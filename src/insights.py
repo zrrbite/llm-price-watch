@@ -427,6 +427,132 @@ def find_bargains(snapshots: list[dict], offers: list[dict] | None = None) -> li
 
 
 # --------------------------------------------------------------------------
+# machine-readable digest
+
+
+def build_advice(snapshots: list[dict], changelog: list[dict], today: date | None = None) -> dict:
+    """A compact digest for programmatic consumers.
+
+    The site answers a human reading it. This answers a tool asking about one
+    model: is it on offer, is it dear for what it is, is it about to retire,
+    and what would be cheaper. Everything here is already computed for the
+    page — emitting it as JSON costs nothing and saves consumers from scraping
+    HTML, which would break the moment the page is restyled.
+    """
+    today = today or _today()
+    offers = find_offers(snapshots, changelog, today)
+    bargains = {b["model"]: b for b in find_bargains(snapshots, offers)}
+    retirements = {
+        r["key"]: r.get("values", {})
+        for s in snapshots if s.get("source") == "copilot-deprecations"
+        for r in s.get("rows", [])
+    }
+
+    offer_by_model: dict[str, dict] = {}
+    for offer in offers:
+        for name in offer.get("models", []):
+            existing = offer_by_model.get(name)
+            if existing is None or (not existing.get("expires") and offer.get("expires")):
+                offer_by_model[name] = offer
+
+    # Tier populations, so "expensive" can be stated relative to peers rather
+    # than as a bare number nobody can calibrate against.
+    tiers: dict[tuple[str, str], list[dict]] = {}
+    models: list[dict] = []
+
+    for snapshot in snapshots:
+        source = snapshot.get("source")
+        if source not in {"anthropic", "copilot-pricing"}:
+            continue
+        vendor = "Anthropic" if source == "anthropic" else "Copilot"
+        for row in snapshot.get("rows", []):
+            values = row.get("values", {})
+            cost = blended(values)
+            if cost is None:
+                continue
+            base = row["key"].split(" (")[0]
+            offer = offer_by_model.get(base)
+            retire = retirements.get(base, {})
+            entry = {
+                "name": row["key"],
+                "base_name": base,
+                "vendor": vendor,
+                "tier": _tier_for(source, row["key"], values),
+                "input": values.get("input"),
+                "output": values.get("output"),
+                "blended": round(cost, 4),
+                "available": not _is_unavailable(values),
+                "status": values.get("status") or values.get("release_status"),
+                "on_offer": bool(values.get("offer")) or bool(offer and offer.get("expires")),
+                "offer_ends": (offer or {}).get("expires"),
+                "offer_days_left": (offer or {}).get("days_left"),
+                "offer_text": (offer or {}).get("text"),
+                "retires": retire.get("retirement_date"),
+                "replacement": retire.get("suggested_alternative"),
+            }
+            bargain = bargains.get(row["key"])
+            if bargain:
+                entry["bargain"] = {
+                    "compared_tier": bargain["compared_tier"],
+                    "percent_below": round((1 - bargain["ratio"]) * 100, 1),
+                }
+            models.append(entry)
+            if entry["tier"] and entry["available"]:
+                tiers.setdefault((vendor, entry["tier"]), []).append(entry)
+
+    # Rank within tier, and name the cheaper same-class options. This is the
+    # part that lets a consumer say "that is dear, and here is what is not".
+    for (_vendor, _tier), peers in tiers.items():
+        peers.sort(key=lambda m: m["blended"])
+        for index, model in enumerate(peers):
+            model["rank_in_tier"] = index + 1
+            model["tier_size"] = len(peers)
+            # Another context tier of the same model is not an alternative;
+            # suggesting it reads as advice and is really just arithmetic.
+            cheaper = [
+                p for p in peers
+                if p["blended"] < model["blended"] * 0.9
+                and p["base_name"] != model["base_name"]
+            ]
+            model["cheaper_alternatives"] = [
+                {
+                    "name": p["name"],
+                    "blended": p["blended"],
+                    "saves_percent": round((1 - p["blended"] / model["blended"]) * 100, 1),
+                    "on_offer": p["on_offer"],
+                }
+                for p in cheaper[:3]
+            ]
+
+    return {
+        "generated": utcnow(),
+        "site": "https://zrrbite.github.io/llm-price-watch/",
+        "units": "USD per million tokens",
+        "blended_formula": f"{INPUT_WEIGHT}*input + {OUTPUT_WEIGHT}*output",
+        "models": sorted(models, key=lambda m: (m["vendor"], m["name"])),
+        "offers": [
+            {
+                "vendor": o["vendor"], "kind": o["kind"], "models": o["models"],
+                "expires": o.get("expires"), "days_left": o.get("days_left"),
+                "text": o.get("text"),
+            }
+            for o in offers
+        ],
+        "retiring_soon": retiring_soon(snapshots, today),
+        "cheapest_by_tier": {
+            f"{v['vendor']}/{v['tier']}": {
+                "model": v["cheapest"]["model"], "blended": round(v["cheapest"]["blended"], 4)
+            }
+            for v in value_table(snapshots)
+        },
+    }
+
+
+def utcnow() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+# --------------------------------------------------------------------------
 # editorial picks
 
 

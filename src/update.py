@@ -149,6 +149,13 @@ def main() -> int:
 
     render.write_site(ROOT, merged, snapshots_for_site, state, build_overview(merged, snapshots_for_site))
 
+    # A machine-readable digest, published alongside the page so tools can ask
+    # about one model without scraping HTML that will eventually be restyled.
+    advice = insights.build_advice(snapshots_for_site, merged)
+    advice_json = json.dumps(advice, indent=2, ensure_ascii=False) + "\n"
+    (DATA / "advice.json").write_text(advice_json, encoding="utf-8")
+    (ROOT / "site" / "advice.json").write_text(advice_json, encoding="utf-8")
+
     # Hand the workflow everything it needs to notify, without giving this
     # script a GitHub token of its own.
     RUN.mkdir(exist_ok=True)
