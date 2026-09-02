@@ -1,0 +1,261 @@
+{
+  "source": "anthropic",
+  "title": "Anthropic API pricing",
+  "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+  "fetched": "2026-09-02T12:25:09Z",
+  "floor": 10,
+  "rows": [
+    {
+      "key": "Claude Fable 5",
+      "values": {
+        "input": 10.0,
+        "cache_write_5m": 12.5,
+        "cache_write_1h": 20.0,
+        "cache_read": 1.0,
+        "output": 50.0,
+        "batch_input": 5.0,
+        "batch_output": 25.0
+      }
+    },
+    {
+      "key": "Claude Fable 5.1",
+      "values": {
+        "input": 10.0,
+        "cache_write_5m": 12.5,
+        "cache_write_1h": 20.0,
+        "cache_read": 0.25,
+        "output": 50.0,
+        "batch_input": 5.0,
+        "batch_output": 25.0
+      }
+    },
+    {
+      "key": "Claude Haiku 3.5",
+      "values": {
+        "status": "retired, except on Bedrock and Google Cloud",
+        "input": 0.8,
+        "cache_write_5m": 1.0,
+        "cache_write_1h": 1.6,
+        "cache_read": 0.08,
+        "output": 4.0,
+        "batch_input": 0.4,
+        "batch_output": 2.0
+      }
+    },
+    {
+      "key": "Claude Haiku 4.5",
+      "values": {
+        "input": 1.0,
+        "cache_write_5m": 1.25,
+        "cache_write_1h": 2.0,
+        "cache_read": 0.1,
+        "output": 5.0,
+        "batch_input": 0.5,
+        "batch_output": 2.5
+      }
+    },
+    {
+      "key": "Claude Mythos 5",
+      "values": {
+        "status": "limited availability",
+        "input": 10.0,
+        "cache_write_5m": 12.5,
+        "cache_write_1h": 20.0,
+        "cache_read": 1.0,
+        "output": 50.0,
+        "batch_input": 5.0,
+        "batch_output": 25.0
+      }
+    },
+    {
+      "key": "Claude Mythos 5.1",
+      "values": {
+        "status": "limited availability",
+        "input": 10.0,
+        "cache_write_5m": 12.5,
+        "cache_write_1h": 20.0,
+        "cache_read": 0.25,
+        "output": 50.0,
+        "batch_input": 5.0,
+        "batch_output": 25.0
+      }
+    },
+    {
+      "key": "Claude Opus 4",
+      "values": {
+        "status": "retired, except on Google Cloud",
+        "input": 15.0,
+        "cache_write_5m": 18.75,
+        "cache_write_1h": 30.0,
+        "cache_read": 1.5,
+        "output": 75.0,
+        "batch_input": 7.5,
+        "batch_output": 37.5
+      }
+    },
+    {
+      "key": "Claude Opus 4.1",
+      "values": {
+        "status": "retired, except on Bedrock and Google Cloud",
+        "input": 15.0,
+        "cache_write_5m": 18.75,
+        "cache_write_1h": 30.0,
+        "cache_read": 1.5,
+        "output": 75.0,
+        "batch_input": 7.5,
+        "batch_output": 37.5
+      }
+    },
+    {
+      "key": "Claude Opus 4.5",
+      "values": {
+        "input": 5.0,
+        "cache_write_5m": 6.25,
+        "cache_write_1h": 10.0,
+        "cache_read": 0.5,
+        "output": 25.0,
+        "batch_input": 2.5,
+        "batch_output": 12.5
+      }
+    },
+    {
+      "key": "Claude Opus 4.6",
+      "values": {
+        "input": 5.0,
+        "cache_write_5m": 6.25,
+        "cache_write_1h": 10.0,
+        "cache_read": 0.5,
+        "output": 25.0,
+        "batch_input": 2.5,
+        "batch_output": 12.5
+      }
+    },
+    {
+      "key": "Claude Opus 4.7",
+      "values": {
+        "input": 5.0,
+        "cache_write_5m": 6.25,
+        "cache_write_1h": 10.0,
+        "cache_read": 0.5,
+        "output": 25.0,
+        "batch_input": 2.5,
+        "batch_output": 12.5
+      }
+    },
+    {
+      "key": "Claude Opus 4.8",
+      "values": {
+        "input": 5.0,
+        "cache_write_5m": 6.25,
+        "cache_write_1h": 10.0,
+        "cache_read": 0.5,
+        "output": 25.0,
+        "batch_input": 2.5,
+        "batch_output": 12.5
+      }
+    },
+    {
+      "key": "Claude Opus 5",
+      "values": {
+        "input": 5.0,
+        "cache_write_5m": 6.25,
+        "cache_write_1h": 10.0,
+        "cache_read": 0.5,
+        "output": 25.0,
+        "batch_input": 2.5,
+        "batch_output": 12.5
+      }
+    },
+    {
+      "key": "Claude Sonnet 4",
+      "values": {
+        "status": "retired, except on Bedrock and Google Cloud",
+        "input": 3.0,
+        "cache_write_5m": 3.75,
+        "cache_write_1h": 6.0,
+        "cache_read": 0.3,
+        "output": 15.0,
+        "batch_input": 1.5,
+        "batch_output": 7.5
+      }
+    },
+    {
+      "key": "Claude Sonnet 4.5",
+      "values": {
+        "input": 3.0,
+        "cache_write_5m": 3.75,
+        "cache_write_1h": 6.0,
+        "cache_read": 0.3,
+        "output": 15.0,
+        "batch_input": 1.5,
+        "batch_output": 7.5
+      }
+    },
+    {
+      "key": "Claude Sonnet 4.6",
+      "values": {
+        "input": 3.0,
+        "cache_write_5m": 3.75,
+        "cache_write_1h": 6.0,
+        "cache_read": 0.3,
+        "output": 15.0,
+        "batch_input": 1.5,
+        "batch_output": 7.5
+      }
+    },
+    {
+      "key": "Claude Sonnet 5",
+      "values": {
+        "input": 2.0,
+        "cache_write_5m": 2.5,
+        "cache_write_1h": 4.0,
+        "cache_read": 0.2,
+        "output": 10.0,
+        "batch_input": 1.0,
+        "batch_output": 5.0
+      }
+    }
+  ],
+  "advisories": [
+    {
+      "key": "claude-sonnet-5-introductory-pricing",
+      "text": "The $2/$10 per million input/output token pricing for Claude Sonnet 5, announced at launch as introductory pricing through August 31, 2026, is now the standard price. The previously scheduled increase to $3/$15 per million input/output tokens on September 1, 2026 will not occur."
+    },
+    {
+      "key": "mtok-million-tokens-the-base-input",
+      "text": "MTok = Million tokens. The \"Base Input Tokens\" column shows standard input pricing, the \"5m Cache Writes\", \"1h Cache Writes\", and \"Cache Hits & Refreshes\" columns are specific to prompt caching, and \"Output Tokens\" shows output pricing. See prompt caching pricing for an explanation of the cache columns and pricing multipliers."
+    },
+    {
+      "key": "claude-47-and-later-models-and",
+      "text": "Claude 4.7 and later models and Claude Mythos Preview use a newer tokenizer that contributes to their improved performance on a wide range of tasks. This tokenizer produces approximately 30% more tokens for the same text. The exact increase depends on the content and workload shape. Claude Sonnet 4.6 and earlier models use the previous tokenizer."
+    },
+    {
+      "key": "regional-and-multiregion-endpoint-pricing-for",
+      "text": "**Regional and multi-region endpoint pricing for Claude 4.5 models and beyond** Starting with Claude Sonnet 4.5, Haiku 4.5, and Opus 4.5: * **Bedrock** offers two endpoint types: global endpoints (dynamic routing for maximum availability) and regional endpoints (guaranteed data routing through specific geographic regions). * **Google Cloud** offers three endpoint types: global endpoints, multi-region endpoints (dynamic routing within a geographic area), and regional endpoints. Regional and multi-region endpoints include a 10% premium over global endpoints. The Claude API (first-party) is global by default; for first-party data residency options and pricing, see Data residency pricing. **Scope:** This pricing structure applies to Claude Sonnet 4.5, Haiku 4.5, Opus 4.5, and all future models. Earlier models (Claude Opus 4.1 and prior releases) retain their existing pricing. For implementation details and code examples: * Amazon Bedrock global vs regional endpoints for Opus 4.7, Haiku 4.5, and later models, or the legacy integration for all other models on Bedrock * Google Cloud global, multi-region, and regional endpoints"
+    },
+    {
+      "key": "claude-consumption-units-if-customer-accesses",
+      "text": "**Claude Consumption Units.** If Customer accesses the Services through certain Marketplace Platforms (e.g., Claude Platform on AWS), usage will be invoiced in Claude Consumption Units (\"CCU\") rather than per MTok. A CCU is a unit of measure used solely for Marketplace Platform invoicing. One hundred (100) CCU represents $1.00 USD of fees owed for the Services, calculated at the applicable prices on claude.com/pricing#api, after application of any discounts."
+    },
+    {
+      "key": "if-you-have-an-existing-amazon",
+      "text": "If you have an existing Amazon Bedrock private offer, contact your Anthropic or AWS account representative before getting started with Claude Platform on AWS to ensure your discounts are applied correctly. Discounts cannot be applied retroactively to usage incurred before your private offer is accepted."
+    },
+    {
+      "key": "if-youre-also-using-bash-or",
+      "text": "If you're also using bash or text editor tools alongside computer use, those tools have their own token costs as documented in their respective pages."
+    },
+    {
+      "key": "if-you-also-use-the-computer",
+      "text": "If you also use the computer use tool, bash tool, text editor tool, or your own tools alongside browser use, those tools have their own token costs as documented on their respective pages."
+    },
+    {
+      "key": "session-runtime-replaces-the-code-execution",
+      "text": "Session runtime replaces the code execution container-hour billing model when using Claude Managed Agents. You are not separately billed for container hours on top of session runtime."
+    },
+    {
+      "key": "example-calculation-for-processing-10000-support",
+      "text": "Example calculation for processing 10,000 support tickets: * Average \\~3,700 tokens per conversation * Using Claude Haiku 4.5 at $1/MTok input, $5/MTok output * Total cost: \\~$37.00 per 10,000 tickets"
+    }
+  ]
+}

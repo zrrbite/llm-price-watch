@@ -1,0 +1,87 @@
+name: update
+
+on:
+  schedule:
+    # Twice a day. Vendor changes land during US business hours, so one check
+    # at either end of it catches them within a few hours.
+    - cron: "17 6 * * *"
+    - cron: "17 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    outputs:
+      notify: ${{ steps.run.outputs.notify }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install --quiet pyyaml
+
+      - name: Run tests
+        # If the parsers are broken against the frozen fixtures, stop before
+        # touching any committed data.
+        run: python -m unittest discover -s tests
+
+      - name: Check prices
+        id: run
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_FROM: ${{ secrets.SMTP_FROM }}
+          SMTP_TO: ${{ secrets.SMTP_TO }}
+        run: |
+          python src/update.py
+          echo "notify=$(cat .run/notify.txt)" >> "$GITHUB_OUTPUT"
+
+      - name: Commit snapshots and site
+        run: |
+          git config user.name  "llm-price-watch"
+          git config user.email "actions@github.com"
+          git add data site
+          if git diff --cached --quiet; then
+            echo "nothing changed"
+          else
+            git commit -m "prices: $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Open an issue
+        if: steps.run.outputs.notify == 'yes'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "$(cat .run/issue-title.txt)" \
+            --body-file .run/issue-body.md
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

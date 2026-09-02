@@ -1,0 +1,6 @@
+{
+  "extraPaths": ["src"],
+  "venvPath": ".",
+  "venv": ".venv",
+  "reportMissingModuleSource": "none"
+}

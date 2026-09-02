@@ -1,0 +1,234 @@
+{
+  "source": "copilot-deprecations",
+  "title": "GitHub Copilot — model retirements",
+  "url": "https://github.com/github/docs/blob/main/data/tables/copilot/model-deprecation-history.yml",
+  "fetched": "2026-09-02T12:25:09Z",
+  "floor": 3,
+  "rows": [
+    {
+      "key": "Claude Opus 4",
+      "values": {
+        "retirement_date": "2025-10-23",
+        "suggested_alternative": "Claude Opus 4.6"
+      }
+    },
+    {
+      "key": "Claude Opus 4.1",
+      "values": {
+        "retirement_date": "2026-02-17",
+        "suggested_alternative": "Claude Opus 4.6"
+      }
+    },
+    {
+      "key": "Claude Opus 4.5",
+      "values": {
+        "retirement_date": "2026-09-01",
+        "suggested_alternative": "Claude Opus 5"
+      }
+    },
+    {
+      "key": "Claude Opus 4.6",
+      "values": {
+        "retirement_date": "2026-09-01",
+        "suggested_alternative": "Claude Opus 5"
+      }
+    },
+    {
+      "key": "Claude Opus 4.6 (fast mode) (preview)",
+      "values": {
+        "retirement_date": "2026-06-29",
+        "suggested_alternative": "Claude Opus 4.8 (fast mode) (preview)"
+      }
+    },
+    {
+      "key": "Claude Sonnet 3.5",
+      "values": {
+        "retirement_date": "2025-11-06",
+        "suggested_alternative": "Claude Haiku 4.5"
+      }
+    },
+    {
+      "key": "Claude Sonnet 3.7",
+      "values": {
+        "retirement_date": "2025-10-23",
+        "suggested_alternative": "Claude Sonnet 4.6"
+      }
+    },
+    {
+      "key": "Claude Sonnet 3.7 Thinking",
+      "values": {
+        "retirement_date": "2025-10-23",
+        "suggested_alternative": "Claude Sonnet 4.6"
+      }
+    },
+    {
+      "key": "Claude Sonnet 4",
+      "values": {
+        "retirement_date": "2026-05-01",
+        "suggested_alternative": "Claude Sonnet 4.6"
+      }
+    },
+    {
+      "key": "Claude Sonnet 4.5",
+      "values": {
+        "retirement_date": "2026-09-01",
+        "suggested_alternative": "Claude Sonnet 5"
+      }
+    },
+    {
+      "key": "Claude Sonnet 4.6",
+      "values": {
+        "retirement_date": "2026-09-01",
+        "suggested_alternative": "Claude Sonnet 5"
+      }
+    },
+    {
+      "key": "GPT-4.1",
+      "values": {
+        "retirement_date": "2026-06-01",
+        "suggested_alternative": "GPT-5.5"
+      }
+    },
+    {
+      "key": "GPT-5",
+      "values": {
+        "retirement_date": "2026-02-17",
+        "suggested_alternative": "GPT-5.5"
+      }
+    },
+    {
+      "key": "GPT-5-Codex",
+      "values": {
+        "retirement_date": "2026-02-17",
+        "suggested_alternative": "GPT-5.3-Codex"
+      }
+    },
+    {
+      "key": "GPT-5.1",
+      "values": {
+        "retirement_date": "2026-04-15",
+        "suggested_alternative": "GPT-5.3-Codex"
+      }
+    },
+    {
+      "key": "GPT-5.1-Codex",
+      "values": {
+        "retirement_date": "2026-04-01",
+        "suggested_alternative": "GPT-5.3-Codex"
+      }
+    },
+    {
+      "key": "GPT-5.1-Codex-Max",
+      "values": {
+        "retirement_date": "2026-04-01",
+        "suggested_alternative": "GPT-5.3-Codex"
+      }
+    },
+    {
+      "key": "GPT-5.1-Codex-Mini",
+      "values": {
+        "retirement_date": "2026-04-01",
+        "suggested_alternative": "GPT-5.3-Codex"
+      }
+    },
+    {
+      "key": "GPT-5.2",
+      "values": {
+        "retirement_date": "2026-06-01",
+        "suggested_alternative": "GPT-5.5"
+      }
+    },
+    {
+      "key": "GPT-5.2-Codex",
+      "values": {
+        "retirement_date": "2026-06-01",
+        "suggested_alternative": "GPT-5.3-Codex"
+      }
+    },
+    {
+      "key": "Gemini 2.0 Flash",
+      "values": {
+        "retirement_date": "2025-10-23",
+        "suggested_alternative": "Gemini 2.5 Pro"
+      }
+    },
+    {
+      "key": "Gemini 2.5 Pro",
+      "values": {
+        "retirement_date": "2026-07-31",
+        "suggested_alternative": "Gemini 3.1 Pro"
+      }
+    },
+    {
+      "key": "Gemini 3 Flash",
+      "values": {
+        "retirement_date": "2026-07-31",
+        "suggested_alternative": "Gemini 3.6 Flash"
+      }
+    },
+    {
+      "key": "Gemini 3 Pro",
+      "values": {
+        "retirement_date": "2026-03-26",
+        "suggested_alternative": "Gemini 3.1 Pro"
+      }
+    },
+    {
+      "key": "Gemini 3.1 Pro",
+      "values": {
+        "retirement_date": "2026-09-01",
+        "suggested_alternative": "Gemini 3.6 Flash"
+      }
+    },
+    {
+      "key": "Grok Code Fast 1",
+      "values": {
+        "retirement_date": "2026-05-15",
+        "suggested_alternative": "GPT-5 mini"
+      }
+    },
+    {
+      "key": "MAI-Code-1-Flash",
+      "values": {
+        "retirement_date": "2026-09-10",
+        "suggested_alternative": "MAI-Code-1.1-Flash"
+      }
+    },
+    {
+      "key": "Raptor mini",
+      "values": {
+        "retirement_date": "2026-09-01",
+        "suggested_alternative": "MAI-Code-1-Flash"
+      }
+    },
+    {
+      "key": "o1-mini",
+      "values": {
+        "retirement_date": "2025-10-23",
+        "suggested_alternative": "GPT-5 mini"
+      }
+    },
+    {
+      "key": "o3",
+      "values": {
+        "retirement_date": "2025-10-23",
+        "suggested_alternative": "GPT-5.5"
+      }
+    },
+    {
+      "key": "o3-mini",
+      "values": {
+        "retirement_date": "2025-10-23",
+        "suggested_alternative": "GPT-5 mini"
+      }
+    },
+    {
+      "key": "o4-mini",
+      "values": {
+        "retirement_date": "2025-10-23",
+        "suggested_alternative": "GPT-5 mini"
+      }
+    }
+  ],
+  "advisories": []
+}

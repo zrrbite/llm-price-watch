@@ -1,0 +1,488 @@
+{
+  "source": "copilot-pricing",
+  "title": "GitHub Copilot — usage-based token pricing",
+  "url": "https://github.com/github/docs/blob/main/data/tables/copilot/models-and-pricing.yml",
+  "fetched": "2026-09-02T12:25:09Z",
+  "floor": 15,
+  "rows": [
+    {
+      "key": "Claude Fable 5",
+      "values": {
+        "input": 10.0,
+        "cached_input": 1.0,
+        "output": 50.0,
+        "cache_write": 12.5,
+        "provider": "anthropic",
+        "release_status": "GA",
+        "category": "Powerful"
+      }
+    },
+    {
+      "key": "Claude Fable 5.1",
+      "values": {
+        "input": 10.0,
+        "cached_input": 0.25,
+        "output": 50.0,
+        "cache_write": 12.5,
+        "provider": "anthropic",
+        "release_status": "GA",
+        "category": "Powerful"
+      }
+    },
+    {
+      "key": "Claude Haiku 4.5",
+      "values": {
+        "input": 1.0,
+        "cached_input": 0.1,
+        "output": 5.0,
+        "cache_write": 1.25,
+        "provider": "anthropic",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "Claude Opus 4.5",
+      "values": {
+        "input": 5.0,
+        "cached_input": 0.5,
+        "output": 25.0,
+        "cache_write": 6.25,
+        "provider": "anthropic",
+        "release_status": "GA",
+        "category": "Powerful"
+      }
+    },
+    {
+      "key": "Claude Opus 4.6",
+      "values": {
+        "input": 5.0,
+        "cached_input": 0.5,
+        "output": 25.0,
+        "cache_write": 6.25,
+        "provider": "anthropic",
+        "release_status": "GA",
+        "category": "Powerful"
+      }
+    },
+    {
+      "key": "Claude Opus 4.7",
+      "values": {
+        "input": 5.0,
+        "cached_input": 0.5,
+        "output": 25.0,
+        "cache_write": 6.25,
+        "provider": "anthropic",
+        "release_status": "GA",
+        "category": "Powerful"
+      }
+    },
+    {
+      "key": "Claude Opus 4.8",
+      "values": {
+        "input": 5.0,
+        "cached_input": 0.5,
+        "output": 25.0,
+        "cache_write": 6.25,
+        "provider": "anthropic",
+        "release_status": "GA",
+        "category": "Powerful"
+      }
+    },
+    {
+      "key": "Claude Opus 4.8 (fast mode) (preview)",
+      "values": {
+        "input": 10.0,
+        "cached_input": 1.0,
+        "output": 50.0,
+        "cache_write": 12.5,
+        "provider": "anthropic",
+        "release_status": "GA",
+        "category": "Powerful"
+      }
+    },
+    {
+      "key": "Claude Opus 5",
+      "values": {
+        "input": 5.0,
+        "cached_input": 0.5,
+        "output": 25.0,
+        "cache_write": 6.25,
+        "provider": "anthropic",
+        "release_status": "GA",
+        "category": "Powerful"
+      }
+    },
+    {
+      "key": "Claude Sonnet 4",
+      "values": {
+        "input": 3.0,
+        "cached_input": 0.3,
+        "output": 15.0,
+        "cache_write": 3.75,
+        "provider": "anthropic",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "Claude Sonnet 4.5",
+      "values": {
+        "input": 3.0,
+        "cached_input": 0.3,
+        "output": 15.0,
+        "cache_write": 3.75,
+        "provider": "anthropic",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "Claude Sonnet 4.6",
+      "values": {
+        "input": 3.0,
+        "cached_input": 0.3,
+        "output": 15.0,
+        "cache_write": 3.75,
+        "provider": "anthropic",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "Claude Sonnet 5",
+      "values": {
+        "input": 2.0,
+        "cached_input": 0.2,
+        "output": 10.0,
+        "cache_write": 2.5,
+        "provider": "anthropic",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "GPT-5 mini",
+      "values": {
+        "input": 0.25,
+        "cached_input": 0.025,
+        "output": 2.0,
+        "cache_write": "Not applicable",
+        "provider": "openai",
+        "release_status": "GA",
+        "category": "Lightweight"
+      }
+    },
+    {
+      "key": "GPT-5.3-Codex",
+      "values": {
+        "input": 1.75,
+        "cached_input": 0.175,
+        "output": 14.0,
+        "cache_write": "Not applicable",
+        "provider": "openai",
+        "release_status": "GA",
+        "category": "Powerful"
+      }
+    },
+    {
+      "key": "GPT-5.4 (> 272K)",
+      "values": {
+        "input": 5.0,
+        "cached_input": 0.5,
+        "output": 22.5,
+        "cache_write": "Not applicable",
+        "provider": "openai",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "GPT-5.4 (≤ 272K)",
+      "values": {
+        "input": 2.5,
+        "cached_input": 0.25,
+        "output": 15.0,
+        "cache_write": "Not applicable",
+        "provider": "openai",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "GPT-5.4 mini",
+      "values": {
+        "input": 0.75,
+        "cached_input": 0.075,
+        "output": 4.5,
+        "cache_write": "Not applicable",
+        "provider": "openai",
+        "release_status": "GA",
+        "category": "Lightweight"
+      }
+    },
+    {
+      "key": "GPT-5.4 nano",
+      "values": {
+        "input": 0.2,
+        "cached_input": 0.02,
+        "output": 1.25,
+        "cache_write": "Not applicable",
+        "provider": "openai",
+        "release_status": "GA",
+        "category": "Lightweight"
+      }
+    },
+    {
+      "key": "GPT-5.5 (> 272K)",
+      "values": {
+        "input": 10.0,
+        "cached_input": 1.0,
+        "output": 45.0,
+        "cache_write": "Not applicable",
+        "provider": "openai",
+        "release_status": "GA",
+        "category": "Powerful"
+      }
+    },
+    {
+      "key": "GPT-5.5 (≤ 272K)",
+      "values": {
+        "input": 5.0,
+        "cached_input": 0.5,
+        "output": 30.0,
+        "cache_write": "Not applicable",
+        "provider": "openai",
+        "release_status": "GA",
+        "category": "Powerful"
+      }
+    },
+    {
+      "key": "GPT-5.6 Luna (> 200K)",
+      "values": {
+        "input": 0.4,
+        "cached_input": 0.04,
+        "output": 1.8,
+        "cache_write": 0.5,
+        "provider": "openai",
+        "release_status": "GA",
+        "category": "Lightweight"
+      }
+    },
+    {
+      "key": "GPT-5.6 Luna (≤ 200K)",
+      "values": {
+        "input": 0.2,
+        "cached_input": 0.02,
+        "output": 1.2,
+        "cache_write": 0.25,
+        "provider": "openai",
+        "release_status": "GA",
+        "category": "Lightweight"
+      }
+    },
+    {
+      "key": "GPT-5.6 Sol[^gpt-56-sol-promo] (> 272K)",
+      "values": {
+        "input": 4.0,
+        "cached_input": 0.4,
+        "output": 15.0,
+        "cache_write": 5.0,
+        "provider": "openai",
+        "release_status": "GA",
+        "category": "Powerful"
+      }
+    },
+    {
+      "key": "GPT-5.6 Sol[^gpt-56-sol-promo] (≤ 272K)",
+      "values": {
+        "input": 2.0,
+        "cached_input": 0.2,
+        "output": 10.0,
+        "cache_write": 2.5,
+        "provider": "openai",
+        "release_status": "GA",
+        "category": "Powerful"
+      }
+    },
+    {
+      "key": "GPT-5.6 Terra (> 272K)",
+      "values": {
+        "input": 4.0,
+        "cached_input": 0.4,
+        "output": 18.0,
+        "cache_write": 5.0,
+        "provider": "openai",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "GPT-5.6 Terra (≤ 272K)",
+      "values": {
+        "input": 2.0,
+        "cached_input": 0.2,
+        "output": 12.0,
+        "cache_write": 2.5,
+        "provider": "openai",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "Gemini 3.1 Pro (> 200K)",
+      "values": {
+        "input": 4.0,
+        "cached_input": 0.4,
+        "output": 18.0,
+        "provider": "google",
+        "release_status": "Public preview",
+        "category": "Powerful"
+      }
+    },
+    {
+      "key": "Gemini 3.1 Pro (≤ 200K)",
+      "values": {
+        "input": 2.0,
+        "cached_input": 0.2,
+        "output": 12.0,
+        "provider": "google",
+        "release_status": "Public preview",
+        "category": "Powerful"
+      }
+    },
+    {
+      "key": "Gemini 3.5 Flash",
+      "values": {
+        "input": 1.5,
+        "cached_input": 0.15,
+        "output": 9.0,
+        "provider": "google",
+        "release_status": "GA",
+        "category": "Lightweight"
+      }
+    },
+    {
+      "key": "Gemini 3.6 Flash[^gemini-flash-promo]",
+      "values": {
+        "input": 0.75,
+        "cached_input": 0.075,
+        "output": 3.75,
+        "provider": "google",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "Gemini 3.7 Flash[^gemini-flash-promo]",
+      "values": {
+        "input": 0.75,
+        "cached_input": 0.075,
+        "output": 3.75,
+        "provider": "google",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "Grok 4.5 (> 200K)",
+      "values": {
+        "input": 4.0,
+        "cached_input": 1.0,
+        "output": 12.0,
+        "provider": "xai",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "Grok 4.5 (≤ 200K)",
+      "values": {
+        "input": 2.0,
+        "cached_input": 0.5,
+        "output": 6.0,
+        "provider": "xai",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "Grok 4.6 (> 200K)",
+      "values": {
+        "input": 4.0,
+        "cached_input": 1.0,
+        "output": 12.0,
+        "provider": "xai",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "Grok 4.6 (≤ 200K)",
+      "values": {
+        "input": 2.0,
+        "cached_input": 0.5,
+        "output": 6.0,
+        "provider": "xai",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "Kimi K2.7 Code",
+      "values": {
+        "input": 0.95,
+        "cached_input": 0.19,
+        "output": 4.0,
+        "provider": "moonshot_ai",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "Kimi K3",
+      "values": {
+        "input": 3.0,
+        "cached_input": 0.3,
+        "output": 15.0,
+        "provider": "moonshot_ai",
+        "release_status": "GA",
+        "category": "Powerful"
+      }
+    },
+    {
+      "key": "MAI-Code-1-Flash",
+      "values": {
+        "input": 0.75,
+        "cached_input": 0.075,
+        "output": 4.5,
+        "provider": "microsoft",
+        "release_status": "GA",
+        "category": "Lightweight"
+      }
+    },
+    {
+      "key": "MAI-Code-1.1-Flash",
+      "values": {
+        "input": 0.2,
+        "cached_input": 0.02,
+        "output": 1.2,
+        "provider": "microsoft",
+        "release_status": "GA",
+        "category": "Lightweight"
+      }
+    },
+    {
+      "key": "Raptor mini",
+      "values": {
+        "input": 0.25,
+        "cached_input": 0.025,
+        "output": 2.0,
+        "provider": "github",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    }
+  ],
+  "advisories": []
+}

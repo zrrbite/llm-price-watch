@@ -1,0 +1,1604 @@
+{
+  "schema": 1,
+  "count": 129,
+  "entries": [
+    {
+      "id": "c484cd2dedef500d",
+      "date": "2026-09-01",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Claude Fable 5.1",
+      "summary": "Claude Fable 5.1 added",
+      "ref": "https://github.com/github/docs/commit/a4691ba2594969ad75cb47c28044f5092d3504f7",
+      "note": "Tented Model 0059 (#62978)"
+    },
+    {
+      "id": "95b4220abb65f94d",
+      "date": "2026-08-21",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "MAI-Code-1-Flash",
+      "summary": "MAI-Code-1-Flash added",
+      "ref": "https://github.com/github/docs/commit/860de230f41196c101f2498f6d46dbaad75c6993",
+      "note": "Announce MAI-Code-1-Flash deprecation (2026-09-10) (#62830)"
+    },
+    {
+      "id": "7ce473961bec3095",
+      "date": "2026-08-21",
+      "source": "copilot-pricing",
+      "class": "price_changed",
+      "key": "GPT-5.6 Sol[^gpt-56-sol-promo] (> 272K)",
+      "summary": "GPT-5.6 Sol[^gpt-56-sol-promo] (> 272K): cache_write $6.25 → $5, cached_input $0.5 → $0.4, input $5 → $4, output $22.5 → $15",
+      "fields": [
+        {
+          "field": "cache_write",
+          "old": 6.25,
+          "new": 5.0
+        },
+        {
+          "field": "cached_input",
+          "old": 0.5,
+          "new": 0.4
+        },
+        {
+          "field": "input",
+          "old": 5.0,
+          "new": 4.0
+        },
+        {
+          "field": "output",
+          "old": 22.5,
+          "new": 15.0
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/1cabce7332082981a4b8d24f7e0acfb6fef85831",
+      "note": "Update GPT-5.6 Sol pricing for new OpenAI list rates (#62884)"
+    },
+    {
+      "id": "5fbd248cb0c387e6",
+      "date": "2026-08-21",
+      "source": "copilot-pricing",
+      "class": "price_changed",
+      "key": "GPT-5.6 Sol[^gpt-56-sol-promo] (≤ 272K)",
+      "summary": "GPT-5.6 Sol[^gpt-56-sol-promo] (≤ 272K): cache_write $3.125 → $2.5, cached_input $0.25 → $0.2, input $2.5 → $2, output $15 → $10",
+      "fields": [
+        {
+          "field": "cache_write",
+          "old": 3.125,
+          "new": 2.5
+        },
+        {
+          "field": "cached_input",
+          "old": 0.25,
+          "new": 0.2
+        },
+        {
+          "field": "input",
+          "old": 2.5,
+          "new": 2.0
+        },
+        {
+          "field": "output",
+          "old": 15.0,
+          "new": 10.0
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/1cabce7332082981a4b8d24f7e0acfb6fef85831",
+      "note": "Update GPT-5.6 Sol pricing for new OpenAI list rates (#62884)"
+    },
+    {
+      "id": "f674b5c081583ee3",
+      "date": "2026-08-20",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "GPT-5.6 Sol (≤ 272K)",
+      "summary": "GPT-5.6 Sol (≤ 272K) removed",
+      "ref": "https://github.com/github/docs/commit/d0e8a483ac3ba90b56079724e684fb30a5e9e564",
+      "note": "Apply GPT-5.6 Sol 50% promotional pricing (#62870)"
+    },
+    {
+      "id": "bb128e93addcbc14",
+      "date": "2026-08-20",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "GPT-5.6 Sol (> 272K)",
+      "summary": "GPT-5.6 Sol (> 272K) removed",
+      "ref": "https://github.com/github/docs/commit/d0e8a483ac3ba90b56079724e684fb30a5e9e564",
+      "note": "Apply GPT-5.6 Sol 50% promotional pricing (#62870)"
+    },
+    {
+      "id": "9e041b68b0a01215",
+      "date": "2026-08-20",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-5.6 Sol[^gpt-56-sol-promo] (> 272K)",
+      "summary": "GPT-5.6 Sol[^gpt-56-sol-promo] (> 272K) added",
+      "ref": "https://github.com/github/docs/commit/d0e8a483ac3ba90b56079724e684fb30a5e9e564",
+      "note": "Apply GPT-5.6 Sol 50% promotional pricing (#62870)"
+    },
+    {
+      "id": "484b2b4ad41378e5",
+      "date": "2026-08-20",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-5.6 Sol[^gpt-56-sol-promo] (≤ 272K)",
+      "summary": "GPT-5.6 Sol[^gpt-56-sol-promo] (≤ 272K) added",
+      "ref": "https://github.com/github/docs/commit/d0e8a483ac3ba90b56079724e684fb30a5e9e564",
+      "note": "Apply GPT-5.6 Sol 50% promotional pricing (#62870)"
+    },
+    {
+      "id": "bd2b2ae18e35b88f",
+      "date": "2026-08-14",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Grok 4.6 (> 200K)",
+      "summary": "Grok 4.6 (> 200K) added",
+      "ref": "https://github.com/github/docs/commit/980eb5d3891933e0409018f3172962ac1e461398",
+      "note": "Grok 4.6 model release (#62752)"
+    },
+    {
+      "id": "7863b9fe61eb9fc3",
+      "date": "2026-08-14",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Grok 4.6 (≤ 200K)",
+      "summary": "Grok 4.6 (≤ 200K) added",
+      "ref": "https://github.com/github/docs/commit/980eb5d3891933e0409018f3172962ac1e461398",
+      "note": "Grok 4.6 model release (#62752)"
+    },
+    {
+      "id": "bb99923413a5e9ee",
+      "date": "2026-08-13",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Gemini 3.7 Flash[^gemini-flash-promo]",
+      "summary": "Gemini 3.7 Flash[^gemini-flash-promo] added",
+      "ref": "https://github.com/github/docs/commit/980334a34dd89b0b66e2b79760a409cb1cb2877b",
+      "note": "Gemini 3.7 Flash model release (#62740)"
+    },
+    {
+      "id": "8ecdcb76bd05156c",
+      "date": "2026-08-13",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "Gemini 3.6 Flash",
+      "summary": "Gemini 3.6 Flash removed",
+      "ref": "https://github.com/github/docs/commit/980334a34dd89b0b66e2b79760a409cb1cb2877b",
+      "note": "Gemini 3.7 Flash model release (#62740)"
+    },
+    {
+      "id": "5790183802e07a88",
+      "date": "2026-08-13",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Gemini 3.6 Flash[^gemini-flash-promo]",
+      "summary": "Gemini 3.6 Flash[^gemini-flash-promo] added",
+      "ref": "https://github.com/github/docs/commit/980334a34dd89b0b66e2b79760a409cb1cb2877b",
+      "note": "Gemini 3.7 Flash model release (#62740)"
+    },
+    {
+      "id": "4a96dd0932aec7f3",
+      "date": "2026-08-13",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Claude Sonnet 5",
+      "summary": "Claude Sonnet 5 added",
+      "ref": "https://github.com/github/docs/commit/980334a34dd89b0b66e2b79760a409cb1cb2877b",
+      "note": "Gemini 3.7 Flash model release (#62740)"
+    },
+    {
+      "id": "2fc0e5fa49304721",
+      "date": "2026-08-13",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "Claude Sonnet 5[^sonnet-5-promo]",
+      "summary": "Claude Sonnet 5[^sonnet-5-promo] removed",
+      "ref": "https://github.com/github/docs/commit/980334a34dd89b0b66e2b79760a409cb1cb2877b",
+      "note": "Gemini 3.7 Flash model release (#62740)"
+    },
+    {
+      "id": "b17016faceac0325",
+      "date": "2026-08-11",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "MAI-Code-1.1-Flash",
+      "summary": "MAI-Code-1.1-Flash added",
+      "ref": "https://github.com/github/docs/commit/50360a971416399614c4715d86214c77403db9bc",
+      "note": "Add MAI-Code-1.1-Flash model (#62637)"
+    },
+    {
+      "id": "2cd2a7df02604659",
+      "date": "2026-08-11",
+      "source": "copilot-multipliers",
+      "class": "model_added",
+      "key": "MAI-Code-1.1-Flash",
+      "summary": "MAI-Code-1.1-Flash added",
+      "ref": "https://github.com/github/docs/commit/50360a971416399614c4715d86214c77403db9bc",
+      "note": "Add MAI-Code-1.1-Flash model (#62637)"
+    },
+    {
+      "id": "eed2fbca995a8cc5",
+      "date": "2026-08-07",
+      "source": "copilot-pricing",
+      "class": "detail_changed",
+      "key": "Kimi K3",
+      "summary": "Kimi K3: category Versatile → Powerful",
+      "fields": [
+        {
+          "field": "category",
+          "old": "Versatile",
+          "new": "Powerful"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/5dacd7cf65640e39d9ad74f4a3f534f50b549d30",
+      "note": "Correct Kimi K3 model category (#62655)"
+    },
+    {
+      "id": "7037b15fac8069bc",
+      "date": "2026-08-07",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Kimi K3",
+      "summary": "Kimi K3 added",
+      "ref": "https://github.com/github/docs/commit/37ae5cab6de60d5cd9b03ac919ad8c78a838a21f",
+      "note": "Document Kimi K3 launch and Moonshot AI content filtering (#62530)"
+    },
+    {
+      "id": "ed2924800931c7f4",
+      "date": "2026-08-05",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Claude Sonnet 4.5",
+      "summary": "Claude Sonnet 4.5 added",
+      "ref": "https://github.com/github/docs/commit/f45ba61210f1dcdacbb35d73e826fb30975494c1",
+      "note": "Announce August 2026 model deprecations (#62616)"
+    },
+    {
+      "id": "e995bac156c44792",
+      "date": "2026-08-05",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Claude Opus 4.5",
+      "summary": "Claude Opus 4.5 added",
+      "ref": "https://github.com/github/docs/commit/f45ba61210f1dcdacbb35d73e826fb30975494c1",
+      "note": "Announce August 2026 model deprecations (#62616)"
+    },
+    {
+      "id": "a556b713af980ec8",
+      "date": "2026-08-05",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Claude Sonnet 4.6",
+      "summary": "Claude Sonnet 4.6 added",
+      "ref": "https://github.com/github/docs/commit/f45ba61210f1dcdacbb35d73e826fb30975494c1",
+      "note": "Announce August 2026 model deprecations (#62616)"
+    },
+    {
+      "id": "967e12b98ae6022f",
+      "date": "2026-08-05",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Gemini 3.1 Pro",
+      "summary": "Gemini 3.1 Pro added",
+      "ref": "https://github.com/github/docs/commit/f45ba61210f1dcdacbb35d73e826fb30975494c1",
+      "note": "Announce August 2026 model deprecations (#62616)"
+    },
+    {
+      "id": "885d73df4d57c734",
+      "date": "2026-08-05",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Raptor mini",
+      "summary": "Raptor mini added",
+      "ref": "https://github.com/github/docs/commit/f45ba61210f1dcdacbb35d73e826fb30975494c1",
+      "note": "Announce August 2026 model deprecations (#62616)"
+    },
+    {
+      "id": "779fbdfbb15da99c",
+      "date": "2026-08-05",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Claude Opus 4.6",
+      "summary": "Claude Opus 4.6 added",
+      "ref": "https://github.com/github/docs/commit/f45ba61210f1dcdacbb35d73e826fb30975494c1",
+      "note": "Announce August 2026 model deprecations (#62616)"
+    },
+    {
+      "id": "d1062b644db27566",
+      "date": "2026-08-03",
+      "source": "copilot-pricing",
+      "class": "detail_changed",
+      "key": "GPT-5.4 (> 272K)",
+      "summary": "GPT-5.4 (> 272K): cache_write — → Not applicable",
+      "fields": [
+        {
+          "field": "cache_write",
+          "old": null,
+          "new": "Not applicable"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/a5846f685eb4844e63b515df7c7c29f505bc58a5",
+      "note": "Document GPT-5.6 models: comparison task sections, model cards, and cache write pricing (#62573)"
+    },
+    {
+      "id": "cee71039cb83b430",
+      "date": "2026-08-03",
+      "source": "copilot-pricing",
+      "class": "price_changed",
+      "key": "GPT-5.6 Sol (> 272K)",
+      "summary": "GPT-5.6 Sol (> 272K): cache_write — → $12.5",
+      "fields": [
+        {
+          "field": "cache_write",
+          "old": null,
+          "new": 12.5
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/a5846f685eb4844e63b515df7c7c29f505bc58a5",
+      "note": "Document GPT-5.6 models: comparison task sections, model cards, and cache write pricing (#62573)"
+    },
+    {
+      "id": "99ac0a06bbd40864",
+      "date": "2026-08-03",
+      "source": "copilot-pricing",
+      "class": "detail_changed",
+      "key": "GPT-5.4 mini",
+      "summary": "GPT-5.4 mini: cache_write — → Not applicable",
+      "fields": [
+        {
+          "field": "cache_write",
+          "old": null,
+          "new": "Not applicable"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/a5846f685eb4844e63b515df7c7c29f505bc58a5",
+      "note": "Document GPT-5.6 models: comparison task sections, model cards, and cache write pricing (#62573)"
+    },
+    {
+      "id": "8d046d928e130beb",
+      "date": "2026-08-03",
+      "source": "copilot-pricing",
+      "class": "detail_changed",
+      "key": "GPT-5.5 (> 272K)",
+      "summary": "GPT-5.5 (> 272K): cache_write — → Not applicable",
+      "fields": [
+        {
+          "field": "cache_write",
+          "old": null,
+          "new": "Not applicable"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/a5846f685eb4844e63b515df7c7c29f505bc58a5",
+      "note": "Document GPT-5.6 models: comparison task sections, model cards, and cache write pricing (#62573)"
+    },
+    {
+      "id": "88f999d5640a1252",
+      "date": "2026-08-03",
+      "source": "copilot-pricing",
+      "class": "detail_changed",
+      "key": "GPT-5 mini",
+      "summary": "GPT-5 mini: cache_write — → Not applicable",
+      "fields": [
+        {
+          "field": "cache_write",
+          "old": null,
+          "new": "Not applicable"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/a5846f685eb4844e63b515df7c7c29f505bc58a5",
+      "note": "Document GPT-5.6 models: comparison task sections, model cards, and cache write pricing (#62573)"
+    },
+    {
+      "id": "7ea3c54252a93834",
+      "date": "2026-08-03",
+      "source": "copilot-pricing",
+      "class": "detail_changed",
+      "key": "GPT-5.3-Codex",
+      "summary": "GPT-5.3-Codex: cache_write — → Not applicable",
+      "fields": [
+        {
+          "field": "cache_write",
+          "old": null,
+          "new": "Not applicable"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/a5846f685eb4844e63b515df7c7c29f505bc58a5",
+      "note": "Document GPT-5.6 models: comparison task sections, model cards, and cache write pricing (#62573)"
+    },
+    {
+      "id": "7a94e8a1bf4232d1",
+      "date": "2026-08-03",
+      "source": "copilot-pricing",
+      "class": "detail_changed",
+      "key": "GPT-5.4 (≤ 272K)",
+      "summary": "GPT-5.4 (≤ 272K): cache_write — → Not applicable",
+      "fields": [
+        {
+          "field": "cache_write",
+          "old": null,
+          "new": "Not applicable"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/a5846f685eb4844e63b515df7c7c29f505bc58a5",
+      "note": "Document GPT-5.6 models: comparison task sections, model cards, and cache write pricing (#62573)"
+    },
+    {
+      "id": "4557e50d0c97d400",
+      "date": "2026-08-03",
+      "source": "copilot-pricing",
+      "class": "detail_changed",
+      "key": "GPT-5.4 nano",
+      "summary": "GPT-5.4 nano: cache_write — → Not applicable",
+      "fields": [
+        {
+          "field": "cache_write",
+          "old": null,
+          "new": "Not applicable"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/a5846f685eb4844e63b515df7c7c29f505bc58a5",
+      "note": "Document GPT-5.6 models: comparison task sections, model cards, and cache write pricing (#62573)"
+    },
+    {
+      "id": "3903003d9da2ca94",
+      "date": "2026-08-03",
+      "source": "copilot-pricing",
+      "class": "price_changed",
+      "key": "GPT-5.6 Sol (≤ 272K)",
+      "summary": "GPT-5.6 Sol (≤ 272K): cache_write — → $6.25",
+      "fields": [
+        {
+          "field": "cache_write",
+          "old": null,
+          "new": 6.25
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/a5846f685eb4844e63b515df7c7c29f505bc58a5",
+      "note": "Document GPT-5.6 models: comparison task sections, model cards, and cache write pricing (#62573)"
+    },
+    {
+      "id": "224c9982c592ea17",
+      "date": "2026-08-03",
+      "source": "copilot-pricing",
+      "class": "price_changed",
+      "key": "GPT-5.6 Luna (> 200K)",
+      "summary": "GPT-5.6 Luna (> 200K): cache_write — → $0.5",
+      "fields": [
+        {
+          "field": "cache_write",
+          "old": null,
+          "new": 0.5
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/a5846f685eb4844e63b515df7c7c29f505bc58a5",
+      "note": "Document GPT-5.6 models: comparison task sections, model cards, and cache write pricing (#62573)"
+    },
+    {
+      "id": "13b40965095d0f05",
+      "date": "2026-08-03",
+      "source": "copilot-pricing",
+      "class": "price_changed",
+      "key": "GPT-5.6 Terra (> 272K)",
+      "summary": "GPT-5.6 Terra (> 272K): cache_write — → $5",
+      "fields": [
+        {
+          "field": "cache_write",
+          "old": null,
+          "new": 5.0
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/a5846f685eb4844e63b515df7c7c29f505bc58a5",
+      "note": "Document GPT-5.6 models: comparison task sections, model cards, and cache write pricing (#62573)"
+    },
+    {
+      "id": "0fc975a22101b8f9",
+      "date": "2026-08-03",
+      "source": "copilot-pricing",
+      "class": "detail_changed",
+      "key": "GPT-5.5 (≤ 272K)",
+      "summary": "GPT-5.5 (≤ 272K): cache_write — → Not applicable",
+      "fields": [
+        {
+          "field": "cache_write",
+          "old": null,
+          "new": "Not applicable"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/a5846f685eb4844e63b515df7c7c29f505bc58a5",
+      "note": "Document GPT-5.6 models: comparison task sections, model cards, and cache write pricing (#62573)"
+    },
+    {
+      "id": "0f9e21fe425ea0e4",
+      "date": "2026-08-03",
+      "source": "copilot-pricing",
+      "class": "price_changed",
+      "key": "GPT-5.6 Terra (≤ 272K)",
+      "summary": "GPT-5.6 Terra (≤ 272K): cache_write — → $2.5",
+      "fields": [
+        {
+          "field": "cache_write",
+          "old": null,
+          "new": 2.5
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/a5846f685eb4844e63b515df7c7c29f505bc58a5",
+      "note": "Document GPT-5.6 models: comparison task sections, model cards, and cache write pricing (#62573)"
+    },
+    {
+      "id": "07702bcb77390ee2",
+      "date": "2026-08-03",
+      "source": "copilot-pricing",
+      "class": "price_changed",
+      "key": "GPT-5.6 Luna (≤ 200K)",
+      "summary": "GPT-5.6 Luna (≤ 200K): cache_write — → $0.25",
+      "fields": [
+        {
+          "field": "cache_write",
+          "old": null,
+          "new": 0.25
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/a5846f685eb4844e63b515df7c7c29f505bc58a5",
+      "note": "Document GPT-5.6 models: comparison task sections, model cards, and cache write pricing (#62573)"
+    },
+    {
+      "id": "fe7c8895533b173d",
+      "date": "2026-07-31",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "Gemini 2.5 Pro",
+      "summary": "Gemini 2.5 Pro removed",
+      "ref": "https://github.com/github/docs/commit/66a9380cc3d9f4933f345013756356eaa7983e6e",
+      "note": "Deprecate Gemini 2.5 Pro and Gemini 3 Flash (#62569)"
+    },
+    {
+      "id": "d22c5f031cbb7cc5",
+      "date": "2026-07-31",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Gemini 2.5 Pro",
+      "summary": "Gemini 2.5 Pro added",
+      "ref": "https://github.com/github/docs/commit/66a9380cc3d9f4933f345013756356eaa7983e6e",
+      "note": "Deprecate Gemini 2.5 Pro and Gemini 3 Flash (#62569)"
+    },
+    {
+      "id": "745a9a68a1c38818",
+      "date": "2026-07-31",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "Gemini 3 Flash",
+      "summary": "Gemini 3 Flash removed",
+      "ref": "https://github.com/github/docs/commit/66a9380cc3d9f4933f345013756356eaa7983e6e",
+      "note": "Deprecate Gemini 2.5 Pro and Gemini 3 Flash (#62569)"
+    },
+    {
+      "id": "70f214423a1f3ede",
+      "date": "2026-07-31",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "Gemini 2.5 Pro",
+      "summary": "Gemini 2.5 Pro removed",
+      "ref": "https://github.com/github/docs/commit/66a9380cc3d9f4933f345013756356eaa7983e6e",
+      "note": "Deprecate Gemini 2.5 Pro and Gemini 3 Flash (#62569)"
+    },
+    {
+      "id": "21a9443f19dd0750",
+      "date": "2026-07-31",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "Gemini 3 Flash",
+      "summary": "Gemini 3 Flash removed",
+      "ref": "https://github.com/github/docs/commit/66a9380cc3d9f4933f345013756356eaa7983e6e",
+      "note": "Deprecate Gemini 2.5 Pro and Gemini 3 Flash (#62569)"
+    },
+    {
+      "id": "059fd5c89a0a3549",
+      "date": "2026-07-31",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Gemini 3 Flash",
+      "summary": "Gemini 3 Flash added",
+      "ref": "https://github.com/github/docs/commit/66a9380cc3d9f4933f345013756356eaa7983e6e",
+      "note": "Deprecate Gemini 2.5 Pro and Gemini 3 Flash (#62569)"
+    },
+    {
+      "id": "c62efdef6788c7a5",
+      "date": "2026-07-30",
+      "source": "copilot-pricing",
+      "class": "price_changed",
+      "key": "GPT-5.6 Terra (≤ 272K)",
+      "summary": "GPT-5.6 Terra (≤ 272K): cached_input $0.25 → $0.2, input $2.5 → $2, output $15 → $12",
+      "fields": [
+        {
+          "field": "cached_input",
+          "old": 0.25,
+          "new": 0.2
+        },
+        {
+          "field": "input",
+          "old": 2.5,
+          "new": 2.0
+        },
+        {
+          "field": "output",
+          "old": 15.0,
+          "new": 12.0
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/47d6eb8a8a33448ab2b8ab6f35f4dcbf9239240f",
+      "note": "Update GPT-5.6 Terra and Luna pricing (#62555)"
+    },
+    {
+      "id": "b9a59e10ba4e8b29",
+      "date": "2026-07-30",
+      "source": "copilot-pricing",
+      "class": "price_changed",
+      "key": "GPT-5.6 Luna (≤ 200K)",
+      "summary": "GPT-5.6 Luna (≤ 200K): cached_input $0.1 → $0.02, input $1 → $0.2, output $6 → $1.2",
+      "fields": [
+        {
+          "field": "cached_input",
+          "old": 0.1,
+          "new": 0.02
+        },
+        {
+          "field": "input",
+          "old": 1.0,
+          "new": 0.2
+        },
+        {
+          "field": "output",
+          "old": 6.0,
+          "new": 1.2
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/47d6eb8a8a33448ab2b8ab6f35f4dcbf9239240f",
+      "note": "Update GPT-5.6 Terra and Luna pricing (#62555)"
+    },
+    {
+      "id": "67710f41c92bce57",
+      "date": "2026-07-30",
+      "source": "copilot-pricing",
+      "class": "price_changed",
+      "key": "GPT-5.6 Terra (> 272K)",
+      "summary": "GPT-5.6 Terra (> 272K): cached_input $0.5 → $0.4, input $5 → $4, output $22.5 → $18",
+      "fields": [
+        {
+          "field": "cached_input",
+          "old": 0.5,
+          "new": 0.4
+        },
+        {
+          "field": "input",
+          "old": 5.0,
+          "new": 4.0
+        },
+        {
+          "field": "output",
+          "old": 22.5,
+          "new": 18.0
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/47d6eb8a8a33448ab2b8ab6f35f4dcbf9239240f",
+      "note": "Update GPT-5.6 Terra and Luna pricing (#62555)"
+    },
+    {
+      "id": "254427811652a9dd",
+      "date": "2026-07-30",
+      "source": "copilot-pricing",
+      "class": "price_changed",
+      "key": "GPT-5.6 Luna (> 200K)",
+      "summary": "GPT-5.6 Luna (> 200K): cached_input $0.2 → $0.04, input $2 → $0.4, output $9 → $1.8",
+      "fields": [
+        {
+          "field": "cached_input",
+          "old": 0.2,
+          "new": 0.04
+        },
+        {
+          "field": "input",
+          "old": 2.0,
+          "new": 0.4
+        },
+        {
+          "field": "output",
+          "old": 9.0,
+          "new": 1.8
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/47d6eb8a8a33448ab2b8ab6f35f4dcbf9239240f",
+      "note": "Update GPT-5.6 Terra and Luna pricing (#62555)"
+    },
+    {
+      "id": "33d941acd26973b2",
+      "date": "2026-07-28",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Grok 4.5 (≤ 200K)",
+      "summary": "Grok 4.5 (≤ 200K) added",
+      "ref": "https://github.com/github/docs/commit/746058ec9c86949451e50cf33db2b7197dc9cc3c",
+      "note": "Model 0053: Grok 4.5 (xAI) (#62297)"
+    },
+    {
+      "id": "027d4f1e7bdcc367",
+      "date": "2026-07-28",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Grok 4.5 (> 200K)",
+      "summary": "Grok 4.5 (> 200K) added",
+      "ref": "https://github.com/github/docs/commit/746058ec9c86949451e50cf33db2b7197dc9cc3c",
+      "note": "Model 0053: Grok 4.5 (xAI) (#62297)"
+    },
+    {
+      "id": "f7069b7c1af8f0bc",
+      "date": "2026-07-24",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Claude Opus 5",
+      "summary": "Claude Opus 5 added",
+      "ref": "https://github.com/github/docs/commit/0b11460a10fcbf0b025946cf75210d0948862f27",
+      "note": "Add Claude Opus 5 (Tented model 0054) (#62425)"
+    },
+    {
+      "id": "2e48d94e3adb4d2a",
+      "date": "2026-07-21",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Gemini 3.6 Flash",
+      "summary": "Gemini 3.6 Flash added",
+      "ref": "https://github.com/github/docs/commit/0ffe479592528ec532b697806c4801430c787d06",
+      "note": "Tented model 0052 (#62363)"
+    },
+    {
+      "id": "b98f114067c404ca",
+      "date": "2026-07-09",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-5.6 Luna (≤ 200K)",
+      "summary": "GPT-5.6 Luna (≤ 200K) added",
+      "ref": "https://github.com/github/docs/commit/ca521508ca420ea5fff1c52a927fd0f6ee5aff65",
+      "note": "Tented model 0036: GPT-5.6 Sol, Terra, and Luna (#62199)"
+    },
+    {
+      "id": "93a55aaae4e4c013",
+      "date": "2026-07-09",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-5.6 Terra (≤ 272K)",
+      "summary": "GPT-5.6 Terra (≤ 272K) added",
+      "ref": "https://github.com/github/docs/commit/ca521508ca420ea5fff1c52a927fd0f6ee5aff65",
+      "note": "Tented model 0036: GPT-5.6 Sol, Terra, and Luna (#62199)"
+    },
+    {
+      "id": "404ea9f043434dd9",
+      "date": "2026-07-09",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-5.6 Terra (> 272K)",
+      "summary": "GPT-5.6 Terra (> 272K) added",
+      "ref": "https://github.com/github/docs/commit/ca521508ca420ea5fff1c52a927fd0f6ee5aff65",
+      "note": "Tented model 0036: GPT-5.6 Sol, Terra, and Luna (#62199)"
+    },
+    {
+      "id": "37333aa0e1832967",
+      "date": "2026-07-09",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-5.6 Luna (> 200K)",
+      "summary": "GPT-5.6 Luna (> 200K) added",
+      "ref": "https://github.com/github/docs/commit/ca521508ca420ea5fff1c52a927fd0f6ee5aff65",
+      "note": "Tented model 0036: GPT-5.6 Sol, Terra, and Luna (#62199)"
+    },
+    {
+      "id": "29082e849146f2db",
+      "date": "2026-07-09",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-5.6 Sol (> 272K)",
+      "summary": "GPT-5.6 Sol (> 272K) added",
+      "ref": "https://github.com/github/docs/commit/ca521508ca420ea5fff1c52a927fd0f6ee5aff65",
+      "note": "Tented model 0036: GPT-5.6 Sol, Terra, and Luna (#62199)"
+    },
+    {
+      "id": "0420bef5d00ca4a1",
+      "date": "2026-07-09",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-5.6 Sol (≤ 272K)",
+      "summary": "GPT-5.6 Sol (≤ 272K) added",
+      "ref": "https://github.com/github/docs/commit/ca521508ca420ea5fff1c52a927fd0f6ee5aff65",
+      "note": "Tented model 0036: GPT-5.6 Sol, Terra, and Luna (#62199)"
+    },
+    {
+      "id": "f543ef5a3ccfd015",
+      "date": "2026-07-01",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Kimi K2.7 Code",
+      "summary": "Kimi K2.7 Code added",
+      "ref": "https://github.com/github/docs/commit/4b5191aebae003a3f9c114cd42d8de4897542366",
+      "note": "Open-weight models in Copilot model picker (#61861)"
+    },
+    {
+      "id": "f6fdf4c35cf211e2",
+      "date": "2026-06-30",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Claude Sonnet 5[^sonnet-5-promo]",
+      "summary": "Claude Sonnet 5[^sonnet-5-promo] added",
+      "ref": "https://github.com/github/docs/commit/97c573e4435eeef54c2c041c71da52cd9611306f",
+      "note": "Tented-model-0044 (#61857)"
+    },
+    {
+      "id": "3e2a912659d238fe",
+      "date": "2026-06-29",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Claude Opus 4.8 (fast mode) (preview)",
+      "summary": "Claude Opus 4.8 (fast mode) (preview) added",
+      "ref": "https://github.com/github/docs/commit/f09a8a68fdc8e563969f96ac2611d35dee444ccf",
+      "note": "Tented-model-0042 (#61947)"
+    },
+    {
+      "id": "3d9445c184e1bff9",
+      "date": "2026-06-29",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Claude Opus 4.6 (fast mode) (preview)",
+      "summary": "Claude Opus 4.6 (fast mode) (preview) added",
+      "ref": "https://github.com/github/docs/commit/f09a8a68fdc8e563969f96ac2611d35dee444ccf",
+      "note": "Tented-model-0042 (#61947)"
+    },
+    {
+      "id": "3bd834c4d7de60e4",
+      "date": "2026-06-24",
+      "source": "copilot-pricing",
+      "class": "detail_changed",
+      "key": "Raptor mini",
+      "summary": "Raptor mini: release_status Public preview → GA",
+      "fields": [
+        {
+          "field": "release_status",
+          "old": "Public preview",
+          "new": "GA"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/47531488637663735d72c38311f407ef3696bd75",
+      "note": "Auto only for free and student plans + models updates (#61806)"
+    },
+    {
+      "id": "38e50f9cc85cb7ac",
+      "date": "2026-06-09",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Claude Fable 5",
+      "summary": "Claude Fable 5 added",
+      "ref": "https://github.com/github/docs/commit/3e6460bc05f4f8a6e7a37f4d29cb5e451ebe7e30",
+      "note": "fruitcake (#61617)"
+    },
+    {
+      "id": "fd04fffa1053f4fd",
+      "date": "2026-06-05",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "GPT-5.2",
+      "summary": "GPT-5.2 added",
+      "ref": "https://github.com/github/docs/commit/c42859992fe6656bdeb2689f40d4689d63246b95",
+      "note": "Remove unintended footnotes from Copilot models-and-pricing sources (#61186)"
+    },
+    {
+      "id": "dfbadcca5d35fe07",
+      "date": "2026-06-05",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "o3",
+      "summary": "o3: suggested_alternative GPT-5.2 → GPT-5.5",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5.2",
+          "new": "GPT-5.5"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/c42859992fe6656bdeb2689f40d4689d63246b95",
+      "note": "Remove unintended footnotes from Copilot models-and-pricing sources (#61186)"
+    },
+    {
+      "id": "c0dc9e9805cbd8ba",
+      "date": "2026-06-05",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "GPT-5.2-Codex",
+      "summary": "GPT-5.2-Codex added",
+      "ref": "https://github.com/github/docs/commit/c42859992fe6656bdeb2689f40d4689d63246b95",
+      "note": "Remove unintended footnotes from Copilot models-and-pricing sources (#61186)"
+    },
+    {
+      "id": "7e47b1d36679311f",
+      "date": "2026-06-05",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "GPT-5",
+      "summary": "GPT-5: suggested_alternative GPT-5.2 → GPT-5.5",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5.2",
+          "new": "GPT-5.5"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/c42859992fe6656bdeb2689f40d4689d63246b95",
+      "note": "Remove unintended footnotes from Copilot models-and-pricing sources (#61186)"
+    },
+    {
+      "id": "708faf167b2ab3b2",
+      "date": "2026-06-05",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "GPT-5-Codex",
+      "summary": "GPT-5-Codex: suggested_alternative GPT-5.2-Codex → GPT-5.3-Codex",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5.2-Codex",
+          "new": "GPT-5.3-Codex"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/c42859992fe6656bdeb2689f40d4689d63246b95",
+      "note": "Remove unintended footnotes from Copilot models-and-pricing sources (#61186)"
+    },
+    {
+      "id": "5a314281fb3ff9b8",
+      "date": "2026-06-05",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "GPT-5.2-Codex",
+      "summary": "GPT-5.2-Codex removed",
+      "ref": "https://github.com/github/docs/commit/c42859992fe6656bdeb2689f40d4689d63246b95",
+      "note": "Remove unintended footnotes from Copilot models-and-pricing sources (#61186)"
+    },
+    {
+      "id": "5731299f0b785a9a",
+      "date": "2026-06-05",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "GPT-5.2",
+      "summary": "GPT-5.2 removed",
+      "ref": "https://github.com/github/docs/commit/c42859992fe6656bdeb2689f40d4689d63246b95",
+      "note": "Remove unintended footnotes from Copilot models-and-pricing sources (#61186)"
+    },
+    {
+      "id": "53be5bfa843499f0",
+      "date": "2026-06-05",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "GPT-5.2-Codex",
+      "summary": "GPT-5.2-Codex removed",
+      "ref": "https://github.com/github/docs/commit/c42859992fe6656bdeb2689f40d4689d63246b95",
+      "note": "Remove unintended footnotes from Copilot models-and-pricing sources (#61186)"
+    },
+    {
+      "id": "263574fdfdf56520",
+      "date": "2026-06-05",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "GPT-5.2",
+      "summary": "GPT-5.2 removed",
+      "ref": "https://github.com/github/docs/commit/c42859992fe6656bdeb2689f40d4689d63246b95",
+      "note": "Remove unintended footnotes from Copilot models-and-pricing sources (#61186)"
+    },
+    {
+      "id": "f8cf6fd2d92050f8",
+      "date": "2026-06-04",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "Gemini 2.5 Pro[^5]",
+      "summary": "Gemini 2.5 Pro[^5] removed",
+      "ref": "https://github.com/github/docs/commit/82c6d5838e59cab2d286fe3d6b41aa7ed310661a",
+      "note": "[Copilot] Adding long context pricing to specific models (#61580)"
+    },
+    {
+      "id": "e6a502f3dac4a593",
+      "date": "2026-06-04",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Raptor mini",
+      "summary": "Raptor mini added",
+      "ref": "https://github.com/github/docs/commit/82c6d5838e59cab2d286fe3d6b41aa7ed310661a",
+      "note": "[Copilot] Adding long context pricing to specific models (#61580)"
+    },
+    {
+      "id": "e4cc0ce7ed272d6c",
+      "date": "2026-06-04",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "GPT-5 mini[^1]",
+      "summary": "GPT-5 mini[^1] removed",
+      "ref": "https://github.com/github/docs/commit/82c6d5838e59cab2d286fe3d6b41aa7ed310661a",
+      "note": "[Copilot] Adding long context pricing to specific models (#61580)"
+    },
+    {
+      "id": "e08a4c9ac90f91f3",
+      "date": "2026-06-04",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Gemini 3.1 Pro (≤ 200K)",
+      "summary": "Gemini 3.1 Pro (≤ 200K) added",
+      "ref": "https://github.com/github/docs/commit/82c6d5838e59cab2d286fe3d6b41aa7ed310661a",
+      "note": "[Copilot] Adding long context pricing to specific models (#61580)"
+    },
+    {
+      "id": "daca8bb06e5855cb",
+      "date": "2026-06-04",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Gemini 2.5 Pro",
+      "summary": "Gemini 2.5 Pro added",
+      "ref": "https://github.com/github/docs/commit/82c6d5838e59cab2d286fe3d6b41aa7ed310661a",
+      "note": "[Copilot] Adding long context pricing to specific models (#61580)"
+    },
+    {
+      "id": "d0167285a68c8f91",
+      "date": "2026-06-04",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "GPT-5.4[^2]",
+      "summary": "GPT-5.4[^2] removed",
+      "ref": "https://github.com/github/docs/commit/82c6d5838e59cab2d286fe3d6b41aa7ed310661a",
+      "note": "[Copilot] Adding long context pricing to specific models (#61580)"
+    },
+    {
+      "id": "cb3e62cdaeed85bc",
+      "date": "2026-06-04",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "GPT-5.5",
+      "summary": "GPT-5.5 removed",
+      "ref": "https://github.com/github/docs/commit/82c6d5838e59cab2d286fe3d6b41aa7ed310661a",
+      "note": "[Copilot] Adding long context pricing to specific models (#61580)"
+    },
+    {
+      "id": "bc76023d126c9391",
+      "date": "2026-06-04",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "Gemini 3.1 Pro[^5]",
+      "summary": "Gemini 3.1 Pro[^5] removed",
+      "ref": "https://github.com/github/docs/commit/82c6d5838e59cab2d286fe3d6b41aa7ed310661a",
+      "note": "[Copilot] Adding long context pricing to specific models (#61580)"
+    },
+    {
+      "id": "af2d2b0706edc1e2",
+      "date": "2026-06-04",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "Gemini 3 Flash[^6]",
+      "summary": "Gemini 3 Flash[^6] removed",
+      "ref": "https://github.com/github/docs/commit/82c6d5838e59cab2d286fe3d6b41aa7ed310661a",
+      "note": "[Copilot] Adding long context pricing to specific models (#61580)"
+    },
+    {
+      "id": "a180c50f3ec14652",
+      "date": "2026-06-04",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-5.5 (≤ 272K)",
+      "summary": "GPT-5.5 (≤ 272K) added",
+      "ref": "https://github.com/github/docs/commit/82c6d5838e59cab2d286fe3d6b41aa7ed310661a",
+      "note": "[Copilot] Adding long context pricing to specific models (#61580)"
+    },
+    {
+      "id": "9d8dcd3b26ab4874",
+      "date": "2026-06-04",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-5.4 (≤ 272K)",
+      "summary": "GPT-5.4 (≤ 272K) added",
+      "ref": "https://github.com/github/docs/commit/82c6d5838e59cab2d286fe3d6b41aa7ed310661a",
+      "note": "[Copilot] Adding long context pricing to specific models (#61580)"
+    },
+    {
+      "id": "7bdaf6bae71f0357",
+      "date": "2026-06-04",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "Raptor mini[^7]",
+      "summary": "Raptor mini[^7] removed",
+      "ref": "https://github.com/github/docs/commit/82c6d5838e59cab2d286fe3d6b41aa7ed310661a",
+      "note": "[Copilot] Adding long context pricing to specific models (#61580)"
+    },
+    {
+      "id": "75a87ff3d871dd3d",
+      "date": "2026-06-04",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-5 mini",
+      "summary": "GPT-5 mini added",
+      "ref": "https://github.com/github/docs/commit/82c6d5838e59cab2d286fe3d6b41aa7ed310661a",
+      "note": "[Copilot] Adding long context pricing to specific models (#61580)"
+    },
+    {
+      "id": "693c902ff62f85a6",
+      "date": "2026-06-04",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Gemini 3.1 Pro (> 200K)",
+      "summary": "Gemini 3.1 Pro (> 200K) added",
+      "ref": "https://github.com/github/docs/commit/82c6d5838e59cab2d286fe3d6b41aa7ed310661a",
+      "note": "[Copilot] Adding long context pricing to specific models (#61580)"
+    },
+    {
+      "id": "4871c2790081490f",
+      "date": "2026-06-04",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Gemini 3 Flash",
+      "summary": "Gemini 3 Flash added",
+      "ref": "https://github.com/github/docs/commit/82c6d5838e59cab2d286fe3d6b41aa7ed310661a",
+      "note": "[Copilot] Adding long context pricing to specific models (#61580)"
+    },
+    {
+      "id": "27c2fa97b868a5e5",
+      "date": "2026-06-04",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-5.4 (> 272K)",
+      "summary": "GPT-5.4 (> 272K) added",
+      "ref": "https://github.com/github/docs/commit/82c6d5838e59cab2d286fe3d6b41aa7ed310661a",
+      "note": "[Copilot] Adding long context pricing to specific models (#61580)"
+    },
+    {
+      "id": "1986dd27868883a4",
+      "date": "2026-06-04",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-5.5 (> 272K)",
+      "summary": "GPT-5.5 (> 272K) added",
+      "ref": "https://github.com/github/docs/commit/82c6d5838e59cab2d286fe3d6b41aa7ed310661a",
+      "note": "[Copilot] Adding long context pricing to specific models (#61580)"
+    },
+    {
+      "id": "d114d34032f88a77",
+      "date": "2026-06-03",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "GPT-4.1",
+      "summary": "GPT-4.1 added",
+      "ref": "https://github.com/github/docs/commit/104ac9f9699571f5b7141ef5ef470fd71f6fccd6",
+      "note": "Deprecate gpt 4.1 (#61553)"
+    },
+    {
+      "id": "a42e1772e6382b03",
+      "date": "2026-06-03",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "GPT-4.1",
+      "summary": "GPT-4.1 removed",
+      "ref": "https://github.com/github/docs/commit/104ac9f9699571f5b7141ef5ef470fd71f6fccd6",
+      "note": "Deprecate gpt 4.1 (#61553)"
+    },
+    {
+      "id": "0c03f439bdc97dd1",
+      "date": "2026-06-03",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "GPT-4.1[^1]",
+      "summary": "GPT-4.1[^1] removed",
+      "ref": "https://github.com/github/docs/commit/104ac9f9699571f5b7141ef5ef470fd71f6fccd6",
+      "note": "Deprecate gpt 4.1 (#61553)"
+    },
+    {
+      "id": "bbacacf901a4eb59",
+      "date": "2026-06-02",
+      "source": "copilot-multipliers",
+      "class": "model_added",
+      "key": "MAI-Code-1-Flash",
+      "summary": "MAI-Code-1-Flash added",
+      "ref": "https://github.com/github/docs/commit/e0679b208251b643fdf7cbcc1c6189caa16016c4",
+      "note": "June 2-3: Microsoft Build 2026 docs-internal feature branch (#61472)"
+    },
+    {
+      "id": "6c1782a4bae4b7d9",
+      "date": "2026-06-02",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "MAI-Code-1-Flash",
+      "summary": "MAI-Code-1-Flash added",
+      "ref": "https://github.com/github/docs/commit/e0679b208251b643fdf7cbcc1c6189caa16016c4",
+      "note": "June 2-3: Microsoft Build 2026 docs-internal feature branch (#61472)"
+    },
+    {
+      "id": "f4573b543e19344b",
+      "date": "2026-05-29",
+      "source": "copilot-multipliers",
+      "class": "price_changed",
+      "key": "GPT-5.5",
+      "summary": "GPT-5.5: multiplier TBD → 57×",
+      "fields": [
+        {
+          "field": "multiplier",
+          "old": "TBD",
+          "new": 57.0
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/b5de52f3c4aa17916bf4e54653d54d94237fa96c",
+      "note": "Feature branch for the usage-based billing GA (May 29) (#61278)"
+    },
+    {
+      "id": "fa87f9e9937807e7",
+      "date": "2026-05-28",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Claude Opus 4.8",
+      "summary": "Claude Opus 4.8 added",
+      "ref": "https://github.com/github/docs/commit/338b0d66acfa237acb25366ae11846a8f0a81620",
+      "note": "Tented model (#61450)"
+    },
+    {
+      "id": "2ff32d9abde27c62",
+      "date": "2026-05-28",
+      "source": "copilot-multipliers",
+      "class": "model_added",
+      "key": "Claude Opus 4.8",
+      "summary": "Claude Opus 4.8 added",
+      "ref": "https://github.com/github/docs/commit/338b0d66acfa237acb25366ae11846a8f0a81620",
+      "note": "Tented model (#61450)"
+    },
+    {
+      "id": "546ea8642b1ff0fa",
+      "date": "2026-05-27",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "Goldeneye[^8]",
+      "summary": "Goldeneye[^8] removed",
+      "ref": "https://github.com/github/docs/commit/51f2444ac0ab01e1a24653f9707ae39670453fe4",
+      "note": "Remove all mentions of \"Goldeneye\" (#61228)"
+    },
+    {
+      "id": "d4a189cf4e9c34cd",
+      "date": "2026-05-19",
+      "source": "copilot-multipliers",
+      "class": "model_added",
+      "key": "Gemini 3.5 Flash",
+      "summary": "Gemini 3.5 Flash added",
+      "ref": "https://github.com/github/docs/commit/f4829a84c8c7ee6d2e8b249a22ad62e73fbc15a7",
+      "note": "Tented model 0032 (#61284)"
+    },
+    {
+      "id": "59bed6a1c3ee6b2d",
+      "date": "2026-05-19",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Gemini 3.5 Flash",
+      "summary": "Gemini 3.5 Flash added",
+      "ref": "https://github.com/github/docs/commit/f4829a84c8c7ee6d2e8b249a22ad62e73fbc15a7",
+      "note": "Tented model 0032 (#61284)"
+    },
+    {
+      "id": "b11b1526b88c8392",
+      "date": "2026-05-15",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "Grok Code Fast 1",
+      "summary": "Grok Code Fast 1 removed",
+      "ref": "https://github.com/github/docs/commit/9177842a2a5dd08bda729e75cb927641d148d548",
+      "note": "Deprecate Grok Code Fast 1 (2026-05-15) (#61178)"
+    },
+    {
+      "id": "9afaa175cc2e8c48",
+      "date": "2026-05-15",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Grok Code Fast 1",
+      "summary": "Grok Code Fast 1 added",
+      "ref": "https://github.com/github/docs/commit/9177842a2a5dd08bda729e75cb927641d148d548",
+      "note": "Deprecate Grok Code Fast 1 (2026-05-15) (#61178)"
+    },
+    {
+      "id": "3f64546a6951febf",
+      "date": "2026-05-15",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "Grok Code Fast 1",
+      "summary": "Grok Code Fast 1 removed",
+      "ref": "https://github.com/github/docs/commit/9177842a2a5dd08bda729e75cb927641d148d548",
+      "note": "Deprecate Grok Code Fast 1 (2026-05-15) (#61178)"
+    },
+    {
+      "id": "bbf3c955599df4f1",
+      "date": "2026-05-06",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "Claude Sonnet 4",
+      "summary": "Claude Sonnet 4 removed",
+      "ref": "https://github.com/github/docs/commit/f9d875ac48ee310821c3eadf67addc1512114bda",
+      "note": "Add Claude Sonnet 4 deprecation (2026-05-06) (#60674)"
+    },
+    {
+      "id": "bbb34e01d0d7f31b",
+      "date": "2026-05-06",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Claude Sonnet 4",
+      "summary": "Claude Sonnet 4 added",
+      "ref": "https://github.com/github/docs/commit/f9d875ac48ee310821c3eadf67addc1512114bda",
+      "note": "Add Claude Sonnet 4 deprecation (2026-05-06) (#60674)"
+    },
+    {
+      "id": "38cb4b0520db185a",
+      "date": "2026-05-04",
+      "source": "copilot-multipliers",
+      "class": "model_added",
+      "key": "GPT-5.5",
+      "summary": "GPT-5.5 added",
+      "ref": "https://github.com/github/docs/commit/6a30cafb5940b0ece87562fe1418d008e6be05f9",
+      "note": "Adds GPT 5.5 to table for individuals with an annual plan (#61042)"
+    },
+    {
+      "id": "7cf41bca498b4e51",
+      "date": "2026-04-27",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "Claude Opus 4.6 (fast mode)[^4]",
+      "summary": "Claude Opus 4.6 (fast mode)[^4] removed",
+      "ref": "https://github.com/github/docs/commit/5c45104bf9efbdc5bd4eb05ba60c8b152d85902f",
+      "note": "update model pricing table (Add: GPT 5.5, Remove Opus 4.6 fast) (#60976)"
+    },
+    {
+      "id": "078c8b8c079f84dd",
+      "date": "2026-04-27",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-5.5",
+      "summary": "GPT-5.5 added",
+      "ref": "https://github.com/github/docs/commit/5c45104bf9efbdc5bd4eb05ba60c8b152d85902f",
+      "note": "update model pricing table (Add: GPT 5.5, Remove Opus 4.6 fast) (#60976)"
+    },
+    {
+      "id": "3cb39347a142e61a",
+      "date": "2026-04-01",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "GPT-5.1",
+      "summary": "GPT-5.1: retirement_date 2026-04-01 → 2026-04-15",
+      "fields": [
+        {
+          "field": "retirement_date",
+          "old": "2026-04-01",
+          "new": "2026-04-15"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/800591dc7ed9d7e937d953dc575d7fcdc91619ec",
+      "note": "deprecate 5.1 family (#60598)"
+    },
+    {
+      "id": "d5813194dc6d147d",
+      "date": "2026-03-26",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "GPT-5.1-Codex-Max",
+      "summary": "GPT-5.1-Codex-Max added",
+      "ref": "https://github.com/github/docs/commit/c5162a9c7dba72c6be56e2cbec830313566252c8",
+      "note": "Prep docs for deprecation of Gemini 3 Pro and GPT-5.1 model family (#60323)"
+    },
+    {
+      "id": "44d1f32386f4f799",
+      "date": "2026-03-26",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Gemini 3 Pro",
+      "summary": "Gemini 3 Pro added",
+      "ref": "https://github.com/github/docs/commit/c5162a9c7dba72c6be56e2cbec830313566252c8",
+      "note": "Prep docs for deprecation of Gemini 3 Pro and GPT-5.1 model family (#60323)"
+    },
+    {
+      "id": "35af9c214f8b5182",
+      "date": "2026-03-26",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "GPT-5.1-Codex-Mini",
+      "summary": "GPT-5.1-Codex-Mini added",
+      "ref": "https://github.com/github/docs/commit/c5162a9c7dba72c6be56e2cbec830313566252c8",
+      "note": "Prep docs for deprecation of Gemini 3 Pro and GPT-5.1 model family (#60323)"
+    },
+    {
+      "id": "22efa4c8ed5e863f",
+      "date": "2026-03-26",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "GPT-5.1-Codex",
+      "summary": "GPT-5.1-Codex added",
+      "ref": "https://github.com/github/docs/commit/c5162a9c7dba72c6be56e2cbec830313566252c8",
+      "note": "Prep docs for deprecation of Gemini 3 Pro and GPT-5.1 model family (#60323)"
+    },
+    {
+      "id": "1e585d5069baa23c",
+      "date": "2026-03-26",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "GPT-5.1",
+      "summary": "GPT-5.1 added",
+      "ref": "https://github.com/github/docs/commit/c5162a9c7dba72c6be56e2cbec830313566252c8",
+      "note": "Prep docs for deprecation of Gemini 3 Pro and GPT-5.1 model family (#60323)"
+    },
+    {
+      "id": "ef2ee73faedb3449",
+      "date": "2026-02-19",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "GPT-5-Codex",
+      "summary": "GPT-5-Codex: suggested_alternative GPT-5.1-Codex → GPT-5.2-Codex",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5.1-Codex",
+          "new": "GPT-5.2-Codex"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/1d3f015c01fdf4f56d47efc6ebc7492c9b8e972e",
+      "note": "Deprecate Claude Opus 4.1, GPT-5, and GPT-5-Codex models (#59473)"
+    },
+    {
+      "id": "e9eed38e82de867b",
+      "date": "2026-02-19",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Opus 4.1",
+      "summary": "Claude Opus 4.1: suggested_alternative Claude Opus 4.5 → Claude Opus 4.6",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Opus 4.5",
+          "new": "Claude Opus 4.6"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/1d3f015c01fdf4f56d47efc6ebc7492c9b8e972e",
+      "note": "Deprecate Claude Opus 4.1, GPT-5, and GPT-5-Codex models (#59473)"
+    },
+    {
+      "id": "d972bf56d00855e6",
+      "date": "2026-02-19",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Sonnet 3.7",
+      "summary": "Claude Sonnet 3.7: suggested_alternative Claude Sonnet 4 → Claude Sonnet 4.6",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Sonnet 4",
+          "new": "Claude Sonnet 4.6"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/1d3f015c01fdf4f56d47efc6ebc7492c9b8e972e",
+      "note": "Deprecate Claude Opus 4.1, GPT-5, and GPT-5-Codex models (#59473)"
+    },
+    {
+      "id": "58b4b9701ded6d2b",
+      "date": "2026-02-19",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Opus 4",
+      "summary": "Claude Opus 4: suggested_alternative Claude Opus 4.1 → Claude Opus 4.6",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Opus 4.1",
+          "new": "Claude Opus 4.6"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/1d3f015c01fdf4f56d47efc6ebc7492c9b8e972e",
+      "note": "Deprecate Claude Opus 4.1, GPT-5, and GPT-5-Codex models (#59473)"
+    },
+    {
+      "id": "545ba8d94f21694f",
+      "date": "2026-02-19",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Sonnet 3.7 Thinking",
+      "summary": "Claude Sonnet 3.7 Thinking: suggested_alternative Claude Sonnet 4 → Claude Sonnet 4.6",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Sonnet 4",
+          "new": "Claude Sonnet 4.6"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/1d3f015c01fdf4f56d47efc6ebc7492c9b8e972e",
+      "note": "Deprecate Claude Opus 4.1, GPT-5, and GPT-5-Codex models (#59473)"
+    },
+    {
+      "id": "4c38bd27044a9eb4",
+      "date": "2026-02-19",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "o3",
+      "summary": "o3: suggested_alternative GPT-5 → GPT-5.2",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5",
+          "new": "GPT-5.2"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/1d3f015c01fdf4f56d47efc6ebc7492c9b8e972e",
+      "note": "Deprecate Claude Opus 4.1, GPT-5, and GPT-5-Codex models (#59473)"
+    },
+    {
+      "id": "6210e2c15b9cb7a5",
+      "date": "2026-01-22",
+      "source": "copilot-deprecations",
+      "class": "model_removed",
+      "key": "Gemini 2.5 Pro",
+      "summary": "Gemini 2.5 Pro removed",
+      "ref": "https://github.com/github/docs/commit/9fb7907bfce757b2cfad00e7d656eb9ed742ba62",
+      "note": "Remove Gemini 2.5 Pro deprecation (#59243)"
+    },
+    {
+      "id": "dd3cb88724858555",
+      "date": "2026-01-13",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Claude Opus 4.1",
+      "summary": "Claude Opus 4.1 added",
+      "ref": "https://github.com/github/docs/commit/0f42e82002549b916643ee5019811f16de79fdd6",
+      "note": "Prepping models for deprecation (#59152)"
+    },
+    {
+      "id": "cafc37223a084bde",
+      "date": "2026-01-13",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "GPT-5-Codex",
+      "summary": "GPT-5-Codex added",
+      "ref": "https://github.com/github/docs/commit/0f42e82002549b916643ee5019811f16de79fdd6",
+      "note": "Prepping models for deprecation (#59152)"
+    },
+    {
+      "id": "a12716b0ee6d70cb",
+      "date": "2026-01-13",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Gemini 2.5 Pro",
+      "summary": "Gemini 2.5 Pro added",
+      "ref": "https://github.com/github/docs/commit/0f42e82002549b916643ee5019811f16de79fdd6",
+      "note": "Prepping models for deprecation (#59152)"
+    },
+    {
+      "id": "130d85d3a4e9cb1e",
+      "date": "2026-01-13",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "GPT-5",
+      "summary": "GPT-5 added",
+      "ref": "https://github.com/github/docs/commit/0f42e82002549b916643ee5019811f16de79fdd6",
+      "note": "Prepping models for deprecation (#59152)"
+    },
+    {
+      "id": "b28328ad4ffac7e2",
+      "date": "2025-11-11",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Sonnet 3.5",
+      "summary": "Claude Sonnet 3.5: suggested_alternative Claude Sonnet 3.5 → Claude Haiku 4.5",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Sonnet 3.5",
+          "new": "Claude Haiku 4.5"
+        }
+      ],
+      "ref": "https://github.com/github/docs/commit/6a1cc556b71955716152433e50244f2e30bed79a",
+      "note": "Fix suggested alternative for deprecated Claude Sonnet 3.5 (#41216)"
+    },
+    {
+      "id": "5caffe63776a5cc9",
+      "date": "2025-11-10",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Claude Sonnet 3.5",
+      "summary": "Claude Sonnet 3.5 added",
+      "ref": "https://github.com/github/docs/commit/1472523ef87cc1bd939a288fed580fbaa25c1d33",
+      "note": "[2025-11-06] Deprecation of Sonnet 3.5 in Copilot [closing down] (#58329)"
+    }
+  ]
+}

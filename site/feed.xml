@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>LLM price watch</title>
+  <subtitle>What changed in Anthropic and GitHub Copilot pricing — not just what it costs.</subtitle>
+  <link href="https://zrrbite.github.io/llm-price-watch/"/>
+  <link rel="self" href="https://zrrbite.github.io/llm-price-watch/feed.xml"/>
+  <id>tag:zrrbite.github.io,2026:llm-price-watch</id>
+  <updated>2026-09-02T12:25:09Z</updated>
+  <entry>
+    <title>2026-09-01: 1 pricing change</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-09-01</id>
+    <updated>2026-09-01T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Claude Fable 5.1 added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-08-21: 3 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-08-21</id>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;MAI-Code-1-Flash added&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.6 Sol[^gpt-56-sol-promo] (&amp;gt; 272K)&lt;/strong&gt; — cache_write &lt;code&gt;$6.25&lt;/code&gt; → &lt;code&gt;$5&lt;/code&gt;, cached_input &lt;code&gt;$0.5&lt;/code&gt; → &lt;code&gt;$0.4&lt;/code&gt;, input &lt;code&gt;$5&lt;/code&gt; → &lt;code&gt;$4&lt;/code&gt;, output &lt;code&gt;$22.5&lt;/code&gt; → &lt;code&gt;$15&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.6 Sol[^gpt-56-sol-promo] (≤ 272K)&lt;/strong&gt; — cache_write &lt;code&gt;$3.125&lt;/code&gt; → &lt;code&gt;$2.5&lt;/code&gt;, cached_input &lt;code&gt;$0.25&lt;/code&gt; → &lt;code&gt;$0.2&lt;/code&gt;, input &lt;code&gt;$2.5&lt;/code&gt; → &lt;code&gt;$2&lt;/code&gt;, output &lt;code&gt;$15&lt;/code&gt; → &lt;code&gt;$10&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-08-20: 4 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-08-20</id>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;GPT-5.6 Sol (≤ 272K) removed&lt;/li&gt;&lt;li&gt;GPT-5.6 Sol (&amp;gt; 272K) removed&lt;/li&gt;&lt;li&gt;GPT-5.6 Sol[^gpt-56-sol-promo] (&amp;gt; 272K) added&lt;/li&gt;&lt;li&gt;GPT-5.6 Sol[^gpt-56-sol-promo] (≤ 272K) added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-08-14: 2 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-08-14</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Grok 4.6 (&amp;gt; 200K) added&lt;/li&gt;&lt;li&gt;Grok 4.6 (≤ 200K) added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-08-13: 5 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-08-13</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Gemini 3.7 Flash[^gemini-flash-promo] added&lt;/li&gt;&lt;li&gt;Gemini 3.6 Flash removed&lt;/li&gt;&lt;li&gt;Gemini 3.6 Flash[^gemini-flash-promo] added&lt;/li&gt;&lt;li&gt;Claude Sonnet 5 added&lt;/li&gt;&lt;li&gt;Claude Sonnet 5[^sonnet-5-promo] removed&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-08-11: 2 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-08-11</id>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;MAI-Code-1.1-Flash added&lt;/li&gt;&lt;li&gt;MAI-Code-1.1-Flash added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-08-07: 2 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-08-07</id>
+    <updated>2026-08-07T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Kimi K3&lt;/strong&gt; — category &lt;code&gt;Versatile&lt;/code&gt; → &lt;code&gt;Powerful&lt;/code&gt;&lt;/li&gt;&lt;li&gt;Kimi K3 added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-08-05: 6 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-08-05</id>
+    <updated>2026-08-05T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Claude Sonnet 4.5 added&lt;/li&gt;&lt;li&gt;Claude Opus 4.5 added&lt;/li&gt;&lt;li&gt;Claude Sonnet 4.6 added&lt;/li&gt;&lt;li&gt;Gemini 3.1 Pro added&lt;/li&gt;&lt;li&gt;Raptor mini added&lt;/li&gt;&lt;li&gt;Claude Opus 4.6 added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-08-03: 14 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-08-03</id>
+    <updated>2026-08-03T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;&lt;strong&gt;GPT-5.4 (&amp;gt; 272K)&lt;/strong&gt; — cache_write &lt;code&gt;—&lt;/code&gt; → &lt;code&gt;Not applicable&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.6 Sol (&amp;gt; 272K)&lt;/strong&gt; — cache_write &lt;code&gt;—&lt;/code&gt; → &lt;code&gt;$12.5&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.4 mini&lt;/strong&gt; — cache_write &lt;code&gt;—&lt;/code&gt; → &lt;code&gt;Not applicable&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.5 (&amp;gt; 272K)&lt;/strong&gt; — cache_write &lt;code&gt;—&lt;/code&gt; → &lt;code&gt;Not applicable&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5 mini&lt;/strong&gt; — cache_write &lt;code&gt;—&lt;/code&gt; → &lt;code&gt;Not applicable&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.3-Codex&lt;/strong&gt; — cache_write &lt;code&gt;—&lt;/code&gt; → &lt;code&gt;Not applicable&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.4 (≤ 272K)&lt;/strong&gt; — cache_write &lt;code&gt;—&lt;/code&gt; → &lt;code&gt;Not applicable&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.4 nano&lt;/strong&gt; — cache_write &lt;code&gt;—&lt;/code&gt; → &lt;code&gt;Not applicable&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.6 Sol (≤ 272K)&lt;/strong&gt; — cache_write &lt;code&gt;—&lt;/code&gt; → &lt;code&gt;$6.25&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.6 Luna (&amp;gt; 200K)&lt;/strong&gt; — cache_write &lt;code&gt;—&lt;/code&gt; → &lt;code&gt;$0.5&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.6 Terra (&amp;gt; 272K)&lt;/strong&gt; — cache_write &lt;code&gt;—&lt;/code&gt; → &lt;code&gt;$5&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.5 (≤ 272K)&lt;/strong&gt; — cache_write &lt;code&gt;—&lt;/code&gt; → &lt;code&gt;Not applicable&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.6 Terra (≤ 272K)&lt;/strong&gt; — cache_write &lt;code&gt;—&lt;/code&gt; → &lt;code&gt;$2.5&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.6 Luna (≤ 200K)&lt;/strong&gt; — cache_write &lt;code&gt;—&lt;/code&gt; → &lt;code&gt;$0.25&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-07-31: 6 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-07-31</id>
+    <updated>2026-07-31T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Gemini 2.5 Pro removed&lt;/li&gt;&lt;li&gt;Gemini 2.5 Pro added&lt;/li&gt;&lt;li&gt;Gemini 3 Flash removed&lt;/li&gt;&lt;li&gt;Gemini 2.5 Pro removed&lt;/li&gt;&lt;li&gt;Gemini 3 Flash removed&lt;/li&gt;&lt;li&gt;Gemini 3 Flash added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-07-30: 4 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-07-30</id>
+    <updated>2026-07-30T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;&lt;strong&gt;GPT-5.6 Terra (≤ 272K)&lt;/strong&gt; — cached_input &lt;code&gt;$0.25&lt;/code&gt; → &lt;code&gt;$0.2&lt;/code&gt;, input &lt;code&gt;$2.5&lt;/code&gt; → &lt;code&gt;$2&lt;/code&gt;, output &lt;code&gt;$15&lt;/code&gt; → &lt;code&gt;$12&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.6 Luna (≤ 200K)&lt;/strong&gt; — cached_input &lt;code&gt;$0.1&lt;/code&gt; → &lt;code&gt;$0.02&lt;/code&gt;, input &lt;code&gt;$1&lt;/code&gt; → &lt;code&gt;$0.2&lt;/code&gt;, output &lt;code&gt;$6&lt;/code&gt; → &lt;code&gt;$1.2&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.6 Terra (&amp;gt; 272K)&lt;/strong&gt; — cached_input &lt;code&gt;$0.5&lt;/code&gt; → &lt;code&gt;$0.4&lt;/code&gt;, input &lt;code&gt;$5&lt;/code&gt; → &lt;code&gt;$4&lt;/code&gt;, output &lt;code&gt;$22.5&lt;/code&gt; → &lt;code&gt;$18&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.6 Luna (&amp;gt; 200K)&lt;/strong&gt; — cached_input &lt;code&gt;$0.2&lt;/code&gt; → &lt;code&gt;$0.04&lt;/code&gt;, input &lt;code&gt;$2&lt;/code&gt; → &lt;code&gt;$0.4&lt;/code&gt;, output &lt;code&gt;$9&lt;/code&gt; → &lt;code&gt;$1.8&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-07-28: 2 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-07-28</id>
+    <updated>2026-07-28T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Grok 4.5 (≤ 200K) added&lt;/li&gt;&lt;li&gt;Grok 4.5 (&amp;gt; 200K) added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-07-24: 1 pricing change</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-07-24</id>
+    <updated>2026-07-24T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Claude Opus 5 added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-07-21: 1 pricing change</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-07-21</id>
+    <updated>2026-07-21T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Gemini 3.6 Flash added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-07-09: 6 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-07-09</id>
+    <updated>2026-07-09T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;GPT-5.6 Luna (≤ 200K) added&lt;/li&gt;&lt;li&gt;GPT-5.6 Terra (≤ 272K) added&lt;/li&gt;&lt;li&gt;GPT-5.6 Terra (&amp;gt; 272K) added&lt;/li&gt;&lt;li&gt;GPT-5.6 Luna (&amp;gt; 200K) added&lt;/li&gt;&lt;li&gt;GPT-5.6 Sol (&amp;gt; 272K) added&lt;/li&gt;&lt;li&gt;GPT-5.6 Sol (≤ 272K) added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-07-01: 1 pricing change</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-07-01</id>
+    <updated>2026-07-01T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Kimi K2.7 Code added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-06-30: 1 pricing change</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-06-30</id>
+    <updated>2026-06-30T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Claude Sonnet 5[^sonnet-5-promo] added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-06-29: 2 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-06-29</id>
+    <updated>2026-06-29T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Claude Opus 4.8 (fast mode) (preview) added&lt;/li&gt;&lt;li&gt;Claude Opus 4.6 (fast mode) (preview) added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-06-24: 1 pricing change</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-06-24</id>
+    <updated>2026-06-24T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Raptor mini&lt;/strong&gt; — release_status &lt;code&gt;Public preview&lt;/code&gt; → &lt;code&gt;GA&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-06-09: 1 pricing change</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-06-09</id>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Claude Fable 5 added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-06-05: 9 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-06-05</id>
+    <updated>2026-06-05T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;GPT-5.2 added&lt;/li&gt;&lt;li&gt;&lt;strong&gt;o3&lt;/strong&gt; — suggested_alternative &lt;code&gt;GPT-5.2&lt;/code&gt; → &lt;code&gt;GPT-5.5&lt;/code&gt;&lt;/li&gt;&lt;li&gt;GPT-5.2-Codex added&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5&lt;/strong&gt; — suggested_alternative &lt;code&gt;GPT-5.2&lt;/code&gt; → &lt;code&gt;GPT-5.5&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5-Codex&lt;/strong&gt; — suggested_alternative &lt;code&gt;GPT-5.2-Codex&lt;/code&gt; → &lt;code&gt;GPT-5.3-Codex&lt;/code&gt;&lt;/li&gt;&lt;li&gt;GPT-5.2-Codex removed&lt;/li&gt;&lt;li&gt;GPT-5.2 removed&lt;/li&gt;&lt;li&gt;GPT-5.2-Codex removed&lt;/li&gt;&lt;li&gt;GPT-5.2 removed&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-06-04: 17 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-06-04</id>
+    <updated>2026-06-04T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Gemini 2.5 Pro[^5] removed&lt;/li&gt;&lt;li&gt;Raptor mini added&lt;/li&gt;&lt;li&gt;GPT-5 mini[^1] removed&lt;/li&gt;&lt;li&gt;Gemini 3.1 Pro (≤ 200K) added&lt;/li&gt;&lt;li&gt;Gemini 2.5 Pro added&lt;/li&gt;&lt;li&gt;GPT-5.4[^2] removed&lt;/li&gt;&lt;li&gt;GPT-5.5 removed&lt;/li&gt;&lt;li&gt;Gemini 3.1 Pro[^5] removed&lt;/li&gt;&lt;li&gt;Gemini 3 Flash[^6] removed&lt;/li&gt;&lt;li&gt;GPT-5.5 (≤ 272K) added&lt;/li&gt;&lt;li&gt;GPT-5.4 (≤ 272K) added&lt;/li&gt;&lt;li&gt;Raptor mini[^7] removed&lt;/li&gt;&lt;li&gt;GPT-5 mini added&lt;/li&gt;&lt;li&gt;Gemini 3.1 Pro (&amp;gt; 200K) added&lt;/li&gt;&lt;li&gt;Gemini 3 Flash added&lt;/li&gt;&lt;li&gt;GPT-5.4 (&amp;gt; 272K) added&lt;/li&gt;&lt;li&gt;GPT-5.5 (&amp;gt; 272K) added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-06-03: 3 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-06-03</id>
+    <updated>2026-06-03T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;GPT-4.1 added&lt;/li&gt;&lt;li&gt;GPT-4.1 removed&lt;/li&gt;&lt;li&gt;GPT-4.1[^1] removed&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-06-02: 2 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-06-02</id>
+    <updated>2026-06-02T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;MAI-Code-1-Flash added&lt;/li&gt;&lt;li&gt;MAI-Code-1-Flash added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-05-29: 1 pricing change</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-05-29</id>
+    <updated>2026-05-29T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;&lt;strong&gt;GPT-5.5&lt;/strong&gt; — multiplier &lt;code&gt;TBD&lt;/code&gt; → &lt;code&gt;57×&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-05-28: 2 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-05-28</id>
+    <updated>2026-05-28T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Claude Opus 4.8 added&lt;/li&gt;&lt;li&gt;Claude Opus 4.8 added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-05-27: 1 pricing change</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-05-27</id>
+    <updated>2026-05-27T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Goldeneye[^8] removed&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-05-19: 2 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-05-19</id>
+    <updated>2026-05-19T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Gemini 3.5 Flash added&lt;/li&gt;&lt;li&gt;Gemini 3.5 Flash added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-05-15: 3 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-05-15</id>
+    <updated>2026-05-15T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Grok Code Fast 1 removed&lt;/li&gt;&lt;li&gt;Grok Code Fast 1 added&lt;/li&gt;&lt;li&gt;Grok Code Fast 1 removed&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-05-06: 2 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-05-06</id>
+    <updated>2026-05-06T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Claude Sonnet 4 removed&lt;/li&gt;&lt;li&gt;Claude Sonnet 4 added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-05-04: 1 pricing change</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-05-04</id>
+    <updated>2026-05-04T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;GPT-5.5 added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-04-27: 2 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-04-27</id>
+    <updated>2026-04-27T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Claude Opus 4.6 (fast mode)[^4] removed&lt;/li&gt;&lt;li&gt;GPT-5.5 added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-04-01: 1 pricing change</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-04-01</id>
+    <updated>2026-04-01T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;&lt;strong&gt;GPT-5.1&lt;/strong&gt; — retirement_date &lt;code&gt;2026-04-01&lt;/code&gt; → &lt;code&gt;2026-04-15&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-03-26: 5 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-03-26</id>
+    <updated>2026-03-26T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;GPT-5.1-Codex-Max added&lt;/li&gt;&lt;li&gt;Gemini 3 Pro added&lt;/li&gt;&lt;li&gt;GPT-5.1-Codex-Mini added&lt;/li&gt;&lt;li&gt;GPT-5.1-Codex added&lt;/li&gt;&lt;li&gt;GPT-5.1 added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-02-19: 6 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-02-19</id>
+    <updated>2026-02-19T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;&lt;strong&gt;GPT-5-Codex&lt;/strong&gt; — suggested_alternative &lt;code&gt;GPT-5.1-Codex&lt;/code&gt; → &lt;code&gt;GPT-5.2-Codex&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Claude Opus 4.1&lt;/strong&gt; — suggested_alternative &lt;code&gt;Claude Opus 4.5&lt;/code&gt; → &lt;code&gt;Claude Opus 4.6&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Claude Sonnet 3.7&lt;/strong&gt; — suggested_alternative &lt;code&gt;Claude Sonnet 4&lt;/code&gt; → &lt;code&gt;Claude Sonnet 4.6&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Claude Opus 4&lt;/strong&gt; — suggested_alternative &lt;code&gt;Claude Opus 4.1&lt;/code&gt; → &lt;code&gt;Claude Opus 4.6&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Claude Sonnet 3.7 Thinking&lt;/strong&gt; — suggested_alternative &lt;code&gt;Claude Sonnet 4&lt;/code&gt; → &lt;code&gt;Claude Sonnet 4.6&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;o3&lt;/strong&gt; — suggested_alternative &lt;code&gt;GPT-5&lt;/code&gt; → &lt;code&gt;GPT-5.2&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-01-22: 1 pricing change</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-01-22</id>
+    <updated>2026-01-22T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Gemini 2.5 Pro removed&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2026-01-13: 4 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-01-13</id>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Claude Opus 4.1 added&lt;/li&gt;&lt;li&gt;GPT-5-Codex added&lt;/li&gt;&lt;li&gt;Gemini 2.5 Pro added&lt;/li&gt;&lt;li&gt;GPT-5 added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2025-11-11: 1 pricing change</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2025-11-11</id>
+    <updated>2025-11-11T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Claude Sonnet 3.5&lt;/strong&gt; — suggested_alternative &lt;code&gt;Claude Sonnet 3.5&lt;/code&gt; → &lt;code&gt;Claude Haiku 4.5&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>2025-11-10: 1 pricing change</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2025-11-10</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Claude Sonnet 3.5 added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
+</feed>
