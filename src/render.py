@@ -155,6 +155,33 @@ td.num { font-variant-numeric: tabular-nums; font-family: ui-monospace, SFMono-R
 caption { text-align: left; padding: .6rem .7rem; font-size: .82rem; color: var(--muted); border-bottom: 1px solid var(--line); }
 caption a { color: var(--accent); }
 
+nav.jump { display: flex; gap: .9rem; flex-wrap: wrap; margin: .75rem 0 0; font-size: .85rem; }
+nav.jump a { color: var(--accent); text-decoration: none; }
+nav.jump a:hover { text-decoration: underline; }
+
+.cards { display: grid; gap: .6rem; grid-template-columns: 1fr; }
+@media (min-width: 660px) { .cards.two { grid-template-columns: 1fr 1fr; } }
+.card {
+  border: 1px solid var(--line); border-left: 3px solid var(--accent);
+  background: var(--card); border-radius: 4px; padding: .8rem .95rem;
+}
+.card.urgent { border-left-color: var(--up); }
+.card.calm { border-left-color: var(--down); }
+.card h3 { margin: 0 0 .3rem; font-size: .97rem; }
+.card .models { font-size: .88rem; margin-bottom: .35rem; }
+.mono, .card .models code, .price {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-variant-numeric: tabular-nums; font-size: .87em;
+}
+.card .models code { background: var(--chip); padding: .05rem .32rem; border-radius: 3px; }
+.card p { margin: .35rem 0 0; font-size: .86rem; color: var(--muted); }
+.card .why { color: var(--fg); opacity: .85; }
+.deadline { font-size: .72rem; text-transform: uppercase; letter-spacing: .07em; font-weight: 700; }
+.deadline.urgent { color: var(--up); }
+.deadline.calm { color: var(--muted); }
+.stale { color: var(--up); font-weight: 600; }
+.note-inline { font-size: .83rem; color: var(--muted); margin: -.4rem 0 1rem; }
+
 footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); font-size: .82rem; color: var(--muted); }
 footer a { color: var(--accent); }
 footer p { margin: .4rem 0; }
@@ -285,7 +312,171 @@ def render_table(snapshot: dict) -> str:
     )
 
 
-def build_index(entries: list[dict], snapshots: list[dict], state: dict) -> str:
+def _price_pair(values: dict) -> str:
+    inp = diffing.fmt_value(values.get("input"), "input") if values.get("input") is not None else None
+    out = diffing.fmt_value(values.get("output"), "output") if values.get("output") is not None else None
+    if inp and out:
+        return f'<span class="price">{esc(inp)} / {esc(out)}</span> per MTok'
+    return ""
+
+
+def render_offers(offers: list[dict]) -> str:
+    """Everything currently cheaper than usual, soonest deadline first."""
+    if not offers:
+        return '<p class="empty">Nothing on offer that either vendor has written down.</p>'
+
+    cards = []
+    for offer in offers:
+        days = offer.get("days_left")
+        if days is not None and days <= 7:
+            tone, when = "urgent", ("ends today" if days == 0 else f"{days} day{'s' if days != 1 else ''} left")
+        elif days is not None:
+            tone, when = "", f"{days} days left · until {offer.get('expires')}"
+        else:
+            tone, when = "calm", "no stated end date"
+
+        models = offer.get("models") or []
+        model_html = " ".join(f"<code>{esc(m)}</code>" for m in models)
+        heading = "Promotional pricing" if offer.get("kind") == "promotion" else "Price cut, still in force"
+
+        cards.append(
+            f'<div class="card {tone}" data-vendor="{esc(offer.get("vendor", ""))}">'
+            f'<div class="meta"><span class="chip">{esc(offer.get("vendor", ""))}</span>'
+            f'<span class="deadline {tone or "calm"}">{esc(when)}</span></div>'
+            f"<h3>{esc(heading)}</h3>"
+            + (f'<div class="models">{model_html}</div>' if model_html else "")
+            + f"<p>{esc(offer.get('text', ''))}</p></div>"
+        )
+    return f'<div class="cards">{"".join(cards)}</div>'
+
+
+def render_bargains(bargains: list[dict]) -> str:
+    """Models priced below the tier beneath them — the "why settle" list."""
+    if not bargains:
+        return '<p class="empty">Nothing is currently priced out of its class.</p>'
+
+    cards = []
+    for item in bargains:
+        promo = item.get("promo")
+        days = item.get("days_left")
+        if promo and days is not None and days <= 7:
+            tone = "urgent"
+            left = "ends today" if days == 0 else f"{days} day{'s' if days != 1 else ''} left"
+            caveat = f'<span class="deadline urgent">promo — {esc(left)}</span>'
+        elif promo:
+            tone = ""
+            until = f" until {item['expires']}" if item.get("expires") else ""
+            caveat = f'<span class="deadline">promo price{esc(until)}</span>'
+        else:
+            tone = "calm"
+            caveat = '<span class="deadline calm">standard price</span>'
+
+        pct = (1 - item["ratio"]) * 100
+        cards.append(
+            f'<div class="card {tone}" data-vendor="{esc(item["vendor"])}">'
+            f'<div class="meta"><span class="chip">{esc(item["vendor"])}</span>'
+            f'<span class="chip">{esc(item["tier"])}</span>{caveat}</div>'
+            f'<h3>{esc(item["model"])}</h3>'
+            f'<p class="why">A <strong>{esc(item["tier"].lower())}</strong> model at '
+            f'<span class="price">${item["blended"]:.2f}</span> blended — '
+            f'{pct:.0f}% below the typical <strong>{esc(item["compared_tier"].lower())}</strong> '
+            f'model at <span class="price">${item["reference"]:.2f}</span>. '
+            f'It undercuts {item["cheaper_than"]} of {item["of"]} of them outright.</p>'
+            "</div>"
+        )
+    return f'<div class="cards two">{"".join(cards)}</div>'
+
+
+def render_retiring(retiring: list[dict]) -> str:
+    if not retiring:
+        return ""
+    items = []
+    for row in retiring:
+        days = row["days_left"]
+        tone = "urgent" if days <= 14 else ""
+        alt = row.get("alternative")
+        items.append(
+            f'<div class="card {tone}" data-vendor="Copilot">'
+            f'<div class="meta"><span class="chip">Copilot</span>'
+            f'<span class="deadline {tone or "calm"}">{days} day{"s" if days != 1 else ""} left</span></div>'
+            f'<h3>{esc(row["model"])} retires {esc(row["date"])}</h3>'
+            + (f"<p>Suggested replacement: <code>{esc(alt)}</code></p>" if alt else "")
+            + "</div>"
+        )
+    return f'<div class="cards two">{"".join(items)}</div>'
+
+
+def render_picks(picks: list[dict]) -> str:
+    """Hand-written recommendations, rendered with live prices."""
+    if not picks:
+        return ""
+    cards = []
+    for pick in picks:
+        stale = pick.get("stale")
+        tone = "urgent" if stale else "calm"
+        price = _price_pair(pick)
+
+        if not pick.get("found"):
+            flag = '<span class="stale">model no longer listed — re-check this pick</span>'
+        elif stale:
+            drift = pick.get("drift_percent") or 0.0
+            direction = "up" if drift > 0 else "down"
+            flag = (
+                f'<span class="stale">price moved {abs(drift):.0f}% {direction} '
+                f"since this was written — re-check</span>"
+            )
+        else:
+            flag = ""
+
+        cards.append(
+            f'<div class="card {tone}">'
+            f'<h3>{esc(pick.get("task", ""))}</h3>'
+            + (f'<p>{esc(pick.get("detail", ""))}</p>' if pick.get("detail") else "")
+            + f'<div class="models" style="margin-top:.45rem"><code>{esc(pick.get("model", ""))}</code>'
+            + (f" &nbsp;{price}" if price else "")
+            + "</div>"
+            + f'<p class="why">{esc(pick.get("why", "").strip())}</p>'
+            + (f"<p>{flag}</p>" if flag else "")
+            + "</div>"
+        )
+    return f'<div class="cards two">{"".join(cards)}</div>'
+
+
+def render_value(rows: list[dict]) -> str:
+    """Cheapest live model per vendor and capability tier."""
+    if not rows:
+        return ""
+    body = []
+    for row in rows:
+        cheapest = row["cheapest"]
+        promo = (
+            ' <span class="deadline urgent">promo price</span>'
+            if cheapest.get("offer")
+            else ""
+        )
+        runners = ", ".join(
+            f'{esc(r["model"])} ${r["blended"]:.2f}' for r in row.get("runners_up", [])
+        )
+        body.append(
+            "<tr>"
+            f'<td>{esc(row["tier"])}</td>'
+            f'<td>{esc(row["vendor"])}</td>'
+            f'<td>{esc(cheapest["model"])}{promo}</td>'
+            f'<td class="num">${cheapest["blended"]:.2f}</td>'
+            f'<td class="num">{esc(diffing.fmt_value(cheapest.get("input"), "input"))} / '
+            f'{esc(diffing.fmt_value(cheapest.get("output"), "output"))}</td>'
+            f"<td>{runners or '—'}</td>"
+            "</tr>"
+        )
+    return (
+        '<div class="tablewrap"><table>'
+        "<thead><tr><th>Tier</th><th>Vendor</th><th>Cheapest</th>"
+        "<th>Blended</th><th>In / Out</th><th>Next cheapest</th></tr></thead>"
+        f"<tbody>{''.join(body)}</tbody></table></div>"
+    )
+
+
+def build_index(entries: list[dict], snapshots: list[dict], state: dict, overview: dict | None = None) -> str:
     price_entries = [e for e in entries if e.get("class") not in ADVISORY_CLASSES]
     advisories = [e for e in entries if e.get("class") in ADVISORY_CLASSES]
 
@@ -298,6 +489,41 @@ def build_index(entries: list[dict], snapshots: list[dict], state: dict) -> str:
         status = '<span class="ok">Last run was clean.</span>'
 
     tables = "".join(render_table(s) for s in snapshots)
+
+    overview = overview or {}
+    offers = overview.get("offers") or []
+    retiring = overview.get("retiring") or []
+    picks = overview.get("picks") or []
+    value = overview.get("value") or []
+
+    bargains = overview.get("bargains") or []
+    bargains_block = (
+        '<h2 id="bargains">Punching above its price</h2>'
+        '<p class="note-inline">Models costing less than the typical model of the tier below them — '
+        "the ones where you would otherwise settle for less and pay more. Promotional prices are "
+        "marked, because an anomaly with an expiry date is a different proposition.</p>"
+        f"{render_bargains(bargains)}"
+    )
+    retiring_block = (
+        f'<h2 id="retiring">Retiring soon</h2>{render_retiring(retiring)}' if retiring else ""
+    )
+    picks_block = (
+        "<h2>Good for this, right now</h2>"
+        '<p class="note-inline">Hand-written, with prices looked up fresh on every build. '
+        "A pick whose price has drifted is flagged rather than left to quietly mislead.</p>"
+        f"{render_picks(picks)}"
+        if picks
+        else ""
+    )
+    value_block = (
+        "<h2>Cheapest per tier</h2>"
+        '<p class="note-inline">Blended cost weights input against output 3:1, the usual shape '
+        "of chat and coding work. Retired and limited-availability models are excluded. "
+        "Tiers are the vendor&rsquo;s own labels where they publish them.</p>"
+        f"{render_value(value)}"
+        if value
+        else ""
+    )
 
     return f"""<!doctype html>
 <html lang="en">
@@ -315,9 +541,32 @@ def build_index(entries: list[dict], snapshots: list[dict], state: dict) -> str:
   <h1>{esc(SITE_TITLE)}</h1>
   <p class="tagline">{esc(SITE_TAGLINE)}</p>
   <p class="status">Checked {esc(checked)}. {status} <a href="feed.xml">Atom feed</a></p>
+  <nav class="jump">
+    <a href="#bargains">Punching above its price</a>
+    <a href="#offers">On offer</a>
+    <a href="#picks">Good for this</a>
+    <a href="#value">Cheapest per tier</a>
+    <a href="#changed">What changed</a>
+    <a href="#prices">All prices</a>
+  </nav>
 </header>
 
-<h2>What changed</h2>
+{bargains_block}
+
+<h2 id="offers">On offer</h2>
+<p class="note-inline">Promotions the vendors have written down, plus price cuts still in force.
+Soonest deadline first.</p>
+{render_offers(offers)}
+
+{retiring_block}
+
+<span id="picks"></span>
+{picks_block}
+
+<span id="value"></span>
+{value_block}
+
+<h2 id="changed">What changed</h2>
 <div class="filters">
   <button data-filter="all" aria-pressed="true">All</button>
   <button data-filter="Anthropic" aria-pressed="false">Anthropic</button>
@@ -328,7 +577,7 @@ def build_index(entries: list[dict], snapshots: list[dict], state: dict) -> str:
 <h2>Worth reading</h2>
 {render_changelog(advisories)}
 
-<h2>Current prices</h2>
+<h2 id="prices">Current prices</h2>
 {tables}
 
 <footer>
@@ -383,10 +632,15 @@ def build_feed(entries: list[dict], state: dict) -> str:
 """
 
 
-def write_site(root: Path, entries: list[dict], snapshots: list[dict], state: dict) -> None:
+def write_site(
+    root: Path, entries: list[dict], snapshots: list[dict], state: dict,
+    overview: dict | None = None,
+) -> None:
     site_dir = root / "site"
     site_dir.mkdir(parents=True, exist_ok=True)
-    (site_dir / "index.html").write_text(build_index(entries, snapshots, state), encoding="utf-8")
+    (site_dir / "index.html").write_text(
+        build_index(entries, snapshots, state, overview), encoding="utf-8"
+    )
     (site_dir / "feed.xml").write_text(build_feed(entries, state), encoding="utf-8")
     # Pages would otherwise run the output through Jekyll.
     (site_dir / ".nojekyll").write_text("", encoding="utf-8")

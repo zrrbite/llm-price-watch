@@ -12,6 +12,7 @@ from __future__ import annotations
 import copy
 import sys
 import unittest
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -19,6 +20,7 @@ sys.path.insert(0, str(ROOT / "src"))
 
 import changelog  # noqa: E402
 import diffing  # noqa: E402
+import insights  # noqa: E402
 import notify  # noqa: E402
 import render  # noqa: E402
 import sources  # noqa: E402
@@ -338,6 +340,321 @@ class TestRenderAndNotify(unittest.TestCase):
             os.environ.pop(var, None)
         self.assertFalse(notify.email_configured())
         self.assertFalse(notify.send_email("subject", "body"))
+
+
+class TestFootnotes(unittest.TestCase):
+    def test_strip_footnote_separates_name_from_marker(self):
+        name, ref = sources.strip_footnote("GPT-5.6 Sol[^gpt-56-sol-promo]")
+        self.assertEqual(name, "GPT-5.6 Sol")
+        self.assertEqual(ref, "gpt-56-sol-promo")
+
+    def test_plain_name_has_no_marker(self):
+        self.assertEqual(sources.strip_footnote("GPT-5.6 Luna"), ("GPT-5.6 Luna", None))
+
+    def test_marker_never_reaches_the_row_key(self):
+        # It used to. GitHub adds the marker when a promo starts, which made
+        # the same model read as removed-then-added instead of a price change.
+        snapshot = sources.parse_copilot_pricing(fixture("copilot-models-and-pricing.yml"))
+        self.assertFalse([r["key"] for r in snapshot["rows"] if "[^" in r["key"]])
+
+    def test_promoted_models_are_flagged(self):
+        snapshot = sources.parse_copilot_pricing(fixture("copilot-models-and-pricing.yml"))
+        flagged = {r["key"] for r in snapshot["rows"] if r["values"].get("offer")}
+        self.assertIn("GPT-5.6 Sol (≤ 272K)", flagged)
+        self.assertIn("Gemini 3.7 Flash", flagged)
+
+    def test_resolve_liquid_substitutes_variables(self):
+        out = sources.resolve_liquid(
+            "{% data variables.copilot.copilot_gpt_56_sol %} is 50% off",
+            {"copilot_gpt_56_sol": "GPT-5.6 Sol"},
+        )
+        self.assertEqual(out, "GPT-5.6 Sol is 50% off")
+
+    def test_parse_through_date(self):
+        self.assertEqual(
+            sources.parse_through_date("50% off through September 3, 2026."), "2026-09-03"
+        )
+        self.assertEqual(
+            sources.parse_through_date("promotional pricing until December 31, 2026"), "2026-12-31"
+        )
+        self.assertIsNone(sources.parse_through_date("no date here"))
+
+    def test_footnotes_parse_with_names_and_expiry(self):
+        notes = sources.parse_copilot_footnotes(
+            fixture("copilot-models-and-pricing-page.md"), fixture("copilot-variables.yml")
+        )
+        by_key = {n["key"]: n for n in notes}
+        self.assertIn("gpt-56-sol-promo", by_key)
+        self.assertEqual(by_key["gpt-56-sol-promo"]["expires"], "2026-09-03")
+        self.assertTrue(by_key["gpt-56-sol-promo"]["text"].startswith("GPT-5.6 Sol"))
+        self.assertNotIn("{%", by_key["gpt-56-sol-promo"]["text"])
+
+    def test_pricing_survives_missing_extras(self):
+        # The extras are optional context; losing them must not lose the prices.
+        snapshot = sources.parse_copilot_pricing(fixture("copilot-models-and-pricing.yml"), {})
+        self.assertGreater(len(snapshot["rows"]), 30)
+        self.assertEqual(snapshot["advisories"], [])
+
+
+def _snap(source, rows, advisories=None):
+    return {"source": source, "url": "u", "rows": rows, "advisories": advisories or []}
+
+
+class TestOffers(unittest.TestCase):
+    def test_promotional_footnote_becomes_an_offer_with_a_deadline(self):
+        snaps = [
+            _snap(
+                "copilot-pricing",
+                [{"key": "GPT-5.6 Sol (≤ 272K)", "values": {"offer": "p", "input": 2.0, "output": 10.0}}],
+                [{"key": "p", "text": "50% off", "expires": "2026-09-03"}],
+            )
+        ]
+        offers = insights.find_offers(snaps, [], today=date(2026, 9, 2))
+        self.assertEqual(len(offers), 1)
+        self.assertEqual(offers[0]["days_left"], 1)
+        self.assertEqual(offers[0]["models"], ["GPT-5.6 Sol"])
+
+    def test_lapsed_offers_are_dropped(self):
+        snaps = [
+            _snap(
+                "copilot-pricing",
+                [{"key": "X", "values": {"offer": "p"}}],
+                [{"key": "p", "text": "was 50% off", "expires": "2026-08-01"}],
+            )
+        ]
+        self.assertEqual(insights.find_offers(snaps, [], today=date(2026, 9, 2)), [])
+
+    def test_anthropic_boilerplate_is_not_an_offer(self):
+        # Both of these matched on a looser pattern and were false positives.
+        snaps = [
+            _snap("anthropic", [], [
+                {"key": "ccu", "text": "calculated at the applicable prices, after application of any discounts."},
+                {"key": "bedrock", "text": "contact your representative to ensure your discounts are applied correctly."},
+            ])
+        ]
+        self.assertEqual(insights.find_offers(snaps, [], today=date(2026, 9, 2)), [])
+
+    def test_real_promotional_note_is_an_offer(self):
+        snaps = [_snap("anthropic", [], [
+            {"key": "s5", "text": "introductory pricing ... the scheduled increase will not occur."},
+        ])]
+        offers = insights.find_offers(snaps, [], today=date(2026, 9, 2))
+        self.assertEqual(len(offers), 1)
+        self.assertEqual(offers[0]["vendor"], "Anthropic")
+
+    def test_offers_sort_soonest_deadline_first(self):
+        snaps = [_snap("copilot-pricing",
+                       [{"key": "A", "values": {"offer": "far"}}, {"key": "B", "values": {"offer": "near"}}],
+                       [{"key": "far", "text": "x", "expires": "2026-12-31"},
+                        {"key": "near", "text": "y", "expires": "2026-09-05"}])]
+        offers = insights.find_offers(snaps, [], today=date(2026, 9, 2))
+        self.assertEqual([o["days_left"] for o in offers], [3, 120])
+
+
+class TestPriceCuts(unittest.TestCase):
+    def _changelog(self, key, field, old, new, date_str="2026-08-01"):
+        return [{
+            "class": diffing.PRICE_CHANGED, "source": "copilot-pricing", "key": key,
+            "date": date_str, "fields": [{"field": field, "old": old, "new": new}],
+        }]
+
+    def test_a_cut_still_in_force_is_reported(self):
+        snaps = [_snap("copilot-pricing", [{"key": "M (≤ 200K)", "values": {"input": 0.2}}])]
+        cuts = insights.recent_price_cuts(snaps, self._changelog("M (≤ 200K)", "input", 1.0, 0.2),
+                                          today=date(2026, 9, 2))
+        self.assertEqual(len(cuts), 1)
+        self.assertAlmostEqual(cuts[0]["percent"], 80.0)
+
+    def test_a_reversed_cut_is_not_an_offer(self):
+        snaps = [_snap("copilot-pricing", [{"key": "M", "values": {"input": 1.0}}])]
+        self.assertEqual(
+            insights.recent_price_cuts(snaps, self._changelog("M", "input", 1.0, 0.2),
+                                       today=date(2026, 9, 2)), []
+        )
+
+    def test_the_same_model_is_not_reported_once_per_context_tier(self):
+        snaps = [_snap("copilot-pricing", [
+            {"key": "M (≤ 200K)", "values": {"input": 0.2}},
+            {"key": "M (> 200K)", "values": {"input": 0.4}},
+        ])]
+        entries = (self._changelog("M (≤ 200K)", "input", 1.0, 0.2)
+                   + self._changelog("M (> 200K)", "input", 2.0, 0.4))
+        cuts = insights.recent_price_cuts(snaps, entries, today=date(2026, 9, 2))
+        self.assertEqual(len(cuts), 1, "one model, one offer")
+
+    def test_cache_field_cuts_are_not_headline_offers(self):
+        snaps = [_snap("copilot-pricing", [{"key": "M", "values": {"cached_input": 0.02}}])]
+        self.assertEqual(
+            insights.recent_price_cuts(snaps, self._changelog("M", "cached_input", 0.1, 0.02),
+                                       today=date(2026, 9, 2)), []
+        )
+
+    def test_old_cuts_fall_out_of_the_window(self):
+        snaps = [_snap("copilot-pricing", [{"key": "M", "values": {"input": 0.2}}])]
+        self.assertEqual(
+            insights.recent_price_cuts(snaps, self._changelog("M", "input", 1.0, 0.2, "2025-01-01"),
+                                       today=date(2026, 9, 2)), []
+        )
+
+
+class TestValueTable(unittest.TestCase):
+    def test_retired_and_limited_models_are_excluded(self):
+        snaps = [_snap("anthropic", [
+            {"key": "Claude Opus 4.1", "values": {"input": 1.0, "output": 1.0, "status": "retired, except on Bedrock"}},
+            {"key": "Claude Mythos 5", "values": {"input": 0.5, "output": 0.5, "status": "limited availability"}},
+            {"key": "Claude Opus 5", "values": {"input": 5.0, "output": 25.0}},
+        ])]
+        rows = insights.value_table(snaps)
+        picked = {r["cheapest"]["model"] for r in rows}
+        self.assertEqual(picked, {"Claude Opus 5"})
+
+    def test_price_tie_prefers_the_newer_model(self):
+        snaps = [_snap("anthropic", [
+            {"key": "Claude Opus 4.5", "values": {"input": 5.0, "output": 25.0}},
+            {"key": "Claude Opus 5", "values": {"input": 5.0, "output": 25.0}},
+        ])]
+        rows = insights.value_table(snaps)
+        self.assertEqual(rows[0]["cheapest"]["model"], "Claude Opus 5")
+
+    def test_blended_uses_the_stated_weighting(self):
+        self.assertAlmostEqual(insights.blended({"input": 2.0, "output": 10.0}), 4.0)
+        self.assertIsNone(insights.blended({"input": 2.0}))
+        self.assertIsNone(insights.blended({"input": "Not applicable", "output": 1.0}))
+
+    def test_real_snapshot_produces_sane_tiers(self):
+        snapshot = sources.parse_anthropic(fixture("anthropic-pricing.md"))
+        rows = insights.value_table([snapshot])
+        tiers = {r["tier"]: r["cheapest"]["model"] for r in rows}
+        self.assertEqual(tiers.get("Versatile"), "Claude Sonnet 5")
+        self.assertEqual(tiers.get("Lightweight"), "Claude Haiku 4.5")
+        self.assertNotIn("Mythos", tiers.get("Frontier", ""))
+
+
+class TestBargains(unittest.TestCase):
+    def _snaps(self):
+        # Two Versatile models (median blended $5) and one Powerful at $4.
+        return [_snap("copilot-pricing", [
+            {"key": "Cheap V", "values": {"input": 2.0, "output": 10.0, "category": "Versatile"}},
+            {"key": "Dear V", "values": {"input": 6.0, "output": 6.0, "category": "Versatile"}},
+            {"key": "Sol (≤ 272K)", "values": {"input": 2.0, "output": 10.0, "category": "Powerful",
+                                               "offer": "promo"}},
+        ])]
+
+    def test_finds_a_model_priced_below_the_tier_beneath_it(self):
+        found = insights.find_bargains(self._snaps())
+        self.assertEqual(len(found), 1)
+        self.assertEqual(found[0]["model"], "Sol (≤ 272K)")
+        self.assertEqual(found[0]["tier"], "Powerful")
+        self.assertEqual(found[0]["compared_tier"], "Versatile")
+
+    def test_reports_how_many_of_the_lower_tier_it_undercuts(self):
+        found = insights.find_bargains(self._snaps())
+        self.assertEqual(found[0]["cheaper_than"], 1)
+        self.assertEqual(found[0]["of"], 2)
+
+    def test_a_promotional_bargain_carries_its_deadline(self):
+        offers = [{"models": ["Sol"], "expires": "2026-09-03", "days_left": 1}]
+        found = insights.find_bargains(self._snaps(), offers)
+        self.assertTrue(found[0]["promo"])
+        self.assertEqual(found[0]["days_left"], 1)
+
+    def test_a_dated_promotion_wins_over_an_undated_price_cut(self):
+        # Both name the same model; the deadline is the part that matters.
+        offers = [
+            {"models": ["Sol"], "expires": None, "days_left": None},
+            {"models": ["Sol"], "expires": "2026-09-03", "days_left": 1},
+        ]
+        found = insights.find_bargains(self._snaps(), offers)
+        self.assertEqual(found[0]["days_left"], 1)
+
+    def test_nothing_reported_when_prices_match_their_tier(self):
+        snaps = [_snap("copilot-pricing", [
+            {"key": "V", "values": {"input": 1.0, "output": 1.0, "category": "Versatile"}},
+            {"key": "P", "values": {"input": 9.0, "output": 9.0, "category": "Powerful"}},
+        ])]
+        self.assertEqual(insights.find_bargains(snaps), [])
+
+    def test_a_promotion_is_not_also_listed_as_a_price_cut(self):
+        snaps = [_snap(
+            "copilot-pricing",
+            [{"key": "Sol (≤ 272K)", "values": {"offer": "p", "input": 2.0, "output": 10.0}}],
+            [{"key": "p", "text": "50% off", "expires": "2026-09-03"}],
+        )]
+        entries = [{
+            "class": diffing.PRICE_CHANGED, "source": "copilot-pricing",
+            "key": "Sol (≤ 272K)", "date": "2026-08-20",
+            "fields": [{"field": "input", "old": 4.0, "new": 2.0}],
+        }]
+        offers = insights.find_offers(snaps, entries, today=date(2026, 9, 2))
+        self.assertEqual(len(offers), 1, "the cut and the promo are the same fact")
+        self.assertEqual(offers[0]["kind"], "promotion")
+
+    def test_real_data_flags_the_powerful_model_priced_like_a_versatile_one(self):
+        snapshot = sources.parse_copilot_pricing(fixture("copilot-models-and-pricing.yml"))
+        found = insights.find_bargains([snapshot])
+        models = {b["model"].split(" (")[0] for b in found}
+        self.assertIn("GPT-5.6 Sol", models)
+
+
+class TestPicks(unittest.TestCase):
+    def test_live_price_is_attached(self):
+        snaps = [_snap("anthropic", [{"key": "Claude Sonnet 5", "values": {"input": 2.0, "output": 10.0}}])]
+        picks = insights.resolve_picks(
+            [{"task": "t", "model": "Claude Sonnet 5", "source": "anthropic", "blended_when_written": 4.0}], snaps
+        )
+        self.assertTrue(picks[0]["found"])
+        self.assertEqual(picks[0]["input"], 2.0)
+        self.assertFalse(picks[0]["stale"])
+
+    def test_a_moved_price_marks_the_pick_stale(self):
+        snaps = [_snap("anthropic", [{"key": "M", "values": {"input": 4.0, "output": 20.0}}])]
+        picks = insights.resolve_picks(
+            [{"task": "t", "model": "M", "source": "anthropic", "blended_when_written": 4.0}], snaps
+        )
+        self.assertTrue(picks[0]["stale"])
+        # blended went 4.0 -> 8.0, so exactly +100%.
+        self.assertAlmostEqual(picks[0]["drift_percent"], 100.0)
+
+    def test_a_vanished_model_marks_the_pick_stale(self):
+        picks = insights.resolve_picks([{"task": "t", "model": "Gone", "source": "anthropic"}], [])
+        self.assertFalse(picks[0]["found"])
+        self.assertTrue(picks[0]["stale"])
+
+    def test_shipped_picks_all_resolve(self):
+        # The picks committed to the repo must name models that exist.
+        import yaml as _yaml
+        picks = _yaml.safe_load((ROOT / "data" / "picks.yml").read_text(encoding="utf-8"))
+        snaps = [
+            sources.parse_anthropic(fixture("anthropic-pricing.md")),
+            sources.parse_copilot_pricing(fixture("copilot-models-and-pricing.yml")),
+            sources.parse_copilot_multipliers(fixture("copilot-multipliers.yml")),
+        ]
+        for pick in insights.resolve_picks(picks, snaps):
+            with self.subTest(pick["model"]):
+                self.assertTrue(pick["found"], f"{pick['model']} is not in any snapshot")
+
+
+class TestOverviewRendering(unittest.TestCase):
+    def test_sections_render_and_stay_wellformed(self):
+        snapshot = sources.parse_anthropic(fixture("anthropic-pricing.md"))
+        overview = {
+            "offers": [{"vendor": "Copilot", "kind": "promotion", "models": ["GPT-5.6 Sol"],
+                        "text": "50% off", "expires": "2026-09-03", "days_left": 1}],
+            "retiring": [{"model": "MAI-Code-1-Flash", "date": "2026-09-10",
+                          "days_left": 8, "alternative": "MAI-Code-1.1-Flash"}],
+            "value": insights.value_table([snapshot]),
+            "picks": [{"task": "Bulk", "model": "Claude Haiku 4.5", "why": "cheap",
+                       "found": True, "stale": False, "input": 1.0, "output": 5.0}],
+        }
+        page = render.build_index([], [snapshot], {"last_checked": "x", "problems": []}, overview)
+        for needle in ("On offer", "1 day left", "Retiring soon", "MAI-Code-1-Flash",
+                       "Good for this, right now", "Cheapest per tier"):
+            self.assertIn(needle, page)
+
+    def test_page_is_fine_without_any_overview(self):
+        snapshot = sources.parse_anthropic(fixture("anthropic-pricing.md"))
+        page = render.build_index([], [snapshot], {"last_checked": "x", "problems": []})
+        self.assertIn("Nothing on offer", page)
 
 
 if __name__ == "__main__":

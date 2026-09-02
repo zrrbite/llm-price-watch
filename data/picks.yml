@@ -1,0 +1,73 @@
+# Hand-written recommendations: "what is good for this, right now".
+#
+# Prices are deliberately NOT stored here. Each pick names a model, and the
+# current price is looked up at build time from the snapshots, so the numbers
+# on the page are always today's.
+#
+# `blended_when_written` is the blended cost (0.75*input + 0.25*output) at the
+# moment the pick was written. It is not displayed -- it exists so the build
+# can tell you the pick has drifted. If the live cost moves more than 10% from
+# it, the pick is flagged stale on the page. Re-judge it, then update this
+# number. If the model disappears entirely the pick is flagged too.
+#
+# Editing this file is the whole point: it is the one place opinion lives.
+# Everything else on the site is derived from vendor data.
+
+- task: Bulk and mechanical work
+  detail: Log triage, batch classification, mass edits — anything you run thousands of times
+  model: Claude Haiku 4.5
+  source: anthropic
+  blended_when_written: 2.0
+  why: >-
+    Cheapest thing Anthropic sells that is still current-generation. At this
+    volume the model choice dominates the bill, and the work rarely needs more.
+
+- task: The cheapest current-generation model anywhere
+  detail: When you want frontier-family quality at old-mini prices
+  model: GPT-5.6 Luna (≤ 200K)
+  source: copilot-pricing
+  blended_when_written: 0.45
+  why: >-
+    An outlier on price — roughly a tenth of Sonnet 5 on input after a 80% cut
+    in July that has held. Worth reaching for on anything high-volume before
+    assuming you need something dearer.
+
+- task: Everyday coding and general work
+  detail: The default that is hard to argue with
+  model: Claude Sonnet 5
+  source: anthropic
+  blended_when_written: 4.0
+  why: >-
+    Undercuts its whole class since the introductory price was made permanent
+    on 1 September 2026 — the scheduled rise to $3/$15 was cancelled, so this
+    is a third cheaper than Sonnet 4.6 for newer work.
+
+- task: The hardest reasoning
+  detail: When a wrong answer costs more than the tokens
+  model: Claude Opus 5
+  source: anthropic
+  blended_when_written: 10.0
+  why: >-
+    Half the price of the old Opus 4.1 at $15/$75. Remember the tokenizer
+    caveat though: Claude 4.7 and later emit about 30% more tokens for the same
+    text, so per-token prices understate the gap against Sonnet 4.6 and earlier.
+
+- task: Long context you re-read many times
+  detail: Big documents or codebases held across many calls
+  model: Claude Fable 5.1
+  source: anthropic
+  blended_when_written: 20.0
+  why: >-
+    Expensive per token, but cache reads are 0.025x base input rather than the
+    usual 0.1x — $0.25/MTok against a $10 list price. If the same context is
+    read repeatedly, that quarter-price cache changes the arithmetic entirely.
+    The 1M context window is billed at standard rates on 4.6 and later.
+
+- task: A legacy annual Copilot plan
+  detail: Only if you stayed on premium-request billing after 1 June 2026
+  model: Claude Haiku 4.5
+  source: copilot-multipliers
+  why: >-
+    The multiplier spread is brutal — 0.33x here against 27x for Opus 4.8 and
+    57x for GPT-5.5. Copilot code review alone costs 13x per review. On these
+    plans the model picker matters more than anything else you can change.

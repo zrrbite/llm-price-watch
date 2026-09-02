@@ -31,11 +31,45 @@ because an extractor that occasionally invents a price is worse than no tool.
 | Copilot token pricing | [`models-and-pricing.yml`](https://github.com/github/docs/blob/main/data/tables/copilot/models-and-pricing.yml) |
 | Copilot legacy multipliers | [`annual-subscriber-model-multipliers.yml`](https://github.com/github/docs/blob/main/data/tables/copilot/annual-subscriber-model-multipliers.yml) |
 | Copilot retirements | [`model-deprecation-history.yml`](https://github.com/github/docs/blob/main/data/tables/copilot/model-deprecation-history.yml) |
+| Copilot promotions | [`models-and-pricing.md`](https://github.com/github/docs/blob/main/content/copilot/reference/copilot-billing/models-and-pricing.md) footnotes, plus [`variables/copilot.yml`](https://github.com/github/docs/blob/main/data/variables/copilot.yml) |
+
+Promotions hide in a footnote marker on the model name — `GPT-5.6 Sol[^gpt-56-sol-promo]` —
+whose text lives on the content page and whose model names come from a Liquid
+variables file. That marker is both the only machine-readable "this is
+temporary, and it ends on this date" signal either vendor publishes, and a trap:
+it is part of the model name, so a key that keeps it reports the same model as
+removed-then-added every time a promotion starts or ends.
 
 Copilot's published pages render those tables from Liquid templates and contain
 no numbers themselves. The YAML data files behind them are the real source —
 structured, and version-controlled in a public repo, which is also where the
 backfilled history comes from.
+
+## What the page shows
+
+Ordered so the actionable things come first and the raw data last.
+
+**Punching above its price** — models costing less than the *typical* model of
+the tier below them. This is the question a price table cannot answer: not what
+is cheapest, but what is underpriced for what it is. Right now GPT-5.6 Sol is a
+Powerful-tier model at $4.00 blended, 11% under the median Versatile model, and
+it undercuts 9 of the 17 of them outright. Promotional prices are marked,
+because an anomaly with an expiry date is a different proposition from a
+permanent one.
+
+**On offer** — promotions the vendors have written down, plus price cuts still
+in force, soonest deadline first. Each cut is re-checked against the current
+price, so a cut that was later reversed is not reported as a deal.
+
+**Retiring soon** — models with a retirement date inside 45 days, with GitHub's
+suggested replacement.
+
+**Good for this, right now** — hand-written picks from `data/picks.yml`. This is
+the one place opinion lives. Prices are not stored there; they are looked up on
+every build, and a pick whose cost has drifted more than 10% since it was
+written is flagged on the page rather than left to quietly mislead.
+
+**Cheapest per tier**, then **What changed**, then the full tables.
 
 ## How it works
 
@@ -79,7 +113,7 @@ the run stays green. To switch it on, add repository secrets `SMTP_HOST`,
 ```bash
 python3 -m venv .venv && .venv/bin/pip install pyyaml
 
-.venv/bin/python -m unittest discover -s tests   # 41 tests, no network
+.venv/bin/python -m unittest discover -s tests   # 76 tests, no network
 .venv/bin/python src/update.py --dry-run         # report, write nothing
 .venv/bin/python src/update.py --cache           # reuse fetches while iterating
 GITHUB_TOKEN=$(gh auth token) .venv/bin/python src/backfill.py

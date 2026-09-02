@@ -262,8 +262,91 @@ def parse_anthropic(text: str) -> dict:
 COPILOT_PRICING_PATH = "data/tables/copilot/models-and-pricing.yml"
 COPILOT_MULTIPLIER_PATH = "data/tables/copilot/annual-subscriber-model-multipliers.yml"
 COPILOT_DEPRECATION_PATH = "data/tables/copilot/model-deprecation-history.yml"
+# The promotional footnotes referenced from model names live on the content
+# page, not in the data file, and the variables they interpolate live in a
+# third. Together they are the only machine-readable statement of what is
+# currently discounted and until when.
+COPILOT_NOTES_PATH = "content/copilot/reference/copilot-billing/models-and-pricing.md"
+COPILOT_VARS_PATH = "data/variables/copilot.yml"
 
 _NOT_APPLICABLE = {"not applicable", "n/a", "none", "-"}
+
+# "GPT-5.6 Sol[^gpt-56-sol-promo]" -> name plus the footnote it points at.
+_FOOTNOTE_REF = re.compile(r"\[\^([a-z0-9-]+)\]")
+# "[^ref]: text" at the start of a line, continuing until a blank line.
+_FOOTNOTE_DEF = re.compile(r"^\[\^([a-z0-9-]+)\]:[ \t]*(.+)$", re.M)
+_LIQUID_VAR = re.compile(r"\{%\s*data\s+variables\.copilot\.([a-z0-9_]+)\s*%\}")
+_LIQUID_ANY = re.compile(r"\{%.*?%\}")
+# "through September 3, 2026" / "until December 31, 2026"
+_THROUGH_DATE = re.compile(
+    r"\b(?:through|until|ends?(?:\s+on)?)\s+"
+    r"(January|February|March|April|May|June|July|August|September|October|November|December)"
+    r"\s+(\d{1,2}),?\s+(\d{4})",
+    re.I,
+)
+
+_MONTHS = {
+    m.lower(): i
+    for i, m in enumerate(
+        ["January", "February", "March", "April", "May", "June", "July",
+         "August", "September", "October", "November", "December"], start=1)
+}
+
+
+def strip_footnote(name: str) -> tuple[str, str | None]:
+    """Split ``"GPT-5.6 Sol[^gpt-56-sol-promo]"`` into name and footnote id.
+
+    The marker must not stay in the key. GitHub adds and removes these when a
+    promotion starts or ends, and a key that changes with it would report the
+    same model as removed-then-added instead of as a price change.
+    """
+    ref = None
+    match = _FOOTNOTE_REF.search(name)
+    if match:
+        ref = match.group(1)
+        name = _FOOTNOTE_REF.sub("", name)
+    return name.strip(), ref
+
+
+def resolve_liquid(text: str, variables: dict[str, str]) -> str:
+    """Replace ``{% data variables.copilot.x %}`` with its value."""
+    text = _LIQUID_VAR.sub(lambda m: variables.get(m.group(1), ""), text)
+    return " ".join(_LIQUID_ANY.sub("", text).split())
+
+
+def parse_through_date(text: str) -> str | None:
+    """ISO date an offer runs to, if the text states one."""
+    match = _THROUGH_DATE.search(text)
+    if not match:
+        return None
+    month = _MONTHS[match.group(1).lower()]
+    return f"{int(match.group(3)):04d}-{month:02d}-{int(match.group(2)):02d}"
+
+
+def parse_copilot_footnotes(notes_md: str, vars_yml: str) -> list[dict]:
+    """Promotional footnotes from the Copilot pricing page.
+
+    These are the only place GitHub states, in machine-readable form, that a
+    price is temporary and when it stops being temporary.
+    """
+    try:
+        variables = yaml.safe_load(vars_yml) or {}
+    except Exception:  # noqa: BLE001
+        variables = {}
+    if not isinstance(variables, dict):
+        variables = {}
+
+    out = []
+    for ref, body in _FOOTNOTE_DEF.findall(notes_md):
+        text = resolve_liquid(body, variables)
+        if not text:
+            continue
+        entry = {"key": ref, "text": text}
+        expires = parse_through_date(text)
+        if expires:
+            entry["expires"] = expires
+        out.append(entry)
+    return out
 
 
 def _yaml_entries(text: str) -> list[dict]:
@@ -284,13 +367,18 @@ def _copilot_value(raw) -> float | str | None:
     return parse_money(text)
 
 
-def parse_copilot_pricing(text: str) -> dict:
-    """Current usage-based per-token pricing for models offered in Copilot."""
+def parse_copilot_pricing(text: str, extras: dict[str, str] | None = None) -> dict:
+    """Current usage-based per-token pricing for models offered in Copilot.
+
+    *extras* may carry ``notes`` (the content page) and ``vars`` (the Liquid
+    variables), which together supply the promotional footnotes.
+    """
     rows = []
     for entry in _yaml_entries(text):
         model = str(entry.get("model", "")).strip()
         if not model:
             continue
+        model, footnote = strip_footnote(model)
         threshold = str(entry.get("threshold", "") or "").strip()
         # GPT-5.4 and friends appear once per context-size tier, so the model
         # name alone is not unique.
@@ -301,12 +389,20 @@ def parse_copilot_pricing(text: str) -> dict:
             value = _copilot_value(entry.get(field))
             if value is not None:
                 values[field] = value
-        for field in ("provider", "release_status", "category"):
+        for field in ("provider", "release_status", "category", "notes"):
             value = entry.get(field)
             if value:
                 values[field] = str(value).strip()
+        # Diffable, so a promotion starting or ending is itself reported.
+        if footnote:
+            values["offer"] = footnote
         if values:
             rows.append({"key": key, "values": values})
+
+    extras = extras or {}
+    advisories = []
+    if extras.get("notes"):
+        advisories = parse_copilot_footnotes(extras["notes"], extras.get("vars", ""))
 
     return {
         "source": "copilot-pricing",
@@ -315,7 +411,7 @@ def parse_copilot_pricing(text: str) -> dict:
         "fetched": utcnow(),
         "floor": 15,
         "rows": sorted(rows, key=lambda r: r["key"]),
-        "advisories": [],
+        "advisories": advisories,
     }
 
 
@@ -386,6 +482,10 @@ SOURCES = {
         "parse": parse_copilot_pricing,
         "vendor": "Copilot",
         "docs_path": COPILOT_PRICING_PATH,
+        "extras": {
+            "notes": GITHUB_DOCS_RAW + COPILOT_NOTES_PATH,
+            "vars": GITHUB_DOCS_RAW + COPILOT_VARS_PATH,
+        },
     },
     "copilot-multipliers": {
         "url": GITHUB_DOCS_RAW + COPILOT_MULTIPLIER_PATH,
@@ -404,4 +504,17 @@ SOURCES = {
 
 def collect(source_id: str, cache_dir: Path | None = None) -> dict:
     spec = SOURCES[source_id]
-    return spec["parse"](fetch(spec["url"], cache_dir=cache_dir))
+    text = fetch(spec["url"], cache_dir=cache_dir)
+    extras_spec = spec.get("extras")
+    if not extras_spec:
+        return spec["parse"](text)
+
+    extras = {}
+    for name, url in extras_spec.items():
+        try:
+            extras[name] = fetch(url, cache_dir=cache_dir)
+        except FetchError as exc:
+            # A missing extra costs context, not correctness: the price rows
+            # still parse. Losing the whole source over it would be worse.
+            print(f"{source_id}: optional extra '{name}' unavailable ({exc})")
+    return spec["parse"](text, extras)

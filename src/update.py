@@ -16,8 +16,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import yaml  # noqa: E402
+
 import changelog  # noqa: E402
 import diffing  # noqa: E402
+import insights  # noqa: E402
 import notify  # noqa: E402
 import render  # noqa: E402
 import sources  # noqa: E402
@@ -47,6 +50,32 @@ def save_snapshot(snapshot: dict) -> None:
     path = snapshot_path(snapshot["source"])
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(snapshot, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def load_picks() -> list[dict]:
+    """Editorial recommendations, if any. A malformed file must not break the
+    build — the derived sections are the important ones."""
+    path = DATA / "picks.yml"
+    if not path.exists():
+        return []
+    try:
+        data = yaml.safe_load(path.read_text(encoding="utf-8"))
+    except yaml.YAMLError as exc:
+        print(f"picks.yml: ignored, will not parse ({exc})")
+        return []
+    return [p for p in data if isinstance(p, dict)] if isinstance(data, list) else []
+
+
+def build_overview(entries: list[dict], snapshots: list[dict]) -> dict:
+    """The at-a-glance layer: what is discounted, what is ending, what is cheap."""
+    offers = insights.find_offers(snapshots, entries)
+    return {
+        "offers": offers,
+        "bargains": insights.find_bargains(snapshots, offers),
+        "retiring": insights.retiring_soon(snapshots),
+        "value": insights.value_table(snapshots),
+        "picks": insights.resolve_picks(load_picks(), snapshots),
+    }
 
 
 def main() -> int:
@@ -118,7 +147,7 @@ def main() -> int:
     changelog.save(DATA / "changelog.json", merged)
     (DATA / "state.json").write_text(json.dumps(state, indent=2) + "\n", encoding="utf-8")
 
-    render.write_site(ROOT, merged, snapshots_for_site, state)
+    render.write_site(ROOT, merged, snapshots_for_site, state, build_overview(merged, snapshots_for_site))
 
     # Hand the workflow everything it needs to notify, without giving this
     # script a GitHub token of its own.
