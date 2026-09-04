@@ -1,4 +1,4 @@
-# llm-price-watch  generated=2026-09-04T05:07:24Z  USD per million tokens
+# llm-price-watch  generated=2026-09-04T06:38:29Z  USD per million tokens
 # blended=0.75*input + 0.25*output  class=vendor's own capability tier
 # offer: none | promo | LAPSED (past its end date, price not yet reverted)
 model	vendor	class	in	out	blended	offer	ends	retires
