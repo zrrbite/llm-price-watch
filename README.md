@@ -70,6 +70,30 @@ If your consumer runs a script, size does not matter — only what it prints
 reaches the context. Reach for the small endpoints when the file itself is
 going into a prompt.
 
+## The skill
+
+`skill/llm-price-check/` is an agent skill that warns you before you commit to a
+model — promotion about to end, price already past its end date, model retiring,
+dearer than its class — and stays quiet when there is nothing to say.
+
+It is one folder in the portable `SKILL.md` format, which **Claude Code and
+GitHub Copilot both read from the same personal location**, so one install
+serves both:
+
+```bash
+ln -s "$PWD/skill/llm-price-check" ~/.claude/skills/llm-price-check
+```
+
+Other locations, if you prefer: personal `~/.copilot/skills/` or
+`~/.agents/skills/`; per-project `.github/skills/`, `.claude/skills/` or
+`.agents/skills/` committed alongside the code.
+
+The skill works two ways so it degrades rather than failing: it runs `check.py`
+when the agent can execute scripts, and otherwise tells the agent to fetch
+`brief.txt` (~180 tokens) and reason over that. Note that when a script runs,
+endpoint size is irrelevant — only what the script *prints* reaches the model's
+context.
+
 ## What the page shows
 
 Ordered so the actionable things come first and the raw data last.

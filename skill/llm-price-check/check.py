@@ -86,8 +86,17 @@ def verdict(model: dict) -> list[str]:
 
     if model.get("on_offer"):
         ends, days = model.get("offer_ends"), model.get("offer_days_left")
-        if days is not None and days <= 7:
-            out.append(f"PROMO PRICE ENDING — {days} day(s) left, until {ends}. The price reverts after that.")
+        if days is not None and days < 0:
+            # The most actionable state: the discount is over but the published
+            # price has not caught up. Whatever number you plan against here is
+            # already wrong.
+            out.append(
+                f"PRICE ABOUT TO REVERT — the promotion ended {ends} "
+                f"({abs(days)} day(s) ago) and the published price has not gone back up yet."
+            )
+        elif days is not None and days <= 7:
+            when = "today" if days == 0 else f"in {days} day(s)"
+            out.append(f"PROMO PRICE ENDING {when}, on {ends}. The price reverts after that.")
         elif ends:
             out.append(f"promo price until {ends} — not the standard rate")
 
