@@ -24,6 +24,11 @@ python3 ./check.py "opus 5"       # verdict on one model
 python3 ./check.py --json "sonnet"
 ```
 
+On Windows use `python ./check.py` — `python3` is frequently not on PATH there.
+The script needs only the standard library, no install step. If neither
+interpreter is available, or if the script cannot reach the network, use the
+fetch route below instead of reporting failure.
+
 **If you cannot execute scripts**, fetch one of these instead and reason over
 it. They are sized so the cheap one is genuinely cheap:
 
