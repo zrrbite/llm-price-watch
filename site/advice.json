@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04T11:52:32Z",
+  "generated": "2026-09-04T18:27:42Z",
   "site": "https://zrrbite.github.io/llm-price-watch/",
   "units": "USD per million tokens",
   "blended_formula": "0.75*input + 0.25*output",
@@ -358,27 +358,27 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 14,
-      "tier_size": 16,
+      "rank_in_tier": 10,
+      "tier_size": 12,
       "cheaper_alternatives": [
-        {
-          "name": "GPT-5.6 Sol (≤ 272K)",
-          "blended": 4.0,
-          "saves_percent": 80.0,
-          "on_offer": true,
-          "offer_lapsed": true
-        },
-        {
-          "name": "Gemini 3.1 Pro (≤ 200K)",
-          "blended": 4.5,
-          "saves_percent": 77.5,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "GPT-5.3-Codex",
           "blended": 4.8125,
           "saves_percent": 75.9,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Kimi K3",
+          "blended": 6.0,
+          "saves_percent": 70.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "GPT-5.6 Sol (≤ 272K)",
+          "blended": 8.0,
+          "saves_percent": 60.0,
           "on_offer": false,
           "offer_lapsed": false
         }
@@ -400,27 +400,27 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 15,
-      "tier_size": 16,
+      "rank_in_tier": 11,
+      "tier_size": 12,
       "cheaper_alternatives": [
-        {
-          "name": "GPT-5.6 Sol (≤ 272K)",
-          "blended": 4.0,
-          "saves_percent": 80.0,
-          "on_offer": true,
-          "offer_lapsed": true
-        },
-        {
-          "name": "Gemini 3.1 Pro (≤ 200K)",
-          "blended": 4.5,
-          "saves_percent": 77.5,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "GPT-5.3-Codex",
           "blended": 4.8125,
           "saves_percent": 75.9,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Kimi K3",
+          "blended": 6.0,
+          "saves_percent": 70.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "GPT-5.6 Sol (≤ 272K)",
+          "blended": 8.0,
+          "saves_percent": 60.0,
           "on_offer": false,
           "offer_lapsed": false
         }
@@ -442,16 +442,9 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 6,
-      "tier_size": 18,
+      "rank_in_tier": 5,
+      "tier_size": 16,
       "cheaper_alternatives": [
-        {
-          "name": "Raptor mini",
-          "blended": 0.6875,
-          "saves_percent": 65.6,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "Gemini 3.6 Flash",
           "blended": 1.5,
@@ -465,89 +458,12 @@
           "saves_percent": 25.0,
           "on_offer": true,
           "offer_lapsed": false
-        }
-      ]
-    },
-    {
-      "name": "Claude Opus 4.5",
-      "base_name": "Claude Opus 4.5",
-      "vendor": "Copilot",
-      "tier": "Powerful",
-      "input": 5.0,
-      "output": 25.0,
-      "blended": 10.0,
-      "available": true,
-      "status": "GA",
-      "on_offer": false,
-      "offer_ends": null,
-      "offer_days_left": null,
-      "offer_text": null,
-      "retires": "2026-09-01",
-      "replacement": "Claude Opus 5",
-      "rank_in_tier": 7,
-      "tier_size": 16,
-      "cheaper_alternatives": [
+        },
         {
-          "name": "GPT-5.6 Sol (≤ 272K)",
-          "blended": 4.0,
-          "saves_percent": 60.0,
+          "name": "Gemini 3.8 Flash",
+          "blended": 1.5,
+          "saves_percent": 25.0,
           "on_offer": true,
-          "offer_lapsed": true
-        },
-        {
-          "name": "Gemini 3.1 Pro (≤ 200K)",
-          "blended": 4.5,
-          "saves_percent": 55.0,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
-        {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 51.9,
-          "on_offer": false,
-          "offer_lapsed": false
-        }
-      ]
-    },
-    {
-      "name": "Claude Opus 4.6",
-      "base_name": "Claude Opus 4.6",
-      "vendor": "Copilot",
-      "tier": "Powerful",
-      "input": 5.0,
-      "output": 25.0,
-      "blended": 10.0,
-      "available": true,
-      "status": "GA",
-      "on_offer": false,
-      "offer_ends": null,
-      "offer_days_left": null,
-      "offer_text": null,
-      "retires": "2026-09-01",
-      "replacement": "Claude Opus 5",
-      "rank_in_tier": 8,
-      "tier_size": 16,
-      "cheaper_alternatives": [
-        {
-          "name": "GPT-5.6 Sol (≤ 272K)",
-          "blended": 4.0,
-          "saves_percent": 60.0,
-          "on_offer": true,
-          "offer_lapsed": true
-        },
-        {
-          "name": "Gemini 3.1 Pro (≤ 200K)",
-          "blended": 4.5,
-          "saves_percent": 55.0,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
-        {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 51.9,
-          "on_offer": false,
           "offer_lapsed": false
         }
       ]
@@ -568,27 +484,27 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 9,
-      "tier_size": 16,
+      "rank_in_tier": 4,
+      "tier_size": 12,
       "cheaper_alternatives": [
-        {
-          "name": "GPT-5.6 Sol (≤ 272K)",
-          "blended": 4.0,
-          "saves_percent": 60.0,
-          "on_offer": true,
-          "offer_lapsed": true
-        },
-        {
-          "name": "Gemini 3.1 Pro (≤ 200K)",
-          "blended": 4.5,
-          "saves_percent": 55.0,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "GPT-5.3-Codex",
           "blended": 4.8125,
           "saves_percent": 51.9,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Kimi K3",
+          "blended": 6.0,
+          "saves_percent": 40.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "GPT-5.6 Sol (≤ 272K)",
+          "blended": 8.0,
+          "saves_percent": 20.0,
           "on_offer": false,
           "offer_lapsed": false
         }
@@ -610,27 +526,27 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 10,
-      "tier_size": 16,
+      "rank_in_tier": 5,
+      "tier_size": 12,
       "cheaper_alternatives": [
-        {
-          "name": "GPT-5.6 Sol (≤ 272K)",
-          "blended": 4.0,
-          "saves_percent": 60.0,
-          "on_offer": true,
-          "offer_lapsed": true
-        },
-        {
-          "name": "Gemini 3.1 Pro (≤ 200K)",
-          "blended": 4.5,
-          "saves_percent": 55.0,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "GPT-5.3-Codex",
           "blended": 4.8125,
           "saves_percent": 51.9,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Kimi K3",
+          "blended": 6.0,
+          "saves_percent": 40.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "GPT-5.6 Sol (≤ 272K)",
+          "blended": 8.0,
+          "saves_percent": 20.0,
           "on_offer": false,
           "offer_lapsed": false
         }
@@ -652,27 +568,27 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 16,
-      "tier_size": 16,
+      "rank_in_tier": 12,
+      "tier_size": 12,
       "cheaper_alternatives": [
-        {
-          "name": "GPT-5.6 Sol (≤ 272K)",
-          "blended": 4.0,
-          "saves_percent": 80.0,
-          "on_offer": true,
-          "offer_lapsed": true
-        },
-        {
-          "name": "Gemini 3.1 Pro (≤ 200K)",
-          "blended": 4.5,
-          "saves_percent": 77.5,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "GPT-5.3-Codex",
           "blended": 4.8125,
           "saves_percent": 75.9,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Kimi K3",
+          "blended": 6.0,
+          "saves_percent": 70.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "GPT-5.6 Sol (≤ 272K)",
+          "blended": 8.0,
+          "saves_percent": 60.0,
           "on_offer": false,
           "offer_lapsed": false
         }
@@ -694,27 +610,27 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 11,
-      "tier_size": 16,
+      "rank_in_tier": 6,
+      "tier_size": 12,
       "cheaper_alternatives": [
-        {
-          "name": "GPT-5.6 Sol (≤ 272K)",
-          "blended": 4.0,
-          "saves_percent": 60.0,
-          "on_offer": true,
-          "offer_lapsed": true
-        },
-        {
-          "name": "Gemini 3.1 Pro (≤ 200K)",
-          "blended": 4.5,
-          "saves_percent": 55.0,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "GPT-5.3-Codex",
           "blended": 4.8125,
           "saves_percent": 51.9,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Kimi K3",
+          "blended": 6.0,
+          "saves_percent": 40.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "GPT-5.6 Sol (≤ 272K)",
+          "blended": 8.0,
+          "saves_percent": 20.0,
           "on_offer": false,
           "offer_lapsed": false
         }
@@ -736,16 +652,9 @@
       "offer_text": null,
       "retires": "2026-05-01",
       "replacement": "Claude Sonnet 4.6",
-      "rank_in_tier": 12,
-      "tier_size": 18,
+      "rank_in_tier": 11,
+      "tier_size": 16,
       "cheaper_alternatives": [
-        {
-          "name": "Raptor mini",
-          "blended": 0.6875,
-          "saves_percent": 88.5,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "Gemini 3.6 Flash",
           "blended": 1.5,
@@ -759,44 +668,9 @@
           "saves_percent": 75.0,
           "on_offer": true,
           "offer_lapsed": false
-        }
-      ]
-    },
-    {
-      "name": "Claude Sonnet 4.5",
-      "base_name": "Claude Sonnet 4.5",
-      "vendor": "Copilot",
-      "tier": "Versatile",
-      "input": 3.0,
-      "output": 15.0,
-      "blended": 6.0,
-      "available": true,
-      "status": "GA",
-      "on_offer": false,
-      "offer_ends": null,
-      "offer_days_left": null,
-      "offer_text": null,
-      "retires": "2026-09-01",
-      "replacement": "Claude Sonnet 5",
-      "rank_in_tier": 13,
-      "tier_size": 18,
-      "cheaper_alternatives": [
-        {
-          "name": "Raptor mini",
-          "blended": 0.6875,
-          "saves_percent": 88.5,
-          "on_offer": false,
-          "offer_lapsed": false
         },
         {
-          "name": "Gemini 3.6 Flash",
-          "blended": 1.5,
-          "saves_percent": 75.0,
-          "on_offer": true,
-          "offer_lapsed": false
-        },
-        {
-          "name": "Gemini 3.7 Flash",
+          "name": "Gemini 3.8 Flash",
           "blended": 1.5,
           "saves_percent": 75.0,
           "on_offer": true,
@@ -820,16 +694,9 @@
       "offer_text": null,
       "retires": "2026-09-01",
       "replacement": "Claude Sonnet 5",
-      "rank_in_tier": 14,
-      "tier_size": 18,
+      "rank_in_tier": 12,
+      "tier_size": 16,
       "cheaper_alternatives": [
-        {
-          "name": "Raptor mini",
-          "blended": 0.6875,
-          "saves_percent": 88.5,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "Gemini 3.6 Flash",
           "blended": 1.5,
@@ -839,6 +706,13 @@
         },
         {
           "name": "Gemini 3.7 Flash",
+          "blended": 1.5,
+          "saves_percent": 75.0,
+          "on_offer": true,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Gemini 3.8 Flash",
           "blended": 1.5,
           "saves_percent": 75.0,
           "on_offer": true,
@@ -862,16 +736,9 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 9,
-      "tier_size": 18,
+      "rank_in_tier": 8,
+      "tier_size": 16,
       "cheaper_alternatives": [
-        {
-          "name": "Raptor mini",
-          "blended": 0.6875,
-          "saves_percent": 82.8,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "Gemini 3.6 Flash",
           "blended": 1.5,
@@ -881,6 +748,13 @@
         },
         {
           "name": "Gemini 3.7 Flash",
+          "blended": 1.5,
+          "saves_percent": 62.5,
+          "on_offer": true,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Gemini 3.8 Flash",
           "blended": 1.5,
           "saves_percent": 62.5,
           "on_offer": true,
@@ -946,17 +820,9 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 3,
-      "tier_size": 16,
-      "cheaper_alternatives": [
-        {
-          "name": "GPT-5.6 Sol (≤ 272K)",
-          "blended": 4.0,
-          "saves_percent": 16.9,
-          "on_offer": true,
-          "offer_lapsed": true
-        }
-      ]
+      "rank_in_tier": 1,
+      "tier_size": 12,
+      "cheaper_alternatives": []
     },
     {
       "name": "GPT-5.4 (> 272K)",
@@ -974,16 +840,9 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 18,
-      "tier_size": 18,
+      "rank_in_tier": 16,
+      "tier_size": 16,
       "cheaper_alternatives": [
-        {
-          "name": "Raptor mini",
-          "blended": 0.6875,
-          "saves_percent": 92.7,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "Gemini 3.6 Flash",
           "blended": 1.5,
@@ -993,6 +852,13 @@
         },
         {
           "name": "Gemini 3.7 Flash",
+          "blended": 1.5,
+          "saves_percent": 84.0,
+          "on_offer": true,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Gemini 3.8 Flash",
           "blended": 1.5,
           "saves_percent": 84.0,
           "on_offer": true,
@@ -1016,16 +882,9 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 11,
-      "tier_size": 18,
+      "rank_in_tier": 10,
+      "tier_size": 16,
       "cheaper_alternatives": [
-        {
-          "name": "Raptor mini",
-          "blended": 0.6875,
-          "saves_percent": 87.8,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "Gemini 3.6 Flash",
           "blended": 1.5,
@@ -1035,6 +894,13 @@
         },
         {
           "name": "Gemini 3.7 Flash",
+          "blended": 1.5,
+          "saves_percent": 73.3,
+          "on_offer": true,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Gemini 3.8 Flash",
           "blended": 1.5,
           "saves_percent": 73.3,
           "on_offer": true,
@@ -1120,27 +986,27 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 13,
-      "tier_size": 16,
+      "rank_in_tier": 9,
+      "tier_size": 12,
       "cheaper_alternatives": [
-        {
-          "name": "GPT-5.6 Sol (≤ 272K)",
-          "blended": 4.0,
-          "saves_percent": 78.7,
-          "on_offer": true,
-          "offer_lapsed": true
-        },
-        {
-          "name": "Gemini 3.1 Pro (≤ 200K)",
-          "blended": 4.5,
-          "saves_percent": 76.0,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "GPT-5.3-Codex",
           "blended": 4.8125,
           "saves_percent": 74.3,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Kimi K3",
+          "blended": 6.0,
+          "saves_percent": 68.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "GPT-5.6 Sol (≤ 272K)",
+          "blended": 8.0,
+          "saves_percent": 57.3,
           "on_offer": false,
           "offer_lapsed": false
         }
@@ -1162,27 +1028,27 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 12,
-      "tier_size": 16,
+      "rank_in_tier": 7,
+      "tier_size": 12,
       "cheaper_alternatives": [
-        {
-          "name": "GPT-5.6 Sol (≤ 272K)",
-          "blended": 4.0,
-          "saves_percent": 64.4,
-          "on_offer": true,
-          "offer_lapsed": true
-        },
-        {
-          "name": "Gemini 3.1 Pro (≤ 200K)",
-          "blended": 4.5,
-          "saves_percent": 60.0,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "GPT-5.3-Codex",
           "blended": 4.8125,
           "saves_percent": 57.2,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Kimi K3",
+          "blended": 6.0,
+          "saves_percent": 46.7,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "GPT-5.6 Sol (≤ 272K)",
+          "blended": 8.0,
+          "saves_percent": 28.9,
           "on_offer": false,
           "offer_lapsed": false
         }
@@ -1248,38 +1114,38 @@
       "base_name": "GPT-5.6 Sol",
       "vendor": "Copilot",
       "tier": "Powerful",
-      "input": 4.0,
-      "output": 15.0,
-      "blended": 6.75,
+      "input": 8.0,
+      "output": 30.0,
+      "blended": 13.5,
       "available": true,
       "status": "GA",
-      "on_offer": true,
-      "offer_ends": "2026-09-03",
-      "offer_days_left": -1,
-      "offer_text": "LAPSED — this promotion ended 2026-09-03 but the published price has not reverted yet. Expect it to. Original terms: GPT-5.6 Sol is available at promotional pricing, 50% off standard rates, through September 3, 2026. The default tier is $2.00 per 1M input tokens, $0.20 per 1M cached input tokens, $2.50 per 1M cache write tokens, and $10.00 per 1M output tokens. The long context tier is $4.00 per 1M input tokens, $0.40 per 1M cached input tokens, $5.00 per 1M cache write tokens, and $15.00 per 1M output tokens.",
+      "on_offer": false,
+      "offer_ends": null,
+      "offer_days_left": null,
+      "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 5,
-      "tier_size": 16,
+      "rank_in_tier": 8,
+      "tier_size": 12,
       "cheaper_alternatives": [
-        {
-          "name": "Gemini 3.1 Pro (≤ 200K)",
-          "blended": 4.5,
-          "saves_percent": 33.3,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "GPT-5.3-Codex",
           "blended": 4.8125,
-          "saves_percent": 28.7,
+          "saves_percent": 64.4,
           "on_offer": false,
           "offer_lapsed": false
         },
         {
           "name": "Kimi K3",
           "blended": 6.0,
-          "saves_percent": 11.1,
+          "saves_percent": 55.6,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Claude Opus 4.7",
+          "blended": 10.0,
+          "saves_percent": 25.9,
           "on_offer": false,
           "offer_lapsed": false
         }
@@ -1290,24 +1156,35 @@
       "base_name": "GPT-5.6 Sol",
       "vendor": "Copilot",
       "tier": "Powerful",
-      "input": 2.0,
-      "output": 10.0,
-      "blended": 4.0,
+      "input": 4.0,
+      "output": 20.0,
+      "blended": 8.0,
       "available": true,
       "status": "GA",
-      "on_offer": true,
-      "offer_ends": "2026-09-03",
-      "offer_days_left": -1,
-      "offer_text": "LAPSED — this promotion ended 2026-09-03 but the published price has not reverted yet. Expect it to. Original terms: GPT-5.6 Sol is available at promotional pricing, 50% off standard rates, through September 3, 2026. The default tier is $2.00 per 1M input tokens, $0.20 per 1M cached input tokens, $2.50 per 1M cache write tokens, and $10.00 per 1M output tokens. The long context tier is $4.00 per 1M input tokens, $0.40 per 1M cached input tokens, $5.00 per 1M cache write tokens, and $15.00 per 1M output tokens.",
+      "on_offer": false,
+      "offer_ends": null,
+      "offer_days_left": null,
+      "offer_text": null,
       "retires": null,
       "replacement": null,
-      "bargain": {
-        "compared_tier": "Versatile",
-        "percent_below": 5.9
-      },
-      "rank_in_tier": 1,
-      "tier_size": 16,
-      "cheaper_alternatives": []
+      "rank_in_tier": 3,
+      "tier_size": 12,
+      "cheaper_alternatives": [
+        {
+          "name": "GPT-5.3-Codex",
+          "blended": 4.8125,
+          "saves_percent": 39.8,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Kimi K3",
+          "blended": 6.0,
+          "saves_percent": 25.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        }
+      ]
     },
     {
       "name": "GPT-5.6 Terra (> 272K)",
@@ -1325,16 +1202,9 @@
       "offer_text": "input fell 20% from $2.5 to $2 on 2026-07-30, and is still there.",
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 17,
-      "tier_size": 18,
+      "rank_in_tier": 15,
+      "tier_size": 16,
       "cheaper_alternatives": [
-        {
-          "name": "Raptor mini",
-          "blended": 0.6875,
-          "saves_percent": 90.8,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "Gemini 3.6 Flash",
           "blended": 1.5,
@@ -1344,6 +1214,13 @@
         },
         {
           "name": "Gemini 3.7 Flash",
+          "blended": 1.5,
+          "saves_percent": 80.0,
+          "on_offer": true,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Gemini 3.8 Flash",
           "blended": 1.5,
           "saves_percent": 80.0,
           "on_offer": true,
@@ -1367,16 +1244,9 @@
       "offer_text": "input fell 20% from $2.5 to $2 on 2026-07-30, and is still there.",
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 10,
-      "tier_size": 18,
+      "rank_in_tier": 9,
+      "tier_size": 16,
       "cheaper_alternatives": [
-        {
-          "name": "Raptor mini",
-          "blended": 0.6875,
-          "saves_percent": 84.7,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "Gemini 3.6 Flash",
           "blended": 1.5,
@@ -1390,76 +1260,13 @@
           "saves_percent": 66.7,
           "on_offer": true,
           "offer_lapsed": false
-        }
-      ]
-    },
-    {
-      "name": "Gemini 3.1 Pro (> 200K)",
-      "base_name": "Gemini 3.1 Pro",
-      "vendor": "Copilot",
-      "tier": "Powerful",
-      "input": 4.0,
-      "output": 18.0,
-      "blended": 7.5,
-      "available": true,
-      "status": "Public preview",
-      "on_offer": false,
-      "offer_ends": null,
-      "offer_days_left": null,
-      "offer_text": null,
-      "retires": "2026-09-01",
-      "replacement": "Gemini 3.6 Flash",
-      "rank_in_tier": 6,
-      "tier_size": 16,
-      "cheaper_alternatives": [
-        {
-          "name": "GPT-5.6 Sol (≤ 272K)",
-          "blended": 4.0,
-          "saves_percent": 46.7,
-          "on_offer": true,
-          "offer_lapsed": true
         },
         {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 35.8,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
-        {
-          "name": "Kimi K3",
-          "blended": 6.0,
-          "saves_percent": 20.0,
-          "on_offer": false,
-          "offer_lapsed": false
-        }
-      ]
-    },
-    {
-      "name": "Gemini 3.1 Pro (≤ 200K)",
-      "base_name": "Gemini 3.1 Pro",
-      "vendor": "Copilot",
-      "tier": "Powerful",
-      "input": 2.0,
-      "output": 12.0,
-      "blended": 4.5,
-      "available": true,
-      "status": "Public preview",
-      "on_offer": false,
-      "offer_ends": null,
-      "offer_days_left": null,
-      "offer_text": null,
-      "retires": "2026-09-01",
-      "replacement": "Gemini 3.6 Flash",
-      "rank_in_tier": 2,
-      "tier_size": 16,
-      "cheaper_alternatives": [
-        {
-          "name": "GPT-5.6 Sol (≤ 272K)",
-          "blended": 4.0,
-          "saves_percent": 11.1,
+          "name": "Gemini 3.8 Flash",
+          "blended": 1.5,
+          "saves_percent": 66.7,
           "on_offer": true,
-          "offer_lapsed": true
+          "offer_lapsed": false
         }
       ]
     },
@@ -1521,17 +1328,9 @@
       "offer_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 2,
-      "tier_size": 18,
-      "cheaper_alternatives": [
-        {
-          "name": "Raptor mini",
-          "blended": 0.6875,
-          "saves_percent": 54.2,
-          "on_offer": false,
-          "offer_lapsed": false
-        }
-      ]
+      "rank_in_tier": 1,
+      "tier_size": 16,
+      "cheaper_alternatives": []
     },
     {
       "name": "Gemini 3.7 Flash",
@@ -1549,17 +1348,9 @@
       "offer_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 3,
-      "tier_size": 18,
-      "cheaper_alternatives": [
-        {
-          "name": "Raptor mini",
-          "blended": 0.6875,
-          "saves_percent": 54.2,
-          "on_offer": false,
-          "offer_lapsed": false
-        }
-      ]
+      "rank_in_tier": 2,
+      "tier_size": 16,
+      "cheaper_alternatives": []
     },
     {
       "name": "Gemini 3.8 Flash",
@@ -1577,17 +1368,9 @@
       "offer_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 4,
-      "tier_size": 18,
-      "cheaper_alternatives": [
-        {
-          "name": "Raptor mini",
-          "blended": 0.6875,
-          "saves_percent": 54.2,
-          "on_offer": false,
-          "offer_lapsed": false
-        }
-      ]
+      "rank_in_tier": 3,
+      "tier_size": 16,
+      "cheaper_alternatives": []
     },
     {
       "name": "Grok 4.5 (> 200K)",
@@ -1605,16 +1388,9 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 15,
-      "tier_size": 18,
+      "rank_in_tier": 13,
+      "tier_size": 16,
       "cheaper_alternatives": [
-        {
-          "name": "Raptor mini",
-          "blended": 0.6875,
-          "saves_percent": 88.5,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "Gemini 3.6 Flash",
           "blended": 1.5,
@@ -1624,6 +1400,13 @@
         },
         {
           "name": "Gemini 3.7 Flash",
+          "blended": 1.5,
+          "saves_percent": 75.0,
+          "on_offer": true,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Gemini 3.8 Flash",
           "blended": 1.5,
           "saves_percent": 75.0,
           "on_offer": true,
@@ -1647,16 +1430,9 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 7,
-      "tier_size": 18,
+      "rank_in_tier": 6,
+      "tier_size": 16,
       "cheaper_alternatives": [
-        {
-          "name": "Raptor mini",
-          "blended": 0.6875,
-          "saves_percent": 77.1,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "Gemini 3.6 Flash",
           "blended": 1.5,
@@ -1666,6 +1442,13 @@
         },
         {
           "name": "Gemini 3.7 Flash",
+          "blended": 1.5,
+          "saves_percent": 50.0,
+          "on_offer": true,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Gemini 3.8 Flash",
           "blended": 1.5,
           "saves_percent": 50.0,
           "on_offer": true,
@@ -1689,16 +1472,9 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 16,
-      "tier_size": 18,
+      "rank_in_tier": 14,
+      "tier_size": 16,
       "cheaper_alternatives": [
-        {
-          "name": "Raptor mini",
-          "blended": 0.6875,
-          "saves_percent": 88.5,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "Gemini 3.6 Flash",
           "blended": 1.5,
@@ -1708,6 +1484,13 @@
         },
         {
           "name": "Gemini 3.7 Flash",
+          "blended": 1.5,
+          "saves_percent": 75.0,
+          "on_offer": true,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Gemini 3.8 Flash",
           "blended": 1.5,
           "saves_percent": 75.0,
           "on_offer": true,
@@ -1731,16 +1514,9 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 8,
-      "tier_size": 18,
+      "rank_in_tier": 7,
+      "tier_size": 16,
       "cheaper_alternatives": [
-        {
-          "name": "Raptor mini",
-          "blended": 0.6875,
-          "saves_percent": 77.1,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "Gemini 3.6 Flash",
           "blended": 1.5,
@@ -1750,6 +1526,13 @@
         },
         {
           "name": "Gemini 3.7 Flash",
+          "blended": 1.5,
+          "saves_percent": 50.0,
+          "on_offer": true,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Gemini 3.8 Flash",
           "blended": 1.5,
           "saves_percent": 50.0,
           "on_offer": true,
@@ -1773,16 +1556,9 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 5,
-      "tier_size": 18,
+      "rank_in_tier": 4,
+      "tier_size": 16,
       "cheaper_alternatives": [
-        {
-          "name": "Raptor mini",
-          "blended": 0.6875,
-          "saves_percent": 59.9,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "Gemini 3.6 Flash",
           "blended": 1.5,
@@ -1792,6 +1568,13 @@
         },
         {
           "name": "Gemini 3.7 Flash",
+          "blended": 1.5,
+          "saves_percent": 12.4,
+          "on_offer": true,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Gemini 3.8 Flash",
           "blended": 1.5,
           "saves_percent": 12.4,
           "on_offer": true,
@@ -1815,23 +1598,9 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 4,
-      "tier_size": 16,
+      "rank_in_tier": 2,
+      "tier_size": 12,
       "cheaper_alternatives": [
-        {
-          "name": "GPT-5.6 Sol (≤ 272K)",
-          "blended": 4.0,
-          "saves_percent": 33.3,
-          "on_offer": true,
-          "offer_lapsed": true
-        },
-        {
-          "name": "Gemini 3.1 Pro (≤ 200K)",
-          "blended": 4.5,
-          "saves_percent": 25.0,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
         {
           "name": "GPT-5.3-Codex",
           "blended": 4.8125,
@@ -1902,40 +1671,9 @@
       "rank_in_tier": 2,
       "tier_size": 8,
       "cheaper_alternatives": []
-    },
-    {
-      "name": "Raptor mini",
-      "base_name": "Raptor mini",
-      "vendor": "Copilot",
-      "tier": "Versatile",
-      "input": 0.25,
-      "output": 2.0,
-      "blended": 0.6875,
-      "available": true,
-      "status": "GA",
-      "on_offer": false,
-      "offer_ends": null,
-      "offer_days_left": null,
-      "offer_text": null,
-      "retires": "2026-09-01",
-      "replacement": "MAI-Code-1-Flash",
-      "rank_in_tier": 1,
-      "tier_size": 18,
-      "cheaper_alternatives": []
     }
   ],
   "offers": [
-    {
-      "vendor": "Copilot",
-      "kind": "lapsed promotion",
-      "models": [
-        "GPT-5.6 Sol"
-      ],
-      "lapsed": true,
-      "expires": "2026-09-03",
-      "days_left": -1,
-      "text": "LAPSED — this promotion ended 2026-09-03 but the published price has not reverted yet. Expect it to. Original terms: GPT-5.6 Sol is available at promotional pricing, 50% off standard rates, through September 3, 2026. The default tier is $2.00 per 1M input tokens, $0.20 per 1M cached input tokens, $2.50 per 1M cache write tokens, and $10.00 per 1M output tokens. The long context tier is $4.00 per 1M input tokens, $0.40 per 1M cached input tokens, $5.00 per 1M cache write tokens, and $15.00 per 1M output tokens."
-    },
     {
       "vendor": "Copilot",
       "kind": "promotion",
@@ -2003,16 +1741,16 @@
       "blended": 4.0
     },
     "Copilot/Versatile": {
-      "model": "Raptor mini",
-      "blended": 0.6875
+      "model": "Gemini 3.8 Flash",
+      "blended": 1.5
     },
     "Anthropic/Powerful": {
       "model": "Claude Opus 5",
       "blended": 10.0
     },
     "Copilot/Powerful": {
-      "model": "GPT-5.6 Sol (≤ 272K)",
-      "blended": 4.0
+      "model": "GPT-5.3-Codex",
+      "blended": 4.8125
     },
     "Anthropic/Frontier": {
       "model": "Claude Fable 5.1",
