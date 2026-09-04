@@ -152,11 +152,32 @@ def describe(model: dict) -> str:
     return head
 
 
+def _is_lapsed(offer: dict) -> bool:
+    if offer.get("lapsed"):
+        return True
+    days = offer.get("days_left")
+    return days is not None and days < 0
+
+
 def overview(data: dict) -> str:
-    out = ["ON OFFER NOW:"]
-    if not data["offers"]:
+    # Live and lapsed must not share a heading. A promotion whose price is
+    # about to rise is not an offer; listing it as one, with a "-1d left"
+    # countdown, invites you to plan around a number that has already expired.
+    live = [o for o in data["offers"] if not _is_lapsed(o)]
+    lapsed = [o for o in data["offers"] if _is_lapsed(o)]
+
+    out = []
+    if lapsed:
+        out.append("PRICE ABOUT TO REVERT — promotion over, published price not yet updated:")
+        for offer in lapsed:
+            names = ", ".join(offer["models"]) or offer["vendor"]
+            out.append(f"  {names} — ended {offer.get('expires')}")
+        out.append("")
+
+    out.append("ON OFFER NOW:")
+    if not live:
         out.append("  (nothing)")
-    for offer in data["offers"]:
+    for offer in live:
         days = offer.get("days_left")
         when = f"{days}d left" if days is not None else "no end date"
         names = ", ".join(offer["models"]) or offer["vendor"]

@@ -837,6 +837,46 @@ class TestSkillScript(unittest.TestCase):
         # The quiet case matters: a tool that comments on everything is ignored.
         self.assertEqual(self.check.verdict({"rank_in_tier": 1, "tier_size": 5}), [])
 
+    def _overview(self, offers):
+        return self.check.overview({
+            "offers": offers, "retiring_soon": [],
+            "cheapest_by_tier": {"X/Y": {"model": "M", "blended": 1.0}},
+        })
+
+    def test_overview_never_shows_a_negative_countdown(self):
+        # The default invocation. It carried this bug after the per-model path
+        # was fixed, because they are separate code paths.
+        text = self._overview([
+            {"models": ["Sol"], "days_left": -1, "expires": "2026-09-03",
+             "lapsed": True, "text": "50% off", "vendor": "Copilot"},
+        ])
+        self.assertNotIn("-1d left", text)
+
+    def test_overview_separates_reverting_from_available(self):
+        text = self._overview([
+            {"models": ["Sol"], "days_left": -1, "expires": "2026-09-03",
+             "lapsed": True, "text": "over", "vendor": "Copilot"},
+            {"models": ["Gemini"], "days_left": 118, "expires": "2026-12-31",
+             "lapsed": False, "text": "live", "vendor": "Copilot"},
+        ])
+        self.assertIn("PRICE ABOUT TO REVERT", text)
+        on_offer = text.split("ON OFFER NOW:")[1]
+        self.assertIn("Gemini", on_offer)
+        self.assertNotIn("Sol", on_offer)
+
+    def test_overview_says_so_when_nothing_is_on_offer(self):
+        text = self._overview([])
+        self.assertIn("(nothing)", text)
+        self.assertNotIn("PRICE ABOUT TO REVERT", text)
+
+    def test_overview_infers_lapsed_from_a_negative_countdown_alone(self):
+        # Older cached payloads predate the `lapsed` field.
+        text = self._overview([
+            {"models": ["Sol"], "days_left": -5, "expires": "2026-09-03",
+             "text": "over", "vendor": "Copilot"},
+        ])
+        self.assertIn("PRICE ABOUT TO REVERT", text)
+
 
 if __name__ == "__main__":
     unittest.main()
