@@ -2,7 +2,7 @@
   "source": "copilot-pricing",
   "title": "GitHub Copilot — usage-based token pricing",
   "url": "https://github.com/github/docs/blob/main/data/tables/copilot/models-and-pricing.yml",
-  "fetched": "2026-09-04T04:49:52Z",
+  "fetched": "2026-09-04T04:52:16Z",
   "floor": 15,
   "rows": [
     {
@@ -389,6 +389,18 @@
       }
     },
     {
+      "key": "Gemini 3.8 Flash",
+      "values": {
+        "input": 0.75,
+        "cached_input": 0.075,
+        "output": 3.75,
+        "provider": "google",
+        "release_status": "GA",
+        "category": "Versatile",
+        "offer": "gemini-flash-promo"
+      }
+    },
+    {
       "key": "Grok 4.5 (> 200K)",
       "values": {
         "input": 4.0,
@@ -492,7 +504,7 @@
   "advisories": [
     {
       "key": "gemini-flash-promo",
-      "text": "Gemini 3.6 Flash and Gemini 3.7 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
+      "text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "expires": "2026-12-31"
     },
     {

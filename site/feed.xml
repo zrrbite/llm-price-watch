@@ -5,7 +5,14 @@
   <link href="https://zrrbite.github.io/llm-price-watch/"/>
   <link rel="self" href="https://zrrbite.github.io/llm-price-watch/feed.xml"/>
   <id>tag:zrrbite.github.io,2026:llm-price-watch</id>
-  <updated>2026-09-04T04:49:52Z</updated>
+  <updated>2026-09-04T04:52:16Z</updated>
+  <entry>
+    <title>2026-09-04: 2 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-09-04</id>
+    <updated>2026-09-04T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Gemini 3.8 Flash added&lt;/li&gt;&lt;li&gt;Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>2026-09-01: 1 pricing change</title>
     <link href="https://zrrbite.github.io/llm-price-watch/"/>

@@ -1,7 +1,25 @@
 {
   "schema": 1,
-  "count": 124,
+  "count": 126,
   "entries": [
+    {
+      "id": "63e71cbd9b4b736a",
+      "date": "2026-09-04",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Gemini 3.8 Flash",
+      "summary": "Gemini 3.8 Flash added"
+    },
+    {
+      "id": "62174cf77febc1ec",
+      "date": "2026-09-04",
+      "source": "copilot-pricing",
+      "class": "advisory_changed",
+      "key": "gemini-flash-promo",
+      "summary": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
+      "text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
+      "previous_text": "Gemini 3.6 Flash and Gemini 3.7 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026."
+    },
     {
       "id": "c484cd2dedef500d",
       "date": "2026-09-01",
