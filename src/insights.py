@@ -125,16 +125,29 @@ def find_offers(snapshots: list[dict], changelog: list[dict], today: date | None
                 }
             )
             expires = note.get("expires")
-            if expires and expires < today.isoformat():
-                continue  # lapsed; the changelog still records that it existed
+            days_left = _days_between(today, expires)
+            # A promotion past its end date whose price has NOT yet reverted is
+            # the most actionable state there is, and it used to be the worst
+            # handled: dropping it here let recent_price_cuts pick the same
+            # model up and report the promotional price as a durable cut —
+            # exactly backwards, in the section you would act on. Keep it, and
+            # say what it is.
+            lapsed = bool(expires and expires < today.isoformat())
+            text = note["text"]
+            if lapsed:
+                text = (
+                    f"LAPSED — this promotion ended {expires} but the published price has "
+                    f"not reverted yet. Expect it to. Original terms: {text}"
+                )
             offers.append(
                 {
                     "vendor": "Copilot",
-                    "kind": "promotion",
+                    "kind": "lapsed promotion" if lapsed else "promotion",
+                    "lapsed": lapsed,
                     "models": models,
-                    "text": note["text"],
+                    "text": text,
                     "expires": expires,
-                    "days_left": _days_between(today, expires),
+                    "days_left": days_left,
                     "source_url": copilot.get("url"),
                 }
             )
@@ -472,7 +485,10 @@ def build_advice(snapshots: list[dict], changelog: list[dict], today: date | Non
                 continue
             base = row["key"].split(" (")[0]
             offer = offer_by_model.get(base)
-            retire = retirements.get(base, {})
+            # Retirements come from Copilot's deprecation list and are a
+            # Copilot fact. GitHub dropping Claude Opus 4.5 says nothing about
+            # whether Anthropic still sells it — and it does.
+            retire = retirements.get(base, {}) if vendor == "Copilot" else {}
             entry = {
                 "name": row["key"],
                 "base_name": base,
@@ -533,6 +549,7 @@ def build_advice(snapshots: list[dict], changelog: list[dict], today: date | Non
         "offers": [
             {
                 "vendor": o["vendor"], "kind": o["kind"], "models": o["models"],
+                "lapsed": bool(o.get("lapsed")),
                 "expires": o.get("expires"), "days_left": o.get("days_left"),
                 "text": o.get("text"),
             }

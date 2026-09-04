@@ -155,6 +155,10 @@ def main() -> int:
     advice_json = json.dumps(advice, indent=2, ensure_ascii=False) + "\n"
     (DATA / "advice.json").write_text(advice_json, encoding="utf-8")
     (ROOT / "site" / "advice.json").write_text(advice_json, encoding="utf-8")
+    # Three sizes, because the cost of reading is part of the answer: a brief
+    # for "what should I use", a table for "compare them", JSON for everything.
+    (ROOT / "site" / "models.tsv").write_text(render.build_tsv(advice), encoding="utf-8")
+    (ROOT / "site" / "brief.txt").write_text(render.build_brief(advice), encoding="utf-8")
 
     # Hand the workflow everything it needs to notify, without giving this
     # script a GitHub token of its own.

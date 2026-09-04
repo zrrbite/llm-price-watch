@@ -414,7 +414,10 @@ class TestOffers(unittest.TestCase):
         self.assertEqual(offers[0]["days_left"], 1)
         self.assertEqual(offers[0]["models"], ["GPT-5.6 Sol"])
 
-    def test_lapsed_offers_are_dropped(self):
+    def test_lapsed_offers_are_kept_but_marked(self):
+        # Deliberately not dropped: see TestLapsedPromotions. A price sitting
+        # past its promotion's end date is about to move, which is the most
+        # actionable thing the tool can say.
         snaps = [
             _snap(
                 "copilot-pricing",
@@ -422,7 +425,9 @@ class TestOffers(unittest.TestCase):
                 [{"key": "p", "text": "was 50% off", "expires": "2026-08-01"}],
             )
         ]
-        self.assertEqual(insights.find_offers(snaps, [], today=date(2026, 9, 2)), [])
+        offers = insights.find_offers(snaps, [], today=date(2026, 9, 2))
+        self.assertEqual(len(offers), 1)
+        self.assertTrue(offers[0]["lapsed"])
 
     def test_anthropic_boilerplate_is_not_an_offer(self):
         # Both of these matched on a looser pattern and were false positives.
@@ -594,6 +599,120 @@ class TestBargains(unittest.TestCase):
         found = insights.find_bargains([snapshot])
         models = {b["model"].split(" (")[0] for b in found}
         self.assertIn("GPT-5.6 Sol", models)
+
+
+class TestLapsedPromotions(unittest.TestCase):
+    """A promo past its end date whose price has not reverted yet.
+
+    This used to be the worst-handled state: the promotion was dropped as
+    lapsed, and recent_price_cuts then re-reported the same model as a durable
+    price cut — the exact opposite of the truth, in the section you act on.
+    """
+
+    def _snaps(self):
+        return [_snap(
+            "copilot-pricing",
+            [{"key": "Sol (≤ 272K)", "values": {"offer": "p", "input": 2.0, "output": 10.0}}],
+            [{"key": "p", "text": "50% off through September 3, 2026", "expires": "2026-09-03"}],
+        )]
+
+    def _cut(self):
+        return [{
+            "class": diffing.PRICE_CHANGED, "source": "copilot-pricing",
+            "key": "Sol (≤ 272K)", "date": "2026-08-20",
+            "fields": [{"field": "input", "old": 4.0, "new": 2.0}],
+        }]
+
+    def test_a_lapsed_promo_is_kept_and_labelled(self):
+        offers = insights.find_offers(self._snaps(), [], today=date(2026, 9, 4))
+        self.assertEqual(len(offers), 1)
+        self.assertTrue(offers[0]["lapsed"])
+        self.assertEqual(offers[0]["kind"], "lapsed promotion")
+        self.assertIn("LAPSED", offers[0]["text"])
+        self.assertIn("has not reverted", offers[0]["text"])
+
+    def test_a_lapsed_promo_is_not_reclassified_as_a_durable_price_cut(self):
+        offers = insights.find_offers(self._snaps(), self._cut(), today=date(2026, 9, 4))
+        kinds = [o["kind"] for o in offers]
+        self.assertEqual(kinds, ["lapsed promotion"])
+        self.assertNotIn("price cut", kinds)
+
+    def test_still_live_the_day_it_ends(self):
+        offers = insights.find_offers(self._snaps(), [], today=date(2026, 9, 3))
+        self.assertFalse(offers[0]["lapsed"])
+        self.assertEqual(offers[0]["days_left"], 0)
+
+    def test_lapsed_sorts_ahead_of_live_offers(self):
+        snaps = [_snap(
+            "copilot-pricing",
+            [{"key": "A", "values": {"offer": "old"}}, {"key": "B", "values": {"offer": "new"}}],
+            [{"key": "old", "text": "x", "expires": "2026-09-01"},
+             {"key": "new", "text": "y", "expires": "2026-12-31"}],
+        )]
+        offers = insights.find_offers(snaps, [], today=date(2026, 9, 4))
+        self.assertTrue(offers[0]["lapsed"], "the thing about to revert comes first")
+
+
+class TestVendorIsolation(unittest.TestCase):
+    def test_a_copilot_retirement_does_not_mark_the_anthropic_model_retired(self):
+        # GitHub dropped Claude Opus 4.5 on 2026-09-01. Anthropic still sells it.
+        snaps = [
+            _snap("anthropic", [{"key": "Claude Opus 4.5", "values": {"input": 5.0, "output": 25.0}}]),
+            _snap("copilot-pricing", [{"key": "Claude Opus 4.5", "values": {"input": 5.0, "output": 25.0}}]),
+            _snap("copilot-deprecations", [{"key": "Claude Opus 4.5",
+                                           "values": {"retirement_date": "2026-09-01"}}]),
+        ]
+        advice = insights.build_advice(snaps, [], today=date(2026, 9, 4))
+        by_vendor = {(m["vendor"], m["name"]): m for m in advice["models"]}
+        self.assertIsNone(by_vendor[("Anthropic", "Claude Opus 4.5")]["retires"])
+        self.assertEqual(by_vendor[("Copilot", "Claude Opus 4.5")]["retires"], "2026-09-01")
+
+
+class TestCheapEndpoints(unittest.TestCase):
+    def _advice(self):
+        snaps = [
+            _snap("anthropic", [
+                {"key": "Claude Sonnet 5", "values": {"input": 2.0, "output": 10.0}},
+                {"key": "Claude Opus 4.1", "values": {"input": 15.0, "output": 75.0,
+                                                      "status": "retired, except on Bedrock"}},
+            ]),
+            _snap("copilot-pricing",
+                  [{"key": "Sol (≤ 272K)", "values": {"offer": "p", "input": 2.0, "output": 10.0,
+                                                      "category": "Powerful"}}],
+                  [{"key": "p", "text": "50% off", "expires": "2026-09-03"}]),
+        ]
+        return insights.build_advice(snaps, [], today=date(2026, 9, 4))
+
+    def test_tsv_has_one_header_and_excludes_retired_models(self):
+        tsv = render.build_tsv(self._advice())
+        body = [l for l in tsv.splitlines() if l and not l.startswith("#")]
+        self.assertTrue(body[0].startswith("model\tvendor\tclass"))
+        self.assertNotIn("Claude Opus 4.1", tsv, "retired models are not choices")
+        self.assertIn("Claude Sonnet 5", tsv)
+
+    def test_tsv_marks_a_lapsed_promo_distinctly(self):
+        tsv = render.build_tsv(self._advice())
+        row = next(l for l in tsv.splitlines() if l.startswith("Sol"))
+        self.assertIn("LAPSED", row)
+
+    def test_tsv_is_far_smaller_than_the_json(self):
+        import json as _json
+        advice = self._advice()
+        self.assertLess(len(render.build_tsv(advice)), len(_json.dumps(advice)) / 3)
+
+    def test_brief_separates_live_offers_from_reverting_ones(self):
+        brief = render.build_brief(self._advice())
+        self.assertIn("PRICE ABOUT TO REVERT", brief)
+        # It may legitimately still appear as cheapest in its class — that is
+        # today's published price. What it must not do is sit under ON OFFER
+        # as though it were still available.
+        if "ON OFFER:" in brief:
+            on_offer = brief.split("ON OFFER:")[1].split("\n\n")[0]
+            self.assertNotIn("Sol", on_offer)
+        self.assertIn("Sol", brief.split("PRICE ABOUT TO REVERT")[1])
+
+    def test_brief_stays_small(self):
+        self.assertLess(len(render.build_brief(self._advice())), 2000)
 
 
 class TestPicks(unittest.TestCase):

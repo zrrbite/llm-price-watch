@@ -632,6 +632,74 @@ def build_feed(entries: list[dict], state: dict) -> str:
 """
 
 
+def build_tsv(advice: dict) -> str:
+    """One line per usable model. The cheap endpoint.
+
+    advice.json is complete but costs roughly 12k tokens to read, which is a
+    lot for the question "is this model suitable and what does it cost". This
+    is the same decision in about a tenth of that: no repeated keys, no prose,
+    no retired models, and a class column so price can be judged against
+    capability rather than in the abstract.
+    """
+    lines = [
+        f"# llm-price-watch  generated={advice['generated']}  {advice['units']}",
+        f"# blended={advice['blended_formula']}  class=vendor's own capability tier",
+        "# offer: none | promo | LAPSED (past its end date, price not yet reverted)",
+        "model\tvendor\tclass\tin\tout\tblended\toffer\tends\tretires",
+    ]
+    for model in advice["models"]:
+        if not model.get("available", True):
+            continue
+        if model.get("on_offer"):
+            days = model.get("offer_days_left")
+            offer = "LAPSED" if days is not None and days < 0 else "promo"
+        else:
+            offer = "none"
+        lines.append(
+            "\t".join([
+                model["name"],
+                model["vendor"],
+                model.get("tier") or "-",
+                f"{model['input']:g}" if isinstance(model.get("input"), (int, float)) else "-",
+                f"{model['output']:g}" if isinstance(model.get("output"), (int, float)) else "-",
+                f"{model['blended']:g}",
+                offer,
+                model.get("offer_ends") or "-",
+                model.get("retires") or "-",
+            ])
+        )
+    return "\n".join(lines) + "\n"
+
+
+def build_brief(advice: dict) -> str:
+    """The smallest useful answer: what to use, what to avoid, what expires."""
+    out = [f"llm-price-watch brief, {advice['generated']}. {advice['units']}."]
+
+    out.append("\nCHEAPEST PER CLASS (blended = 0.75*in + 0.25*out):")
+    for tier, info in advice["cheapest_by_tier"].items():
+        out.append(f"  {tier}: {info['model']} {info['blended']:g}")
+
+    live = [o for o in advice["offers"] if not o.get("lapsed")]
+    lapsed = [o for o in advice["offers"] if o.get("lapsed")]
+    if live:
+        out.append("\nON OFFER:")
+        for offer in live:
+            days = offer.get("days_left")
+            when = f"{days}d left" if days is not None else "no end date"
+            out.append(f"  {', '.join(offer['models']) or offer['vendor']} ({when})")
+    if lapsed:
+        out.append("\nPRICE ABOUT TO REVERT (promo ended, price not yet updated):")
+        for offer in lapsed:
+            out.append(f"  {', '.join(offer['models'])} — ended {offer['expires']}")
+    if advice.get("retiring_soon"):
+        out.append("\nRETIRING:")
+        for row in advice["retiring_soon"]:
+            out.append(f"  {row['model']} on {row['date']} -> {row.get('alternative')}")
+
+    out.append("\nFull table: models.tsv   Everything: advice.json")
+    return "\n".join(out) + "\n"
+
+
 def write_site(
     root: Path, entries: list[dict], snapshots: list[dict], state: dict,
     overview: dict | None = None,

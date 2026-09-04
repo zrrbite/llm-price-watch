@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-03T18:30:58Z",
+  "generated": "2026-09-04T04:49:52Z",
   "site": "https://zrrbite.github.io/llm-price-watch/",
   "units": "USD per million tokens",
   "blended_formula": "0.75*input + 0.25*output",
@@ -129,8 +129,8 @@
       "offer_ends": null,
       "offer_days_left": null,
       "offer_text": null,
-      "retires": "2025-10-23",
-      "replacement": "Claude Opus 4.6"
+      "retires": null,
+      "replacement": null
     },
     {
       "name": "Claude Opus 4.1",
@@ -146,8 +146,8 @@
       "offer_ends": null,
       "offer_days_left": null,
       "offer_text": null,
-      "retires": "2026-02-17",
-      "replacement": "Claude Opus 4.6"
+      "retires": null,
+      "replacement": null
     },
     {
       "name": "Claude Opus 4.5",
@@ -163,8 +163,8 @@
       "offer_ends": null,
       "offer_days_left": null,
       "offer_text": null,
-      "retires": "2026-09-01",
-      "replacement": "Claude Opus 5",
+      "retires": null,
+      "replacement": null,
       "rank_in_tier": 1,
       "tier_size": 5,
       "cheaper_alternatives": []
@@ -183,8 +183,8 @@
       "offer_ends": null,
       "offer_days_left": null,
       "offer_text": null,
-      "retires": "2026-09-01",
-      "replacement": "Claude Opus 5",
+      "retires": null,
+      "replacement": null,
       "rank_in_tier": 2,
       "tier_size": 5,
       "cheaper_alternatives": []
@@ -263,8 +263,8 @@
       "offer_ends": null,
       "offer_days_left": null,
       "offer_text": null,
-      "retires": "2026-05-01",
-      "replacement": "Claude Sonnet 4.6"
+      "retires": null,
+      "replacement": null
     },
     {
       "name": "Claude Sonnet 4.5",
@@ -280,8 +280,8 @@
       "offer_ends": null,
       "offer_days_left": null,
       "offer_text": null,
-      "retires": "2026-09-01",
-      "replacement": "Claude Sonnet 5",
+      "retires": null,
+      "replacement": null,
       "rank_in_tier": 2,
       "tier_size": 3,
       "cheaper_alternatives": [
@@ -307,8 +307,8 @@
       "offer_ends": null,
       "offer_days_left": null,
       "offer_text": null,
-      "retires": "2026-09-01",
-      "replacement": "Claude Sonnet 5",
+      "retires": null,
+      "replacement": null,
       "rank_in_tier": 3,
       "tier_size": 3,
       "cheaper_alternatives": [
@@ -1193,8 +1193,8 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-09-03",
-      "offer_days_left": 0,
-      "offer_text": "GPT-5.6 Sol is available at promotional pricing, 50% off standard rates, through September 3, 2026. The default tier is $2.00 per 1M input tokens, $0.20 per 1M cached input tokens, $2.50 per 1M cache write tokens, and $10.00 per 1M output tokens. The long context tier is $4.00 per 1M input tokens, $0.40 per 1M cached input tokens, $5.00 per 1M cache write tokens, and $15.00 per 1M output tokens.",
+      "offer_days_left": -1,
+      "offer_text": "LAPSED — this promotion ended 2026-09-03 but the published price has not reverted yet. Expect it to. Original terms: GPT-5.6 Sol is available at promotional pricing, 50% off standard rates, through September 3, 2026. The default tier is $2.00 per 1M input tokens, $0.20 per 1M cached input tokens, $2.50 per 1M cache write tokens, and $10.00 per 1M output tokens. The long context tier is $4.00 per 1M input tokens, $0.40 per 1M cached input tokens, $5.00 per 1M cache write tokens, and $15.00 per 1M output tokens.",
       "retires": null,
       "replacement": null,
       "rank_in_tier": 5,
@@ -1232,8 +1232,8 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-09-03",
-      "offer_days_left": 0,
-      "offer_text": "GPT-5.6 Sol is available at promotional pricing, 50% off standard rates, through September 3, 2026. The default tier is $2.00 per 1M input tokens, $0.20 per 1M cached input tokens, $2.50 per 1M cache write tokens, and $10.00 per 1M output tokens. The long context tier is $4.00 per 1M input tokens, $0.40 per 1M cached input tokens, $5.00 per 1M cache write tokens, and $15.00 per 1M output tokens.",
+      "offer_days_left": -1,
+      "offer_text": "LAPSED — this promotion ended 2026-09-03 but the published price has not reverted yet. Expect it to. Original terms: GPT-5.6 Sol is available at promotional pricing, 50% off standard rates, through September 3, 2026. The default tier is $2.00 per 1M input tokens, $0.20 per 1M cached input tokens, $2.50 per 1M cache write tokens, and $10.00 per 1M output tokens. The long context tier is $4.00 per 1M input tokens, $0.40 per 1M cached input tokens, $5.00 per 1M cache write tokens, and $15.00 per 1M output tokens.",
       "retires": null,
       "replacement": null,
       "bargain": {
@@ -1439,7 +1439,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 119,
+      "offer_days_left": 118,
       "offer_text": "Gemini 3.6 Flash and Gemini 3.7 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
@@ -1466,7 +1466,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 119,
+      "offer_days_left": 118,
       "offer_text": "Gemini 3.6 Flash and Gemini 3.7 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
@@ -1798,13 +1798,14 @@
   "offers": [
     {
       "vendor": "Copilot",
-      "kind": "promotion",
+      "kind": "lapsed promotion",
       "models": [
         "GPT-5.6 Sol"
       ],
+      "lapsed": true,
       "expires": "2026-09-03",
-      "days_left": 0,
-      "text": "GPT-5.6 Sol is available at promotional pricing, 50% off standard rates, through September 3, 2026. The default tier is $2.00 per 1M input tokens, $0.20 per 1M cached input tokens, $2.50 per 1M cache write tokens, and $10.00 per 1M output tokens. The long context tier is $4.00 per 1M input tokens, $0.40 per 1M cached input tokens, $5.00 per 1M cache write tokens, and $15.00 per 1M output tokens."
+      "days_left": -1,
+      "text": "LAPSED — this promotion ended 2026-09-03 but the published price has not reverted yet. Expect it to. Original terms: GPT-5.6 Sol is available at promotional pricing, 50% off standard rates, through September 3, 2026. The default tier is $2.00 per 1M input tokens, $0.20 per 1M cached input tokens, $2.50 per 1M cache write tokens, and $10.00 per 1M output tokens. The long context tier is $4.00 per 1M input tokens, $0.40 per 1M cached input tokens, $5.00 per 1M cache write tokens, and $15.00 per 1M output tokens."
     },
     {
       "vendor": "Copilot",
@@ -1813,14 +1814,16 @@
         "Gemini 3.6 Flash",
         "Gemini 3.7 Flash"
       ],
+      "lapsed": false,
       "expires": "2026-12-31",
-      "days_left": 119,
+      "days_left": 118,
       "text": "Gemini 3.6 Flash and Gemini 3.7 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026."
     },
     {
       "vendor": "Anthropic",
       "kind": "promotion",
       "models": [],
+      "lapsed": false,
       "expires": null,
       "days_left": null,
       "text": "The $2/$10 per million input/output token pricing for Claude Sonnet 5, announced at launch as introductory pricing through August 31, 2026, is now the standard price. The previously scheduled increase to $3/$15 per million input/output tokens on September 1, 2026 will not occur."
@@ -1831,6 +1834,7 @@
       "models": [
         "GPT-5.6 Luna"
       ],
+      "lapsed": false,
       "expires": null,
       "days_left": null,
       "text": "input fell 80% from $1 to $0.2 on 2026-07-30, and is still there."
@@ -1841,6 +1845,7 @@
       "models": [
         "GPT-5.6 Terra"
       ],
+      "lapsed": false,
       "expires": null,
       "days_left": null,
       "text": "input fell 20% from $2.5 to $2 on 2026-07-30, and is still there."
@@ -1850,7 +1855,7 @@
     {
       "model": "MAI-Code-1-Flash",
       "date": "2026-09-10",
-      "days_left": 7,
+      "days_left": 6,
       "alternative": "MAI-Code-1.1-Flash"
     }
   ],

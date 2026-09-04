@@ -45,6 +45,31 @@ no numbers themselves. The YAML data files behind them are the real source —
 structured, and version-controlled in a public repo, which is also where the
 backfilled history comes from.
 
+## Endpoints
+
+Three sizes, because for an agent the cost of *reading* is part of the answer.
+Measured on the live data:
+
+| Endpoint | Size | ~Tokens | Use it when |
+|---|---|---|---|
+| [`brief.txt`](https://zrrbite.github.io/llm-price-watch/brief.txt) | 0.7 KB | ~180 | "what should I use, what should I avoid" |
+| [`models.tsv`](https://zrrbite.github.io/llm-price-watch/models.tsv) | 3.3 KB | ~820 | comparing models on price against capability class |
+| [`advice.json`](https://zrrbite.github.io/llm-price-watch/advice.json) | 48 KB | ~12,000 | everything: ranks, cheaper alternatives, offer text |
+
+`models.tsv` is one line per usable model — no repeated keys, no prose, retired
+models omitted — with a `class` column carrying the vendor's own capability tier
+so price can be judged against what you get rather than in the abstract:
+
+```
+model	vendor	class	in	out	blended	offer	ends	retires
+Claude Sonnet 5	Anthropic	Versatile	2	10	4	none	-	-
+GPT-5.6 Sol (≤ 272K)	Copilot	Powerful	2	10	4	LAPSED	2026-09-03	-
+```
+
+If your consumer runs a script, size does not matter — only what it prints
+reaches the context. Reach for the small endpoints when the file itself is
+going into a prompt.
+
 ## What the page shows
 
 Ordered so the actionable things come first and the raw data last.
@@ -113,7 +138,7 @@ the run stays green. To switch it on, add repository secrets `SMTP_HOST`,
 ```bash
 python3 -m venv .venv && .venv/bin/pip install pyyaml
 
-.venv/bin/python -m unittest discover -s tests   # 76 tests, no network
+.venv/bin/python -m unittest discover -s tests   # 86 tests, no network
 .venv/bin/python src/update.py --dry-run         # report, write nothing
 .venv/bin/python src/update.py --cache           # reuse fetches while iterating
 GITHUB_TOKEN=$(gh auth token) .venv/bin/python src/backfill.py

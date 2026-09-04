@@ -1,0 +1,56 @@
+# llm-price-watch  generated=2026-09-04T04:49:52Z  USD per million tokens
+# blended=0.75*input + 0.25*output  class=vendor's own capability tier
+# offer: none | promo | LAPSED (past its end date, price not yet reverted)
+model	vendor	class	in	out	blended	offer	ends	retires
+Claude Fable 5	Anthropic	Frontier	10	50	20	none	-	-
+Claude Fable 5.1	Anthropic	Frontier	10	50	20	none	-	-
+Claude Haiku 4.5	Anthropic	Lightweight	1	5	2	none	-	-
+Claude Opus 4.5	Anthropic	Powerful	5	25	10	none	-	-
+Claude Opus 4.6	Anthropic	Powerful	5	25	10	none	-	-
+Claude Opus 4.7	Anthropic	Powerful	5	25	10	none	-	-
+Claude Opus 4.8	Anthropic	Powerful	5	25	10	none	-	-
+Claude Opus 5	Anthropic	Powerful	5	25	10	none	-	-
+Claude Sonnet 4.5	Anthropic	Versatile	3	15	6	none	-	-
+Claude Sonnet 4.6	Anthropic	Versatile	3	15	6	none	-	-
+Claude Sonnet 5	Anthropic	Versatile	2	10	4	none	-	-
+Claude Fable 5	Copilot	Powerful	10	50	20	none	-	-
+Claude Fable 5.1	Copilot	Powerful	10	50	20	none	-	-
+Claude Haiku 4.5	Copilot	Versatile	1	5	2	none	-	-
+Claude Opus 4.5	Copilot	Powerful	5	25	10	none	-	2026-09-01
+Claude Opus 4.6	Copilot	Powerful	5	25	10	none	-	2026-09-01
+Claude Opus 4.7	Copilot	Powerful	5	25	10	none	-	-
+Claude Opus 4.8	Copilot	Powerful	5	25	10	none	-	-
+Claude Opus 4.8 (fast mode) (preview)	Copilot	Powerful	10	50	20	none	-	-
+Claude Opus 5	Copilot	Powerful	5	25	10	none	-	-
+Claude Sonnet 4	Copilot	Versatile	3	15	6	none	-	2026-05-01
+Claude Sonnet 4.5	Copilot	Versatile	3	15	6	none	-	2026-09-01
+Claude Sonnet 4.6	Copilot	Versatile	3	15	6	none	-	2026-09-01
+Claude Sonnet 5	Copilot	Versatile	2	10	4	none	-	-
+GPT-5 mini	Copilot	Lightweight	0.25	2	0.6875	none	-	-
+GPT-5.3-Codex	Copilot	Powerful	1.75	14	4.8125	none	-	-
+GPT-5.4 (> 272K)	Copilot	Versatile	5	22.5	9.375	none	-	-
+GPT-5.4 (≤ 272K)	Copilot	Versatile	2.5	15	5.625	none	-	-
+GPT-5.4 mini	Copilot	Lightweight	0.75	4.5	1.6875	none	-	-
+GPT-5.4 nano	Copilot	Lightweight	0.2	1.25	0.4625	none	-	-
+GPT-5.5 (> 272K)	Copilot	Powerful	10	45	18.75	none	-	-
+GPT-5.5 (≤ 272K)	Copilot	Powerful	5	30	11.25	none	-	-
+GPT-5.6 Luna (> 200K)	Copilot	Lightweight	0.4	1.8	0.75	none	-	-
+GPT-5.6 Luna (≤ 200K)	Copilot	Lightweight	0.2	1.2	0.45	none	-	-
+GPT-5.6 Sol (> 272K)	Copilot	Powerful	4	15	6.75	LAPSED	2026-09-03	-
+GPT-5.6 Sol (≤ 272K)	Copilot	Powerful	2	10	4	LAPSED	2026-09-03	-
+GPT-5.6 Terra (> 272K)	Copilot	Versatile	4	18	7.5	none	-	-
+GPT-5.6 Terra (≤ 272K)	Copilot	Versatile	2	12	4.5	none	-	-
+Gemini 3.1 Pro (> 200K)	Copilot	Powerful	4	18	7.5	none	-	2026-09-01
+Gemini 3.1 Pro (≤ 200K)	Copilot	Powerful	2	12	4.5	none	-	2026-09-01
+Gemini 3.5 Flash	Copilot	Lightweight	1.5	9	3.375	none	-	-
+Gemini 3.6 Flash	Copilot	Versatile	0.75	3.75	1.5	promo	2026-12-31	-
+Gemini 3.7 Flash	Copilot	Versatile	0.75	3.75	1.5	promo	2026-12-31	-
+Grok 4.5 (> 200K)	Copilot	Versatile	4	12	6	none	-	-
+Grok 4.5 (≤ 200K)	Copilot	Versatile	2	6	3	none	-	-
+Grok 4.6 (> 200K)	Copilot	Versatile	4	12	6	none	-	-
+Grok 4.6 (≤ 200K)	Copilot	Versatile	2	6	3	none	-	-
+Kimi K2.7 Code	Copilot	Versatile	0.95	4	1.7125	none	-	-
+Kimi K3	Copilot	Powerful	3	15	6	none	-	-
+MAI-Code-1-Flash	Copilot	Lightweight	0.75	4.5	1.6875	none	-	2026-09-10
+MAI-Code-1.1-Flash	Copilot	Lightweight	0.2	1.2	0.45	none	-	-
+Raptor mini	Copilot	Versatile	0.25	2	0.6875	none	-	2026-09-01
