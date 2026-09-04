@@ -19,6 +19,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from datetime import date
 from pathlib import Path
 
 URL = "https://zrrbite.github.io/llm-price-watch/advice.json"
@@ -50,6 +51,14 @@ def load() -> tuple[dict, str]:
         raise SystemExit(f"could not reach {URL} and no usable cache: {exc}")
 
 
+def days_until(iso: str) -> int | None:
+    """Days from today to *iso*; negative if already past, None if unparseable."""
+    try:
+        return (date.fromisoformat(iso) - date.today()).days
+    except (TypeError, ValueError):
+        return None
+
+
 def normalise(text: str) -> str:
     return "".join(c for c in text.lower() if c.isalnum())
 
@@ -75,11 +84,20 @@ def verdict(model: dict) -> list[str]:
     """The warnings, most consequential first. Empty means nothing to flag."""
     out = []
 
-    if model.get("retires"):
-        out.append(
-            f"RETIRES {model['retires']}"
-            + (f" — replacement {model['replacement']}" if model.get("replacement") else "")
-        )
+    retires = model.get("retires")
+    if retires:
+        replacement = f" — replacement {model['replacement']}" if model.get("replacement") else ""
+        days = days_until(retires)
+        if days is None:
+            out.append(f"RETIRES {retires}{replacement}")
+        elif days < 0:
+            # Past tense matters: "RETIRES 2026-05-01" on a date four months
+            # gone reads as a warning about something upcoming.
+            out.append(f"RETIRED {retires}{replacement}")
+        elif days == 0:
+            out.append(f"RETIRES TODAY, {retires}{replacement}")
+        else:
+            out.append(f"RETIRES in {days} day(s), on {retires}{replacement}")
 
     if not model.get("available", True):
         out.append(f"NOT GENERALLY AVAILABLE ({model.get('status')})")

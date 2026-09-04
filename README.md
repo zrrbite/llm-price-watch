@@ -78,15 +78,40 @@ dearer than its class — and stays quiet when there is nothing to say.
 
 It is one folder in the portable `SKILL.md` format, which **Claude Code and
 GitHub Copilot both read from the same personal location**, so one install
-serves both:
+serves both.
+
+### Install
+
+macOS and Linux:
 
 ```bash
-ln -s "$PWD/skill/llm-price-check" ~/.claude/skills/llm-price-check
+curl -sSL https://raw.githubusercontent.com/zrrbite/llm-price-watch/main/skill/install.sh | bash
 ```
 
-Other locations, if you prefer: personal `~/.copilot/skills/` or
-`~/.agents/skills/`; per-project `.github/skills/`, `.claude/skills/` or
-`.agents/skills/` committed alongside the code.
+Windows:
+
+```powershell
+irm https://raw.githubusercontent.com/zrrbite/llm-price-watch/main/skill/install.ps1 | iex
+```
+
+Both default to `~/.claude/skills` (`%USERPROFILE%\.claude\skills`), find a
+working Python, copy the two files, and run a real check so you know whether it
+works *before* you rely on it in a session. Pass a different skills root as the
+first argument — `~/.copilot/skills`, `~/.agents/skills`, or a project's
+`.github/skills` to commit it with the code.
+
+They copy rather than symlink, so the skill keeps working on a machine with no
+checkout of this repo — which is the machine you usually want it on. The
+Windows script prefers the `py` launcher and skips the Microsoft Store `python`
+stub, which otherwise exits without running anything.
+
+Or by hand — it is two files in a folder named `llm-price-check`:
+
+```
+~/.claude/skills/llm-price-check/
+├── SKILL.md
+└── check.py
+```
 
 The skill works two ways so it degrades rather than failing: it runs `check.py`
 when the agent can execute scripts, and otherwise tells the agent to fetch
@@ -162,7 +187,7 @@ the run stays green. To switch it on, add repository secrets `SMTP_HOST`,
 ```bash
 python3 -m venv .venv && .venv/bin/pip install pyyaml
 
-.venv/bin/python -m unittest discover -s tests   # 86 tests, no network
+.venv/bin/python -m unittest discover -s tests   # 94 tests, no network
 .venv/bin/python src/update.py --dry-run         # report, write nothing
 .venv/bin/python src/update.py --cache           # reuse fetches while iterating
 GITHUB_TOKEN=$(gh auth token) .venv/bin/python src/backfill.py

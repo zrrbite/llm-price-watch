@@ -12,7 +12,7 @@ from __future__ import annotations
 import copy
 import sys
 import unittest
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -774,6 +774,68 @@ class TestOverviewRendering(unittest.TestCase):
         snapshot = sources.parse_anthropic(fixture("anthropic-pricing.md"))
         page = render.build_index([], [snapshot], {"last_checked": "x", "problems": []})
         self.assertIn("Nothing on offer", page)
+
+
+def _load_check_script():
+    """Import skill/llm-price-check/check.py, whose folder name is not a
+    valid module name."""
+    import importlib.util
+    path = ROOT / "skill" / "llm-price-check" / "check.py"
+    spec = importlib.util.spec_from_file_location("check_script", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+class TestSkillScript(unittest.TestCase):
+    """The skill's own output wording. Two bugs have landed here — a negative
+    'days left' and a future-tense retirement on a past date — both of which
+    told the user the opposite of the truth while looking fine."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.check = _load_check_script()
+
+    def _verdict(self, **fields):
+        return " | ".join(self.check.verdict(fields))
+
+    def test_a_past_retirement_reads_as_past(self):
+        out = self._verdict(retires="2020-05-01", replacement="Newer")
+        self.assertIn("RETIRED 2020-05-01", out)
+        self.assertNotIn("RETIRES", out)
+        self.assertIn("Newer", out)
+
+    def test_a_future_retirement_reads_as_future_with_a_countdown(self):
+        future = (date.today() + timedelta(days=9)).isoformat()
+        out = self._verdict(retires=future)
+        self.assertIn("RETIRES in 9 day(s)", out)
+
+    def test_a_retirement_today_says_today(self):
+        out = self._verdict(retires=date.today().isoformat())
+        self.assertIn("RETIRES TODAY", out)
+
+    def test_an_unparseable_date_does_not_crash(self):
+        self.assertIn("RETIRES soon-ish", self._verdict(retires="soon-ish"))
+
+    def test_a_lapsed_promo_says_the_price_is_going_up(self):
+        out = self._verdict(on_offer=True, offer_ends="2026-09-03", offer_days_left=-1)
+        self.assertIn("PRICE ABOUT TO REVERT", out)
+        self.assertNotIn("-1 day", out, "a negative countdown is never the right phrasing")
+
+    def test_a_live_promo_counts_down(self):
+        out = self._verdict(on_offer=True, offer_ends="2026-09-03", offer_days_left=3)
+        self.assertIn("PROMO PRICE ENDING in 3 day(s)", out)
+
+    def test_a_lapsed_alternative_is_not_sold_as_a_saving(self):
+        out = self._verdict(cheaper_alternatives=[
+            {"name": "X", "blended": 4.0, "saves_percent": 60.0,
+             "on_offer": True, "offer_lapsed": True},
+        ])
+        self.assertIn("about to rise", out)
+
+    def test_a_clean_model_produces_no_warnings(self):
+        # The quiet case matters: a tool that comments on everything is ignored.
+        self.assertEqual(self.check.verdict({"rank_in_tier": 1, "tier_size": 5}), [])
 
 
 if __name__ == "__main__":
