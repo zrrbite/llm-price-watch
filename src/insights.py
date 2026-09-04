@@ -536,6 +536,10 @@ def build_advice(snapshots: list[dict], changelog: list[dict], today: date | Non
                     "blended": p["blended"],
                     "saves_percent": round((1 - p["blended"] / model["blended"]) * 100, 1),
                     "on_offer": p["on_offer"],
+                    # Without this, the cheapest alternative can be one whose
+                    # promotional price has already expired — recommending a
+                    # saving that is about to evaporate.
+                    "offer_lapsed": (p.get("offer_days_left") or 0) < 0,
                 }
                 for p in cheaper[:3]
             ]

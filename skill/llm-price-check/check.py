@@ -105,8 +105,16 @@ def verdict(model: dict) -> list[str]:
         out.append(f"dear for its class — {rank} of {size} by price in the {model['tier']} tier")
 
     for alt in model.get("cheaper_alternatives", [])[:2]:
-        note = " (itself on a promo price)" if alt.get("on_offer") else ""
-        out.append(f"cheaper same-tier option: {alt['name']} at {money(alt['blended'])} blended, saves {alt['saves_percent']:.0f}%{note}")
+        if alt.get("offer_lapsed"):
+            note = " — WARNING: that price is a lapsed promotion and is about to rise"
+        elif alt.get("on_offer"):
+            note = " (itself on a promo price, so temporary)"
+        else:
+            note = ""
+        out.append(
+            f"cheaper same-tier option: {alt['name']} at {money(alt['blended'])} blended, "
+            f"saves {alt['saves_percent']:.0f}%{note}"
+        )
 
     return out
 
