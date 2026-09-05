@@ -1,7 +1,7 @@
 ---
 name: llm-price-check
-description: Check live LLM pricing before committing to a model. Use when the user names a model to use or switch to, asks what a model costs, asks which model is cheapest or best value for a task, mentions an offer/promo/deal on a model, asks whether a model is being retired or deprecated, or is about to start work whose cost depends on the model chosen.
-argument-hint: "[model name, e.g. opus 5]"
+description: Check live LLM pricing before committing to a model, and recommend one for a kind of work. Use when the user names a model to use or switch to, asks what a model costs, asks which model is cheapest or best value for a task, describes the work rather than naming a model ("something for light work", "what should I use for hard debugging", "cheapest thing that can do bulk classification"), mentions an offer/promo/deal on a model, asks whether a model is being retired or deprecated, or is about to start work whose cost depends on the model chosen.
+argument-hint: "[model name, e.g. opus 5 — or a kind of work, e.g. light work]"
 ---
 
 # Checking a model's price before committing to it
@@ -19,9 +19,12 @@ own published sources twice a day.
 matching and the judgement for you:
 
 ```bash
-python3 ./check.py                # everything current
-python3 ./check.py "opus 5"       # verdict on one model
+python3 ./check.py                     # everything current
+python3 ./check.py "opus 5"            # verdict on one model
 python3 ./check.py --json "sonnet"
+python3 ./check.py --task "light work"  # what to use for a kind of work
+python3 ./check.py --tier Powerful      # same, tier already decided
+python3 ./check.py --vendor Anthropic "opus 5"   # one vendor only
 ```
 
 On Windows use `python ./check.py` — `python3` is frequently not on PATH there.
@@ -42,6 +45,46 @@ Start with `brief.txt`. Only fetch `models.tsv` if you need to compare specific
 models, and `advice.json` only if you need why-cheaper detail.
 
 Run the check **before** confirming a model choice, not after.
+
+## Naming a model
+
+Version numbers are matched exactly, so name the one you mean. `"opus 4"` is
+Opus 4 alone, not Opus 4.1 through 4.8; ask for `"opus 4.5"` to get that one.
+Drop the version to get the whole family: `"opus"` returns all of them, `"kimi"`
+returns both.
+
+Two rows for one model is normal and not a bug — the same model priced by two
+vendors, or one model priced in two context-window bands (`≤ 272K` / `> 272K`).
+Both prices are real. Narrow with `--vendor Anthropic` or `--vendor Copilot`
+when the user can only reach one of them.
+
+## Recommending a model for a kind of work
+
+When the user describes the work instead of naming a model — "light work",
+"something cheap for bulk tagging", "the hard debugging" — recommend rather
+than quote.
+
+**You classify, then ask for the tier.** Judge which tier the work needs and
+pass `--tier Lightweight|Versatile|Powerful|Frontier`. You read the user's
+actual situation; the script only reads keywords.
+
+Use `--task "their words"` when you would rather see the script's own reading
+first, or as a starting point you then override. It prints the tier it chose
+and the words that chose it, so you can see when it has misread. It is a
+keyword match, not a judgement — treat it as a suggestion.
+
+Either way the output ranks the tier's available models by price per vendor,
+drops retired ones, flags any whose price is about to move, and names the
+cheapest model one tier up in case the recommended tier is not enough.
+
+Two things the tiers do not tell you:
+
+- **Tiers are the vendor's own labels, and vendors disagree.** Claude Haiku 4.5
+  is Lightweight at Anthropic and Versatile on Copilot. Same model, same price,
+  different shelf. Recommend within a vendor, not across.
+- **This still knows nothing about capability.** Within a tier it ranks on
+  price alone, newer version first only where prices tie. Do not present the
+  cheapest model in a tier as the best one in it.
 
 ## When to speak up
 
