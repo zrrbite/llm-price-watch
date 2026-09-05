@@ -878,5 +878,167 @@ class TestSkillScript(unittest.TestCase):
         self.assertIn("PRICE ABOUT TO REVERT", text)
 
 
+def _model(name, vendor="Copilot", tier="Versatile", blended=1.0, base=None, **extra):
+    row = {"name": name, "base_name": base or name, "vendor": vendor, "tier": tier,
+           "blended": blended, "input": blended, "output": blended, "available": True}
+    row.update(extra)
+    return row
+
+
+# The catalogue that broke the old matcher: versions one dot apart, a family
+# whose members have differently shaped names, context-window variants, and one
+# model sold by two vendors.
+MODELS = [
+    _model("Claude Opus 4", "Anthropic", "Powerful", 30.0, available=False, status="retired"),
+    _model("Claude Opus 4.5", "Anthropic", "Powerful", 10.0),
+    _model("Claude Opus 4.8", "Anthropic", "Powerful", 10.0),
+    _model("Claude Opus 5", "Anthropic", "Powerful", 10.0),
+    _model("Claude Opus 5", "Copilot", "Powerful", 10.0),
+    _model("Claude Haiku 4.5", "Anthropic", "Lightweight", 2.0),
+    _model("Claude Haiku 4.5", "Copilot", "Versatile", 2.0),
+    _model("GPT-5 mini", "Copilot", "Lightweight", 0.5),
+    _model("GPT-5.4 (> 272K)", "Copilot", "Versatile", 9.0, base="GPT-5.4"),
+    _model("GPT-5.4 (≤ 272K)", "Copilot", "Versatile", 5.0, base="GPT-5.4"),
+    _model("GPT-5.4 mini", "Copilot", "Lightweight", 0.4),
+    _model("Kimi K2.7 Code", "Copilot", "Versatile", 3.0),
+    _model("Kimi K3", "Copilot", "Powerful", 6.0),
+]
+
+
+class TestSkillMatching(unittest.TestCase):
+    """Targeting one model. The old matcher stripped punctuation and then
+    substring-matched, so "opus 4" answered with every Opus from 4 to 4.8 and
+    "gpt-5" with fourteen models — no way to ask about one model and get it."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.check = _load_check_script()
+
+    def _find(self, query, vendor=None):
+        return sorted({m["name"] for m in self.check.find(MODELS, query, vendor)})
+
+    def test_a_version_does_not_match_a_longer_version(self):
+        # The whole bug: "4" is not "4.5", however the dot is normalised.
+        self.assertEqual(self._find("opus 4"), ["Claude Opus 4"])
+
+    def test_a_bare_major_version_does_not_drag_in_point_releases(self):
+        self.assertEqual(self._find("gpt-5"), ["GPT-5 mini"])
+
+    def test_separators_and_spacing_do_not_matter(self):
+        for query in ("opus 5", "opus5", "claude-opus-5", "Claude Opus 5"):
+            self.assertEqual(self._find(query), ["Claude Opus 5"], query)
+
+    def test_a_model_sold_by_two_vendors_returns_both_rows(self):
+        # Two real prices, not a duplicate. Collapsing them would hide one.
+        self.assertEqual(len(self.check.find(MODELS, "opus 5")), 2)
+
+    def test_a_vendor_filter_narrows_to_one_row(self):
+        hits = self.check.find(MODELS, "opus 5", "Anthropic")
+        self.assertEqual([m["vendor"] for m in hits], ["Anthropic"])
+
+    def test_a_family_query_returns_the_whole_family(self):
+        # Both Kimis, though their names are shaped differently. Ranking the
+        # shorter name first here would silently drop the other one.
+        self.assertEqual(self._find("kimi"), ["Kimi K2.7 Code", "Kimi K3"])
+
+    def test_a_pinned_version_beats_a_longer_name_sharing_it(self):
+        self.assertEqual(self._find("gpt 5.4"),
+                         ["GPT-5.4 (> 272K)", "GPT-5.4 (≤ 272K)"])
+
+    def test_the_longer_name_is_still_reachable_by_naming_it(self):
+        self.assertEqual(self._find("gpt 5.4 mini"), ["GPT-5.4 mini"])
+
+    def test_no_match_returns_nothing_rather_than_a_guess(self):
+        self.assertEqual(self._find("llama"), [])
+        self.assertEqual(self._find(""), [])
+
+
+class TestSkillEncoding(unittest.TestCase):
+    """Model names contain U+2264 and the output uses em dashes. On a Windows
+    console, printing either raised UnicodeEncodeError and lost the whole
+    answer — on the platform the skill tells people to run."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.check = _load_check_script()
+
+    def test_output_survives_a_legacy_console_codepage(self):
+        import io
+        stream = io.TextIOWrapper(io.BytesIO(), encoding="cp1252", errors="strict")
+        real = sys.stdout
+        sys.stdout = stream
+        try:
+            self.check.use_utf8_output()
+            self.assertEqual(sys.stdout.encoding.lower().replace("-", ""), "utf8")
+            print(self.check.describe(_model("GPT-5.4 (≤ 272K)", blended=9.0)))
+        finally:
+            sys.stdout = real
+
+
+class TestSkillRecommendation(unittest.TestCase):
+    """Choosing a model from a description of the work."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.check = _load_check_script()
+
+    def test_light_work_lands_in_the_cheapest_tier(self):
+        tier, matched = self.check.classify("just some light work")
+        self.assertEqual(tier, "Lightweight")
+        self.assertIn("light", matched)
+
+    def test_hard_work_lands_in_a_capable_tier(self):
+        self.assertEqual(self.check.classify("hard debugging")[0], "Powerful")
+
+    def test_research_lands_at_the_frontier(self):
+        self.assertEqual(self.check.classify("novel research")[0], "Frontier")
+
+    def test_an_unrecognised_description_defaults_and_says_it_defaulted(self):
+        # An empty match list is how the caller knows it was a default rather
+        # than a reading of the request.
+        self.assertEqual(self.check.classify("do the thing"), ("Versatile", []))
+
+    def test_a_tie_goes_to_the_cheaper_tier(self):
+        # "cheap" is Lightweight, "coding" is Versatile, one word each.
+        # Overspending on work that did not need it is the costlier mistake.
+        self.assertEqual(self.check.classify("cheap coding")[0], "Lightweight")
+
+    def _rank(self, tier, vendor=None):
+        groups = self.check._candidates(MODELS, tier, vendor)
+        return {v: [m["name"] for m in rows] for v, rows in groups.items()}
+
+    def test_a_retired_model_is_never_recommended(self):
+        self.assertNotIn("Claude Opus 4", self._rank("Powerful")["Anthropic"])
+
+    def test_candidates_are_ordered_by_price(self):
+        self.assertEqual(self._rank("Versatile", "Copilot"),
+                         {"Copilot": ["Claude Haiku 4.5", "Kimi K2.7 Code",
+                                      "GPT-5.4 (≤ 272K)", "GPT-5.4 (> 272K)"]})
+
+    def test_equal_prices_put_the_newer_version_first(self):
+        # All three are $10. Heading the list with 4.5 because it comes first
+        # in the feed is advice nobody wants.
+        self.assertEqual(self._rank("Powerful", "Anthropic")["Anthropic"],
+                         ["Claude Opus 5", "Claude Opus 4.8", "Claude Opus 4.5"])
+
+    def test_vendors_are_not_merged_across_disagreeing_tiers(self):
+        # Haiku 4.5 is Lightweight at Anthropic and Versatile on Copilot.
+        self.assertEqual(self._rank("Lightweight"),
+                         {"Anthropic": ["Claude Haiku 4.5"],
+                          "Copilot": ["GPT-5.4 mini", "GPT-5 mini"]})
+
+    def test_the_recommendation_names_the_next_tier_up(self):
+        data = {"models": MODELS}
+        text = self.check.recommend(data, "Lightweight")
+        self.assertIn("Claude Haiku 4.5", text)
+        self.assertIn("If Lightweight is not enough", text)
+        self.assertIn("Versatile", text)
+
+    def test_the_top_tier_offers_no_step_up(self):
+        text = self.check.recommend({"models": MODELS}, "Frontier")
+        self.assertNotIn("is not enough", text)
+        self.assertIn("no available models", text)
+
+
 if __name__ == "__main__":
     unittest.main()
