@@ -1,7 +1,23 @@
 {
   "schema": 1,
-  "count": 144,
+  "count": 146,
   "entries": [
+    {
+      "id": "dd7997cd64de9cbc",
+      "date": "2026-09-05",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-6 Astra (≤ 272K)",
+      "summary": "GPT-6 Astra (≤ 272K) added"
+    },
+    {
+      "id": "99b47982b4bced46",
+      "date": "2026-09-05",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-6 Astra (> 272K)",
+      "summary": "GPT-6 Astra (> 272K) added"
+    },
     {
       "id": "f295b77c5b852b78",
       "date": "2026-09-04",

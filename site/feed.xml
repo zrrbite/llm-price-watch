@@ -5,7 +5,14 @@
   <link href="https://zrrbite.github.io/llm-price-watch/"/>
   <link rel="self" href="https://zrrbite.github.io/llm-price-watch/feed.xml"/>
   <id>tag:zrrbite.github.io,2026:llm-price-watch</id>
-  <updated>2026-09-04T18:27:42Z</updated>
+  <updated>2026-09-05T06:34:18Z</updated>
+  <entry>
+    <title>2026-09-05: 2 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-09-05</id>
+    <updated>2026-09-05T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;GPT-6 Astra (≤ 272K) added&lt;/li&gt;&lt;li&gt;GPT-6 Astra (&amp;gt; 272K) added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>2026-09-04: 20 pricing changes</title>
     <link href="https://zrrbite.github.io/llm-price-watch/"/>

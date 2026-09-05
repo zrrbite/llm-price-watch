@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04T18:27:42Z",
+  "generated": "2026-09-05T06:34:18Z",
   "site": "https://zrrbite.github.io/llm-price-watch/",
   "units": "USD per million tokens",
   "blended_formula": "0.75*input + 0.25*output",
@@ -359,7 +359,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 10,
-      "tier_size": 12,
+      "tier_size": 14,
       "cheaper_alternatives": [
         {
           "name": "GPT-5.3-Codex",
@@ -401,7 +401,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 11,
-      "tier_size": 12,
+      "tier_size": 14,
       "cheaper_alternatives": [
         {
           "name": "GPT-5.3-Codex",
@@ -485,7 +485,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 4,
-      "tier_size": 12,
+      "tier_size": 14,
       "cheaper_alternatives": [
         {
           "name": "GPT-5.3-Codex",
@@ -527,7 +527,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 5,
-      "tier_size": 12,
+      "tier_size": 14,
       "cheaper_alternatives": [
         {
           "name": "GPT-5.3-Codex",
@@ -569,7 +569,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 12,
-      "tier_size": 12,
+      "tier_size": 14,
       "cheaper_alternatives": [
         {
           "name": "GPT-5.3-Codex",
@@ -611,7 +611,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 6,
-      "tier_size": 12,
+      "tier_size": 14,
       "cheaper_alternatives": [
         {
           "name": "GPT-5.3-Codex",
@@ -821,7 +821,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 1,
-      "tier_size": 12,
+      "tier_size": 14,
       "cheaper_alternatives": []
     },
     {
@@ -987,7 +987,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 9,
-      "tier_size": 12,
+      "tier_size": 14,
       "cheaper_alternatives": [
         {
           "name": "GPT-5.3-Codex",
@@ -1029,7 +1029,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 7,
-      "tier_size": 12,
+      "tier_size": 14,
       "cheaper_alternatives": [
         {
           "name": "GPT-5.3-Codex",
@@ -1126,7 +1126,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 8,
-      "tier_size": 12,
+      "tier_size": 14,
       "cheaper_alternatives": [
         {
           "name": "GPT-5.3-Codex",
@@ -1168,7 +1168,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 3,
-      "tier_size": 12,
+      "tier_size": 14,
       "cheaper_alternatives": [
         {
           "name": "GPT-5.3-Codex",
@@ -1271,6 +1271,90 @@
       ]
     },
     {
+      "name": "GPT-6 Astra (> 272K)",
+      "base_name": "GPT-6 Astra",
+      "vendor": "Copilot",
+      "tier": "Powerful",
+      "input": 20.0,
+      "output": 75.0,
+      "blended": 33.75,
+      "available": true,
+      "status": "GA",
+      "on_offer": false,
+      "offer_ends": null,
+      "offer_days_left": null,
+      "offer_text": null,
+      "retires": null,
+      "replacement": null,
+      "rank_in_tier": 14,
+      "tier_size": 14,
+      "cheaper_alternatives": [
+        {
+          "name": "GPT-5.3-Codex",
+          "blended": 4.8125,
+          "saves_percent": 85.7,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Kimi K3",
+          "blended": 6.0,
+          "saves_percent": 82.2,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "GPT-5.6 Sol (≤ 272K)",
+          "blended": 8.0,
+          "saves_percent": 76.3,
+          "on_offer": false,
+          "offer_lapsed": false
+        }
+      ]
+    },
+    {
+      "name": "GPT-6 Astra (≤ 272K)",
+      "base_name": "GPT-6 Astra",
+      "vendor": "Copilot",
+      "tier": "Powerful",
+      "input": 10.0,
+      "output": 50.0,
+      "blended": 20.0,
+      "available": true,
+      "status": "GA",
+      "on_offer": false,
+      "offer_ends": null,
+      "offer_days_left": null,
+      "offer_text": null,
+      "retires": null,
+      "replacement": null,
+      "rank_in_tier": 13,
+      "tier_size": 14,
+      "cheaper_alternatives": [
+        {
+          "name": "GPT-5.3-Codex",
+          "blended": 4.8125,
+          "saves_percent": 75.9,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Kimi K3",
+          "blended": 6.0,
+          "saves_percent": 70.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "GPT-5.6 Sol (≤ 272K)",
+          "blended": 8.0,
+          "saves_percent": 60.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        }
+      ]
+    },
+    {
       "name": "Gemini 3.5 Flash",
       "base_name": "Gemini 3.5 Flash",
       "vendor": "Copilot",
@@ -1324,7 +1408,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 118,
+      "offer_days_left": 117,
       "offer_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
@@ -1344,7 +1428,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 118,
+      "offer_days_left": 117,
       "offer_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
@@ -1364,7 +1448,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 118,
+      "offer_days_left": 117,
       "offer_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
@@ -1599,7 +1683,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 2,
-      "tier_size": 12,
+      "tier_size": 14,
       "cheaper_alternatives": [
         {
           "name": "GPT-5.3-Codex",
@@ -1684,7 +1768,7 @@
       ],
       "lapsed": false,
       "expires": "2026-12-31",
-      "days_left": 118,
+      "days_left": 117,
       "text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026."
     },
     {
@@ -1723,7 +1807,7 @@
     {
       "model": "MAI-Code-1-Flash",
       "date": "2026-09-10",
-      "days_left": 6,
+      "days_left": 5,
       "alternative": "MAI-Code-1.1-Flash"
     }
   ],
