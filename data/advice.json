@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-09T18:30:12Z",
+  "generated": "2026-09-10T06:38:54Z",
   "site": "https://zrrbite.github.io/llm-price-watch/",
   "units": "USD per million tokens",
   "blended_formula": "0.75*input + 0.25*output",
@@ -1408,7 +1408,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 113,
+      "offer_days_left": 112,
       "offer_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
@@ -1428,7 +1428,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 113,
+      "offer_days_left": 112,
       "offer_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
@@ -1448,7 +1448,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 113,
+      "offer_days_left": 112,
       "offer_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
@@ -1768,7 +1768,7 @@
       ],
       "lapsed": false,
       "expires": "2026-12-31",
-      "days_left": 113,
+      "days_left": 112,
       "text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026."
     },
     {
@@ -1807,7 +1807,7 @@
     {
       "model": "MAI-Code-1-Flash",
       "date": "2026-09-10",
-      "days_left": 1,
+      "days_left": 0,
       "alternative": "MAI-Code-1.1-Flash"
     }
   ],
