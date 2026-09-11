@@ -2,7 +2,7 @@
   "source": "copilot-deprecations",
   "title": "GitHub Copilot — model retirements",
   "url": "https://github.com/github/docs/blob/main/data/tables/copilot/model-deprecation-history.yml",
-  "fetched": "2026-09-10T18:28:12Z",
+  "fetched": "2026-09-11T06:38:06Z",
   "floor": 3,
   "rows": [
     {
@@ -198,7 +198,7 @@
       "key": "Raptor mini",
       "values": {
         "retirement_date": "2026-09-01",
-        "suggested_alternative": "MAI-Code-1-Flash"
+        "suggested_alternative": "MAI-Code-1.1-Flash"
       }
     },
     {

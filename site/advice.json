@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T18:28:12Z",
+  "generated": "2026-09-11T06:38:06Z",
   "site": "https://zrrbite.github.io/llm-price-watch/",
   "units": "USD per million tokens",
   "blended_formula": "0.75*input + 0.25*output",
@@ -779,7 +779,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 4,
-      "tier_size": 8,
+      "tier_size": 7,
       "cheaper_alternatives": [
         {
           "name": "GPT-5.6 Luna (≤ 200K)",
@@ -925,7 +925,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 6,
-      "tier_size": 8,
+      "tier_size": 7,
       "cheaper_alternatives": [
         {
           "name": "GPT-5.6 Luna (≤ 200K)",
@@ -967,7 +967,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 3,
-      "tier_size": 8,
+      "tier_size": 7,
       "cheaper_alternatives": []
     },
     {
@@ -1071,7 +1071,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 5,
-      "tier_size": 8,
+      "tier_size": 7,
       "cheaper_alternatives": [
         {
           "name": "MAI-Code-1.1-Flash",
@@ -1106,7 +1106,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 1,
-      "tier_size": 8,
+      "tier_size": 7,
       "cheaper_alternatives": []
     },
     {
@@ -1370,8 +1370,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 8,
-      "tier_size": 8,
+      "rank_in_tier": 7,
+      "tier_size": 7,
       "cheaper_alternatives": [
         {
           "name": "GPT-5.6 Luna (≤ 200K)",
@@ -1408,7 +1408,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 112,
+      "offer_days_left": 111,
       "offer_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
@@ -1428,7 +1428,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 112,
+      "offer_days_left": 111,
       "offer_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
@@ -1448,7 +1448,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 112,
+      "offer_days_left": 111,
       "offer_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
@@ -1695,48 +1695,6 @@
       ]
     },
     {
-      "name": "MAI-Code-1-Flash",
-      "base_name": "MAI-Code-1-Flash",
-      "vendor": "Copilot",
-      "tier": "Lightweight",
-      "input": 0.75,
-      "output": 4.5,
-      "blended": 1.6875,
-      "available": true,
-      "status": "GA",
-      "on_offer": false,
-      "offer_ends": null,
-      "offer_days_left": null,
-      "offer_text": null,
-      "retires": "2026-09-10",
-      "replacement": "MAI-Code-1.1-Flash",
-      "rank_in_tier": 7,
-      "tier_size": 8,
-      "cheaper_alternatives": [
-        {
-          "name": "GPT-5.6 Luna (≤ 200K)",
-          "blended": 0.45,
-          "saves_percent": 73.3,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
-        {
-          "name": "MAI-Code-1.1-Flash",
-          "blended": 0.45,
-          "saves_percent": 73.3,
-          "on_offer": false,
-          "offer_lapsed": false
-        },
-        {
-          "name": "GPT-5.4 nano",
-          "blended": 0.4625,
-          "saves_percent": 72.6,
-          "on_offer": false,
-          "offer_lapsed": false
-        }
-      ]
-    },
-    {
       "name": "MAI-Code-1.1-Flash",
       "base_name": "MAI-Code-1.1-Flash",
       "vendor": "Copilot",
@@ -1753,7 +1711,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 2,
-      "tier_size": 8,
+      "tier_size": 7,
       "cheaper_alternatives": []
     }
   ],
@@ -1768,7 +1726,7 @@
       ],
       "lapsed": false,
       "expires": "2026-12-31",
-      "days_left": 112,
+      "days_left": 111,
       "text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026."
     },
     {
@@ -1803,14 +1761,7 @@
       "text": "input fell 20% from $2.5 to $2 on 2026-07-30, and is still there."
     }
   ],
-  "retiring_soon": [
-    {
-      "model": "MAI-Code-1-Flash",
-      "date": "2026-09-10",
-      "days_left": 0,
-      "alternative": "MAI-Code-1.1-Flash"
-    }
-  ],
+  "retiring_soon": [],
   "cheapest_by_tier": {
     "Anthropic/Lightweight": {
       "model": "Claude Haiku 4.5",

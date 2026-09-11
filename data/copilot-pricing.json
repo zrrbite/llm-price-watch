@@ -2,7 +2,7 @@
   "source": "copilot-pricing",
   "title": "GitHub Copilot — usage-based token pricing",
   "url": "https://github.com/github/docs/blob/main/data/tables/copilot/models-and-pricing.yml",
-  "fetched": "2026-09-10T18:28:12Z",
+  "fetched": "2026-09-11T06:38:06Z",
   "floor": 15,
   "rows": [
     {
@@ -428,17 +428,6 @@
         "provider": "moonshot_ai",
         "release_status": "GA",
         "category": "Powerful"
-      }
-    },
-    {
-      "key": "MAI-Code-1-Flash",
-      "values": {
-        "input": 0.75,
-        "cached_input": 0.075,
-        "output": 4.5,
-        "provider": "microsoft",
-        "release_status": "GA",
-        "category": "Lightweight"
       }
     },
     {

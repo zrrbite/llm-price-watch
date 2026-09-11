@@ -1,7 +1,38 @@
 {
   "schema": 1,
-  "count": 146,
+  "count": 149,
   "entries": [
+    {
+      "id": "f4464e9e64c43f74",
+      "date": "2026-09-11",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Raptor mini",
+      "summary": "Raptor mini: suggested_alternative MAI-Code-1-Flash → MAI-Code-1.1-Flash",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "MAI-Code-1-Flash",
+          "new": "MAI-Code-1.1-Flash"
+        }
+      ]
+    },
+    {
+      "id": "f2de456d22896f0d",
+      "date": "2026-09-11",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "MAI-Code-1-Flash",
+      "summary": "MAI-Code-1-Flash removed"
+    },
+    {
+      "id": "e22e7fbf89fb6e76",
+      "date": "2026-09-11",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "MAI-Code-1-Flash",
+      "summary": "MAI-Code-1-Flash removed"
+    },
     {
       "id": "dd7997cd64de9cbc",
       "date": "2026-09-05",

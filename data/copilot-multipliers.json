@@ -2,7 +2,7 @@
   "source": "copilot-multipliers",
   "title": "GitHub Copilot — legacy premium-request multipliers",
   "url": "https://github.com/github/docs/blob/main/data/tables/copilot/annual-subscriber-model-multipliers.yml",
-  "fetched": "2026-09-10T18:28:12Z",
+  "fetched": "2026-09-11T06:38:06Z",
   "floor": 10,
   "rows": [
     {
@@ -105,12 +105,6 @@
       "key": "Gemini 3.5 Flash",
       "values": {
         "multiplier": 14.0
-      }
-    },
-    {
-      "key": "MAI-Code-1-Flash",
-      "values": {
-        "multiplier": 0.33
       }
     },
     {
