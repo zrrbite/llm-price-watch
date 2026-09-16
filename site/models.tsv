@@ -1,4 +1,4 @@
-# llm-price-watch  generated=2026-09-16T06:40:00Z  USD per million tokens
+# llm-price-watch  generated=2026-09-16T18:29:37Z  USD per million tokens
 # blended=0.75*input + 0.25*output  class=vendor's own capability tier
 # offer: none | promo | LAPSED (past its end date, price not yet reverted)
 model	vendor	class	in	out	blended	offer	ends	retires
@@ -16,7 +16,7 @@ Claude Sonnet 5	Anthropic	Versatile	2	10	4	none	-	-
 Claude Fable 5	Copilot	Powerful	10	50	20	none	-	-
 Claude Fable 5.1	Copilot	Powerful	10	50	20	none	-	-
 Claude Haiku 4.5	Copilot	Versatile	1	5	2	none	-	-
-Claude Opus 4.7	Copilot	Powerful	5	25	10	none	-	-
+Claude Opus 4.7	Copilot	Powerful	5	25	10	none	-	2026-10-02
 Claude Opus 4.8	Copilot	Powerful	5	25	10	none	-	-
 Claude Opus 4.8 (fast mode) (preview)	Copilot	Powerful	10	50	20	none	-	-
 Claude Opus 5	Copilot	Powerful	5	25	10	none	-	-
@@ -39,14 +39,14 @@ GPT-5.6 Terra (> 272K)	Copilot	Versatile	4	18	7.5	none	-	-
 GPT-5.6 Terra (≤ 272K)	Copilot	Versatile	2	12	4.5	none	-	-
 GPT-6 Astra (> 272K)	Copilot	Powerful	20	75	33.75	none	-	-
 GPT-6 Astra (≤ 272K)	Copilot	Powerful	10	50	20	none	-	-
-Gemini 3.5 Flash	Copilot	Lightweight	1.5	9	3.375	none	-	-
-Gemini 3.6 Flash	Copilot	Versatile	0.75	3.75	1.5	promo	2026-12-31	-
+Gemini 3.5 Flash	Copilot	Lightweight	1.5	9	3.375	none	-	2026-10-02
+Gemini 3.6 Flash	Copilot	Versatile	0.75	3.75	1.5	promo	2026-12-31	2026-10-02
 Gemini 3.7 Flash	Copilot	Versatile	0.75	3.75	1.5	promo	2026-12-31	-
 Gemini 3.8 Flash	Copilot	Versatile	0.75	3.75	1.5	promo	2026-12-31	-
 Grok 4.5 (> 200K)	Copilot	Versatile	4	12	6	none	-	-
 Grok 4.5 (≤ 200K)	Copilot	Versatile	2	6	3	none	-	-
 Grok 4.6 (> 200K)	Copilot	Versatile	4	12	6	none	-	-
 Grok 4.6 (≤ 200K)	Copilot	Versatile	2	6	3	none	-	-
-Kimi K2.7 Code	Copilot	Versatile	0.95	4	1.7125	none	-	-
+Kimi K2.7 Code	Copilot	Versatile	0.95	4	1.7125	none	-	2026-10-02
 Kimi K3	Copilot	Powerful	3	15	6	none	-	-
 MAI-Code-1.1-Flash	Copilot	Lightweight	0.2	1.2	0.45	none	-	-

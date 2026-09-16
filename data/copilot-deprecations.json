@@ -2,7 +2,7 @@
   "source": "copilot-deprecations",
   "title": "GitHub Copilot — model retirements",
   "url": "https://github.com/github/docs/blob/main/data/tables/copilot/model-deprecation-history.yml",
-  "fetched": "2026-09-16T06:40:00Z",
+  "fetched": "2026-09-16T18:29:37Z",
   "floor": 3,
   "rows": [
     {
@@ -38,6 +38,13 @@
       "values": {
         "retirement_date": "2026-06-29",
         "suggested_alternative": "Claude Opus 4.8 (fast mode) (preview)"
+      }
+    },
+    {
+      "key": "Claude Opus 4.7",
+      "values": {
+        "retirement_date": "2026-10-02",
+        "suggested_alternative": "Claude Opus 5"
       }
     },
     {
@@ -181,10 +188,31 @@
       }
     },
     {
+      "key": "Gemini 3.5 Flash",
+      "values": {
+        "retirement_date": "2026-10-02",
+        "suggested_alternative": "Gemini 3.8 Flash"
+      }
+    },
+    {
+      "key": "Gemini 3.6 Flash",
+      "values": {
+        "retirement_date": "2026-10-02",
+        "suggested_alternative": "Gemini 3.8 Flash"
+      }
+    },
+    {
       "key": "Grok Code Fast 1",
       "values": {
         "retirement_date": "2026-05-15",
         "suggested_alternative": "GPT-5 mini"
+      }
+    },
+    {
+      "key": "Kimi K2.7 Code",
+      "values": {
+        "retirement_date": "2026-10-02",
+        "suggested_alternative": "Kimi K3"
       }
     },
     {

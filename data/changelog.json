@@ -1,7 +1,39 @@
 {
   "schema": 1,
-  "count": 149,
+  "count": 153,
   "entries": [
+    {
+      "id": "fee9d98157a9de0f",
+      "date": "2026-09-16",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Claude Opus 4.7",
+      "summary": "Claude Opus 4.7 added"
+    },
+    {
+      "id": "7b7d19de0f758a2e",
+      "date": "2026-09-16",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Gemini 3.5 Flash",
+      "summary": "Gemini 3.5 Flash added"
+    },
+    {
+      "id": "7352accebce74917",
+      "date": "2026-09-16",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Kimi K2.7 Code",
+      "summary": "Kimi K2.7 Code added"
+    },
+    {
+      "id": "1c903d8ba5ef3ac7",
+      "date": "2026-09-16",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Gemini 3.6 Flash",
+      "summary": "Gemini 3.6 Flash added"
+    },
     {
       "id": "f4464e9e64c43f74",
       "date": "2026-09-11",
