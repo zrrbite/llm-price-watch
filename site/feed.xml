@@ -5,7 +5,14 @@
   <link href="https://zrrbite.github.io/llm-price-watch/"/>
   <link rel="self" href="https://zrrbite.github.io/llm-price-watch/feed.xml"/>
   <id>tag:zrrbite.github.io,2026:llm-price-watch</id>
-  <updated>2026-09-21T06:50:11Z</updated>
+  <updated>2026-09-21T18:30:36Z</updated>
+  <entry>
+    <title>2026-09-21: 9 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-09-21</id>
+    <updated>2026-09-21T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Claude Opus 4&lt;/strong&gt; — suggested_alternative &lt;code&gt;Claude Opus 4.6&lt;/code&gt; → &lt;code&gt;Claude Opus 5&lt;/code&gt;&lt;/li&gt;&lt;li&gt;Grok 4.7 (&amp;gt; 200K) added&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Gemini 3 Pro&lt;/strong&gt; — suggested_alternative &lt;code&gt;Gemini 3.1 Pro&lt;/code&gt; → &lt;code&gt;Gemini 3.8 Flash&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Gemini 2.5 Pro&lt;/strong&gt; — suggested_alternative &lt;code&gt;Gemini 3.1 Pro&lt;/code&gt; → &lt;code&gt;Gemini 3.8 Flash&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Gemini 2.0 Flash&lt;/strong&gt; — suggested_alternative &lt;code&gt;Gemini 2.5 Pro&lt;/code&gt; → &lt;code&gt;Gemini 3.8 Flash&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.2-Codex&lt;/strong&gt; — retirement_date &lt;code&gt;2026-06-01&lt;/code&gt; → &lt;code&gt;2026-06-05&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Claude Opus 4.1&lt;/strong&gt; — suggested_alternative &lt;code&gt;Claude Opus 4.6&lt;/code&gt; → &lt;code&gt;Claude Opus 5&lt;/code&gt;&lt;/li&gt;&lt;li&gt;Grok 4.7 (≤ 200K) added&lt;/li&gt;&lt;li&gt;&lt;strong&gt;GPT-5.2&lt;/strong&gt; — retirement_date &lt;code&gt;2026-06-01&lt;/code&gt; → &lt;code&gt;2026-06-05&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>2026-09-16: 4 pricing changes</title>
     <link href="https://zrrbite.github.io/llm-price-watch/"/>

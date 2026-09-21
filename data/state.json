@@ -1,11 +1,11 @@
 {
-  "last_checked": "2026-09-21T06:50:11Z",
+  "last_checked": "2026-09-21T18:30:36Z",
   "problems": [],
   "sources": {
     "anthropic": 17,
-    "copilot-pricing": 37,
+    "copilot-pricing": 39,
     "copilot-multipliers": 18,
     "copilot-deprecations": 36
   },
-  "changelog_entries": 153
+  "changelog_entries": 162
 }

@@ -2,21 +2,21 @@
   "source": "copilot-deprecations",
   "title": "GitHub Copilot — model retirements",
   "url": "https://github.com/github/docs/blob/main/data/tables/copilot/model-deprecation-history.yml",
-  "fetched": "2026-09-21T06:50:11Z",
+  "fetched": "2026-09-21T18:30:36Z",
   "floor": 3,
   "rows": [
     {
       "key": "Claude Opus 4",
       "values": {
         "retirement_date": "2025-10-23",
-        "suggested_alternative": "Claude Opus 4.6"
+        "suggested_alternative": "Claude Opus 5"
       }
     },
     {
       "key": "Claude Opus 4.1",
       "values": {
         "retirement_date": "2026-02-17",
-        "suggested_alternative": "Claude Opus 4.6"
+        "suggested_alternative": "Claude Opus 5"
       }
     },
     {
@@ -141,14 +141,14 @@
     {
       "key": "GPT-5.2",
       "values": {
-        "retirement_date": "2026-06-01",
+        "retirement_date": "2026-06-05",
         "suggested_alternative": "GPT-5.5"
       }
     },
     {
       "key": "GPT-5.2-Codex",
       "values": {
-        "retirement_date": "2026-06-01",
+        "retirement_date": "2026-06-05",
         "suggested_alternative": "GPT-5.3-Codex"
       }
     },
@@ -156,14 +156,14 @@
       "key": "Gemini 2.0 Flash",
       "values": {
         "retirement_date": "2025-10-23",
-        "suggested_alternative": "Gemini 2.5 Pro"
+        "suggested_alternative": "Gemini 3.8 Flash"
       }
     },
     {
       "key": "Gemini 2.5 Pro",
       "values": {
         "retirement_date": "2026-07-31",
-        "suggested_alternative": "Gemini 3.1 Pro"
+        "suggested_alternative": "Gemini 3.8 Flash"
       }
     },
     {
@@ -177,7 +177,7 @@
       "key": "Gemini 3 Pro",
       "values": {
         "retirement_date": "2026-03-26",
-        "suggested_alternative": "Gemini 3.1 Pro"
+        "suggested_alternative": "Gemini 3.8 Flash"
       }
     },
     {

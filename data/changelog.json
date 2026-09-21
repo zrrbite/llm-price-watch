@@ -1,7 +1,128 @@
 {
   "schema": 1,
-  "count": 153,
+  "count": 162,
   "entries": [
+    {
+      "id": "f08677f81c56589a",
+      "date": "2026-09-21",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Opus 4",
+      "summary": "Claude Opus 4: suggested_alternative Claude Opus 4.6 → Claude Opus 5",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Opus 4.6",
+          "new": "Claude Opus 5"
+        }
+      ]
+    },
+    {
+      "id": "bbed00b8ba8b5eb1",
+      "date": "2026-09-21",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Grok 4.7 (> 200K)",
+      "summary": "Grok 4.7 (> 200K) added"
+    },
+    {
+      "id": "b15d42ffbcaa11c5",
+      "date": "2026-09-21",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Gemini 3 Pro",
+      "summary": "Gemini 3 Pro: suggested_alternative Gemini 3.1 Pro → Gemini 3.8 Flash",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Gemini 3.1 Pro",
+          "new": "Gemini 3.8 Flash"
+        }
+      ]
+    },
+    {
+      "id": "aa53cd08d61a9bca",
+      "date": "2026-09-21",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Gemini 2.5 Pro",
+      "summary": "Gemini 2.5 Pro: suggested_alternative Gemini 3.1 Pro → Gemini 3.8 Flash",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Gemini 3.1 Pro",
+          "new": "Gemini 3.8 Flash"
+        }
+      ]
+    },
+    {
+      "id": "a81e9c6151a6f188",
+      "date": "2026-09-21",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Gemini 2.0 Flash",
+      "summary": "Gemini 2.0 Flash: suggested_alternative Gemini 2.5 Pro → Gemini 3.8 Flash",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Gemini 2.5 Pro",
+          "new": "Gemini 3.8 Flash"
+        }
+      ]
+    },
+    {
+      "id": "a2cd2a8adfecec23",
+      "date": "2026-09-21",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "GPT-5.2-Codex",
+      "summary": "GPT-5.2-Codex: retirement_date 2026-06-01 → 2026-06-05",
+      "fields": [
+        {
+          "field": "retirement_date",
+          "old": "2026-06-01",
+          "new": "2026-06-05"
+        }
+      ]
+    },
+    {
+      "id": "93ce8702a586b80b",
+      "date": "2026-09-21",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Opus 4.1",
+      "summary": "Claude Opus 4.1: suggested_alternative Claude Opus 4.6 → Claude Opus 5",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Opus 4.6",
+          "new": "Claude Opus 5"
+        }
+      ]
+    },
+    {
+      "id": "93c1a500753238c4",
+      "date": "2026-09-21",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Grok 4.7 (≤ 200K)",
+      "summary": "Grok 4.7 (≤ 200K) added"
+    },
+    {
+      "id": "1156e0889d0c415d",
+      "date": "2026-09-21",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "GPT-5.2",
+      "summary": "GPT-5.2: retirement_date 2026-06-01 → 2026-06-05",
+      "fields": [
+        {
+          "field": "retirement_date",
+          "old": "2026-06-01",
+          "new": "2026-06-05"
+        }
+      ]
+    },
     {
       "id": "fee9d98157a9de0f",
       "date": "2026-09-16",

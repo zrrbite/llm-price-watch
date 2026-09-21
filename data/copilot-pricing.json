@@ -2,7 +2,7 @@
   "source": "copilot-pricing",
   "title": "GitHub Copilot — usage-based token pricing",
   "url": "https://github.com/github/docs/blob/main/data/tables/copilot/models-and-pricing.yml",
-  "fetched": "2026-09-21T06:50:11Z",
+  "fetched": "2026-09-21T18:30:36Z",
   "floor": 15,
   "rows": [
     {
@@ -399,6 +399,28 @@
     },
     {
       "key": "Grok 4.6 (≤ 200K)",
+      "values": {
+        "input": 2.0,
+        "cached_input": 0.5,
+        "output": 6.0,
+        "provider": "xai",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "Grok 4.7 (> 200K)",
+      "values": {
+        "input": 4.0,
+        "cached_input": 1.0,
+        "output": 12.0,
+        "provider": "xai",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "Grok 4.7 (≤ 200K)",
       "values": {
         "input": 2.0,
         "cached_input": 0.5,
