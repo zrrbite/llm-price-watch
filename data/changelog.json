@@ -1,7 +1,15 @@
 {
   "schema": 1,
-  "count": 162,
+  "count": 163,
   "entries": [
+    {
+      "id": "eef8df52a5833329",
+      "date": "2026-09-22",
+      "source": "anthropic",
+      "class": "model_added",
+      "key": "Claude Opus 5.5",
+      "summary": "Claude Opus 5.5 added"
+    },
     {
       "id": "f08677f81c56589a",
       "date": "2026-09-21",

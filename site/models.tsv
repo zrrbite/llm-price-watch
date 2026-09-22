@@ -1,4 +1,4 @@
-# llm-price-watch  generated=2026-09-22T06:39:41Z  USD per million tokens
+# llm-price-watch  generated=2026-09-22T18:31:30Z  USD per million tokens
 # blended=0.75*input + 0.25*output  class=vendor's own capability tier
 # offer: none | promo | LAPSED (past its end date, price not yet reverted)
 model	vendor	class	in	out	blended	offer	ends	retires
@@ -10,6 +10,7 @@ Claude Opus 4.6	Anthropic	Powerful	5	25	10	none	-	-
 Claude Opus 4.7	Anthropic	Powerful	5	25	10	none	-	-
 Claude Opus 4.8	Anthropic	Powerful	5	25	10	none	-	-
 Claude Opus 5	Anthropic	Powerful	5	25	10	none	-	-
+Claude Opus 5.5	Anthropic	Powerful	4	20	8	none	-	-
 Claude Sonnet 4.5	Anthropic	Versatile	3	15	6	none	-	-
 Claude Sonnet 4.6	Anthropic	Versatile	3	15	6	none	-	-
 Claude Sonnet 5	Anthropic	Versatile	2	10	4	none	-	-

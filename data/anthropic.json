@@ -2,7 +2,7 @@
   "source": "anthropic",
   "title": "Anthropic API pricing",
   "url": "https://platform.claude.com/docs/en/about-claude/pricing",
-  "fetched": "2026-09-22T06:39:40Z",
+  "fetched": "2026-09-22T18:31:29Z",
   "floor": 10,
   "rows": [
     {
@@ -164,6 +164,18 @@
         "output": 25.0,
         "batch_input": 2.5,
         "batch_output": 12.5
+      }
+    },
+    {
+      "key": "Claude Opus 5.5",
+      "values": {
+        "input": 4.0,
+        "cache_write_5m": 5.0,
+        "cache_write_1h": 8.0,
+        "cache_read": 0.2,
+        "output": 20.0,
+        "batch_input": 2.0,
+        "batch_output": 10.0
       }
     },
     {

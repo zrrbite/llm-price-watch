@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-22T06:39:41Z",
+  "generated": "2026-09-22T18:31:30Z",
   "site": "https://zrrbite.github.io/llm-price-watch/",
   "units": "USD per million tokens",
   "blended_formula": "0.75*input + 0.25*output",
@@ -165,9 +165,17 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 1,
-      "tier_size": 5,
-      "cheaper_alternatives": []
+      "rank_in_tier": 2,
+      "tier_size": 6,
+      "cheaper_alternatives": [
+        {
+          "name": "Claude Opus 5.5",
+          "blended": 8.0,
+          "saves_percent": 20.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        }
+      ]
     },
     {
       "name": "Claude Opus 4.6",
@@ -185,9 +193,17 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 2,
-      "tier_size": 5,
-      "cheaper_alternatives": []
+      "rank_in_tier": 3,
+      "tier_size": 6,
+      "cheaper_alternatives": [
+        {
+          "name": "Claude Opus 5.5",
+          "blended": 8.0,
+          "saves_percent": 20.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        }
+      ]
     },
     {
       "name": "Claude Opus 4.7",
@@ -205,9 +221,17 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 3,
-      "tier_size": 5,
-      "cheaper_alternatives": []
+      "rank_in_tier": 4,
+      "tier_size": 6,
+      "cheaper_alternatives": [
+        {
+          "name": "Claude Opus 5.5",
+          "blended": 8.0,
+          "saves_percent": 20.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        }
+      ]
     },
     {
       "name": "Claude Opus 4.8",
@@ -225,9 +249,17 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 4,
-      "tier_size": 5,
-      "cheaper_alternatives": []
+      "rank_in_tier": 5,
+      "tier_size": 6,
+      "cheaper_alternatives": [
+        {
+          "name": "Claude Opus 5.5",
+          "blended": 8.0,
+          "saves_percent": 20.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        }
+      ]
     },
     {
       "name": "Claude Opus 5",
@@ -245,8 +277,36 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 5,
-      "tier_size": 5,
+      "rank_in_tier": 6,
+      "tier_size": 6,
+      "cheaper_alternatives": [
+        {
+          "name": "Claude Opus 5.5",
+          "blended": 8.0,
+          "saves_percent": 20.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        }
+      ]
+    },
+    {
+      "name": "Claude Opus 5.5",
+      "base_name": "Claude Opus 5.5",
+      "vendor": "Anthropic",
+      "tier": "Powerful",
+      "input": 4.0,
+      "output": 20.0,
+      "blended": 8.0,
+      "available": true,
+      "status": null,
+      "on_offer": false,
+      "offer_ends": null,
+      "offer_days_left": null,
+      "offer_text": null,
+      "retires": null,
+      "replacement": null,
+      "rank_in_tier": 1,
+      "tier_size": 6,
       "cheaper_alternatives": []
     },
     {
@@ -1889,8 +1949,8 @@
       "blended": 1.5
     },
     "Anthropic/Powerful": {
-      "model": "Claude Opus 5",
-      "blended": 10.0
+      "model": "Claude Opus 5.5",
+      "blended": 8.0
     },
     "Copilot/Powerful": {
       "model": "GPT-5.3-Codex",
