@@ -5,13 +5,13 @@
   <link href="https://zrrbite.github.io/llm-price-watch/"/>
   <link rel="self" href="https://zrrbite.github.io/llm-price-watch/feed.xml"/>
   <id>tag:zrrbite.github.io,2026:llm-price-watch</id>
-  <updated>2026-09-23T06:40:19Z</updated>
+  <updated>2026-09-23T18:31:04Z</updated>
   <entry>
-    <title>2026-09-23: 5 pricing changes</title>
+    <title>2026-09-23: 9 pricing changes</title>
     <link href="https://zrrbite.github.io/llm-price-watch/"/>
     <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-09-23</id>
     <updated>2026-09-23T00:00:00Z</updated>
-    <content type="html">&lt;ul&gt;&lt;li&gt;GPT-6 Luna (&amp;gt; 272K) added&lt;/li&gt;&lt;li&gt;GPT-6 Sol (&amp;gt; 272K) added&lt;/li&gt;&lt;li&gt;GPT-6 Sol (≤ 272K) added&lt;/li&gt;&lt;li&gt;GPT-6 Luna (≤ 272K) added&lt;/li&gt;&lt;li&gt;Claude Opus 5.5 added&lt;/li&gt;&lt;/ul&gt;</content>
+    <content type="html">&lt;ul&gt;&lt;li&gt;GPT-6 Luna (&amp;gt; 272K) added&lt;/li&gt;&lt;li&gt;note withdrawn: Claude 4.7 and later models and Claude Mythos Preview use a newer tokenizer that contributes to their improved performance on a wide range of tasks. This tokenizer produces approximately 30% more tokens for the same text. The exact increase depends on the content and workload shape. Claude Sonnet 4.6 and earlier models use the previous tokenizer.&lt;/li&gt;&lt;li&gt;note withdrawn: MTok = Million tokens. The &amp;quot;Base Input Tokens&amp;quot; column shows standard input pricing, the &amp;quot;5m Cache Writes&amp;quot;, &amp;quot;1h Cache Writes&amp;quot;, and &amp;quot;Cache Hits &amp;amp; Refreshes&amp;quot; columns are specific to prompt caching, and &amp;quot;Output Tokens&amp;quot; shows output pricing. See prompt caching pricing for an explanation of the cache columns and pricing multipliers.&lt;/li&gt;&lt;li&gt;GPT-6 Sol (&amp;gt; 272K) added&lt;/li&gt;&lt;li&gt;GPT-6 Sol (≤ 272K) added&lt;/li&gt;&lt;li&gt;note withdrawn: **Claude Consumption Units.** If Customer accesses the Services through certain Marketplace Platforms (e.g., Claude Platform on AWS), usage will be invoiced in Claude Consumption Units (&amp;quot;CCU&amp;quot;) rather than per MTok. A CCU is a unit of measure used solely for Marketplace Platform invoicing. One hundred (100) CCU represents $1.00 USD of fees owed for the Services, calculated at the applicable prices on claude.com/pricing#api, after application of any discounts.&lt;/li&gt;&lt;li&gt;GPT-6 Luna (≤ 272K) added&lt;/li&gt;&lt;li&gt;Claude Opus 5.5 added&lt;/li&gt;&lt;li&gt;note withdrawn: The $2/$10 per million input/output token pricing for Claude Sonnet 5, announced at launch as introductory pricing through August 31, 2026, is now the standard price. The previously scheduled increase to $3/$15 per million input/output tokens on September 1, 2026 will not occur.&lt;/li&gt;&lt;/ul&gt;</content>
   </entry>
   <entry>
     <title>2026-09-22: 1 pricing change</title>

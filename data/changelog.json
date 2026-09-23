@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 168,
+  "count": 172,
   "entries": [
     {
       "id": "b770a9c6c4acfac6",
@@ -9,6 +9,24 @@
       "class": "model_added",
       "key": "GPT-6 Luna (> 272K)",
       "summary": "GPT-6 Luna (> 272K) added"
+    },
+    {
+      "id": "8e0f102c2a51b1e2",
+      "date": "2026-09-23",
+      "source": "anthropic",
+      "class": "advisory_removed",
+      "key": "claude-47-and-later-models-and",
+      "summary": "note withdrawn: Claude 4.7 and later models and Claude Mythos Preview use a newer tokenizer that contributes to their improved performance on a wide range of tasks. This tokenizer produces approximately 30% more tokens for the same text. The exact increase depends on the content and workload shape. Claude Sonnet 4.6 and earlier models use the previous tokenizer.",
+      "previous_text": "Claude 4.7 and later models and Claude Mythos Preview use a newer tokenizer that contributes to their improved performance on a wide range of tasks. This tokenizer produces approximately 30% more tokens for the same text. The exact increase depends on the content and workload shape. Claude Sonnet 4.6 and earlier models use the previous tokenizer."
+    },
+    {
+      "id": "8aa92fca5051aa9e",
+      "date": "2026-09-23",
+      "source": "anthropic",
+      "class": "advisory_removed",
+      "key": "mtok-million-tokens-the-base-input",
+      "summary": "note withdrawn: MTok = Million tokens. The \"Base Input Tokens\" column shows standard input pricing, the \"5m Cache Writes\", \"1h Cache Writes\", and \"Cache Hits & Refreshes\" columns are specific to prompt caching, and \"Output Tokens\" shows output pricing. See prompt caching pricing for an explanation of the cache columns and pricing multipliers.",
+      "previous_text": "MTok = Million tokens. The \"Base Input Tokens\" column shows standard input pricing, the \"5m Cache Writes\", \"1h Cache Writes\", and \"Cache Hits & Refreshes\" columns are specific to prompt caching, and \"Output Tokens\" shows output pricing. See prompt caching pricing for an explanation of the cache columns and pricing multipliers."
     },
     {
       "id": "5cb9ef4a7496b407",
@@ -27,6 +45,15 @@
       "summary": "GPT-6 Sol (≤ 272K) added"
     },
     {
+      "id": "3007ec6631d6e26f",
+      "date": "2026-09-23",
+      "source": "anthropic",
+      "class": "advisory_removed",
+      "key": "claude-consumption-units-if-customer-accesses",
+      "summary": "note withdrawn: **Claude Consumption Units.** If Customer accesses the Services through certain Marketplace Platforms (e.g., Claude Platform on AWS), usage will be invoiced in Claude Consumption Units (\"CCU\") rather than per MTok. A CCU is a unit of measure used solely for Marketplace Platform invoicing. One hundred (100) CCU represents $1.00 USD of fees owed for the Services, calculated at the applicable prices on claude.com/pricing#api, after application of any discounts.",
+      "previous_text": "**Claude Consumption Units.** If Customer accesses the Services through certain Marketplace Platforms (e.g., Claude Platform on AWS), usage will be invoiced in Claude Consumption Units (\"CCU\") rather than per MTok. A CCU is a unit of measure used solely for Marketplace Platform invoicing. One hundred (100) CCU represents $1.00 USD of fees owed for the Services, calculated at the applicable prices on claude.com/pricing#api, after application of any discounts."
+    },
+    {
       "id": "2e6c978a547b6706",
       "date": "2026-09-23",
       "source": "copilot-pricing",
@@ -41,6 +68,15 @@
       "class": "model_added",
       "key": "Claude Opus 5.5",
       "summary": "Claude Opus 5.5 added"
+    },
+    {
+      "id": "11d6b2b5d275062b",
+      "date": "2026-09-23",
+      "source": "anthropic",
+      "class": "advisory_removed",
+      "key": "claude-sonnet-5-introductory-pricing",
+      "summary": "note withdrawn: The $2/$10 per million input/output token pricing for Claude Sonnet 5, announced at launch as introductory pricing through August 31, 2026, is now the standard price. The previously scheduled increase to $3/$15 per million input/output tokens on September 1, 2026 will not occur.",
+      "previous_text": "The $2/$10 per million input/output token pricing for Claude Sonnet 5, announced at launch as introductory pricing through August 31, 2026, is now the standard price. The previously scheduled increase to $3/$15 per million input/output tokens on September 1, 2026 will not occur."
     },
     {
       "id": "eef8df52a5833329",
