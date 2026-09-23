@@ -1,4 +1,4 @@
-# llm-price-watch  generated=2026-09-22T20:03:57Z  USD per million tokens
+# llm-price-watch  generated=2026-09-23T06:40:19Z  USD per million tokens
 # blended=0.75*input + 0.25*output  class=vendor's own capability tier
 # offer: none | promo | LAPSED (past its end date, price not yet reverted)
 model	vendor	class	in	out	blended	offer	ends	retires
@@ -21,6 +21,7 @@ Claude Opus 4.7	Copilot	Powerful	5	25	10	none	-	2026-10-02
 Claude Opus 4.8	Copilot	Powerful	5	25	10	none	-	-
 Claude Opus 4.8 (fast mode) (preview)	Copilot	Powerful	10	50	20	none	-	-
 Claude Opus 5	Copilot	Powerful	5	25	10	none	-	-
+Claude Opus 5.5	Copilot	Powerful	4	20	8	none	-	-
 Claude Sonnet 4	Copilot	Versatile	3	15	6	none	-	2026-05-01
 Claude Sonnet 4.6	Copilot	Versatile	3	15	6	none	-	2026-09-01
 Claude Sonnet 5	Copilot	Versatile	2	10	4	none	-	-
@@ -40,6 +41,10 @@ GPT-5.6 Terra (> 272K)	Copilot	Versatile	4	18	7.5	none	-	-
 GPT-5.6 Terra (≤ 272K)	Copilot	Versatile	2	12	4.5	none	-	-
 GPT-6 Astra (> 272K)	Copilot	Powerful	20	75	33.75	none	-	-
 GPT-6 Astra (≤ 272K)	Copilot	Powerful	10	50	20	none	-	-
+GPT-6 Luna (> 272K)	Copilot	Lightweight	0.2	0.75	0.3375	none	-	-
+GPT-6 Luna (≤ 272K)	Copilot	Lightweight	0.1	0.5	0.2	none	-	-
+GPT-6 Sol (> 272K)	Copilot	Powerful	4	15	6.75	none	-	-
+GPT-6 Sol (≤ 272K)	Copilot	Powerful	2	10	4	none	-	-
 Gemini 3.5 Flash	Copilot	Lightweight	1.5	9	3.375	none	-	2026-10-02
 Gemini 3.6 Flash	Copilot	Versatile	0.75	3.75	1.5	promo	2026-12-31	2026-10-02
 Gemini 3.7 Flash	Copilot	Versatile	0.75	3.75	1.5	promo	2026-12-31	-
