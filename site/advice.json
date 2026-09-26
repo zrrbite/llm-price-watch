@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-25T18:29:43Z",
+  "generated": "2026-09-26T06:37:08Z",
   "site": "https://zrrbite.github.io/llm-price-watch/",
   "units": "USD per million tokens",
   "blended_formula": "0.75*input + 0.25*output",
@@ -1661,7 +1661,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 97,
+      "offer_days_left": 96,
       "offer_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": "2026-10-02",
       "replacement": "Gemini 3.8 Flash",
@@ -1681,7 +1681,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 97,
+      "offer_days_left": 96,
       "offer_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
@@ -1701,7 +1701,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 97,
+      "offer_days_left": 96,
       "offer_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
@@ -2085,7 +2085,7 @@
       ],
       "lapsed": false,
       "expires": "2026-12-31",
-      "days_left": 97,
+      "days_left": 96,
       "text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026."
     },
     {
@@ -2115,25 +2115,25 @@
     {
       "model": "Claude Opus 4.7",
       "date": "2026-10-02",
-      "days_left": 7,
+      "days_left": 6,
       "alternative": "Claude Opus 5"
     },
     {
       "model": "Gemini 3.5 Flash",
       "date": "2026-10-02",
-      "days_left": 7,
+      "days_left": 6,
       "alternative": "Gemini 3.8 Flash"
     },
     {
       "model": "Gemini 3.6 Flash",
       "date": "2026-10-02",
-      "days_left": 7,
+      "days_left": 6,
       "alternative": "Gemini 3.8 Flash"
     },
     {
       "model": "Kimi K2.7 Code",
       "date": "2026-10-02",
-      "days_left": 7,
+      "days_left": 6,
       "alternative": "Kimi K3"
     }
   ],
