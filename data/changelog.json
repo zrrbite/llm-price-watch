@@ -1,7 +1,15 @@
 {
   "schema": 1,
-  "count": 172,
+  "count": 173,
   "entries": [
+    {
+      "id": "a6eb3d9ed214817c",
+      "date": "2026-09-28",
+      "source": "anthropic",
+      "class": "model_added",
+      "key": "Claude Sonnet 5.5",
+      "summary": "Claude Sonnet 5.5 added"
+    },
     {
       "id": "b770a9c6c4acfac6",
       "date": "2026-09-23",

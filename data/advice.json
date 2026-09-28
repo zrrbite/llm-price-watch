@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28T06:54:19Z",
+  "generated": "2026-09-28T18:33:32Z",
   "site": "https://zrrbite.github.io/llm-price-watch/",
   "units": "USD per million tokens",
   "blended_formula": "0.75*input + 0.25*output",
@@ -342,11 +342,18 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 2,
-      "tier_size": 3,
+      "rank_in_tier": 3,
+      "tier_size": 4,
       "cheaper_alternatives": [
         {
           "name": "Claude Sonnet 5",
+          "blended": 4.0,
+          "saves_percent": 33.3,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Claude Sonnet 5.5",
           "blended": 4.0,
           "saves_percent": 33.3,
           "on_offer": false,
@@ -370,11 +377,18 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 3,
-      "tier_size": 3,
+      "rank_in_tier": 4,
+      "tier_size": 4,
       "cheaper_alternatives": [
         {
           "name": "Claude Sonnet 5",
+          "blended": 4.0,
+          "saves_percent": 33.3,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Claude Sonnet 5.5",
           "blended": 4.0,
           "saves_percent": 33.3,
           "on_offer": false,
@@ -399,7 +413,27 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 1,
-      "tier_size": 3,
+      "tier_size": 4,
+      "cheaper_alternatives": []
+    },
+    {
+      "name": "Claude Sonnet 5.5",
+      "base_name": "Claude Sonnet 5.5",
+      "vendor": "Anthropic",
+      "tier": "Versatile",
+      "input": 2.0,
+      "output": 10.0,
+      "blended": 4.0,
+      "available": true,
+      "status": null,
+      "on_offer": false,
+      "offer_ends": null,
+      "offer_days_left": null,
+      "offer_text": null,
+      "retires": null,
+      "replacement": null,
+      "rank_in_tier": 2,
+      "tier_size": 4,
       "cheaper_alternatives": []
     },
     {
@@ -2147,7 +2181,7 @@
       "blended": 0.2
     },
     "Anthropic/Versatile": {
-      "model": "Claude Sonnet 5",
+      "model": "Claude Sonnet 5.5",
       "blended": 4.0
     },
     "Copilot/Versatile": {
