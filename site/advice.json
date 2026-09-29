@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28T18:33:32Z",
+  "generated": "2026-09-29T06:42:35Z",
   "site": "https://zrrbite.github.io/llm-price-watch/",
   "units": "USD per million tokens",
   "blended_formula": "0.75*input + 0.25*output",
@@ -537,7 +537,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 5,
-      "tier_size": 18,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.6 Flash",
@@ -788,8 +788,8 @@
       "offer_text": null,
       "retires": "2026-05-01",
       "replacement": "Claude Sonnet 4.6",
-      "rank_in_tier": 12,
-      "tier_size": 18,
+      "rank_in_tier": 13,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.6 Flash",
@@ -830,8 +830,8 @@
       "offer_text": null,
       "retires": "2026-09-01",
       "replacement": "Claude Sonnet 5",
-      "rank_in_tier": 13,
-      "tier_size": 18,
+      "rank_in_tier": 14,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.6 Flash",
@@ -873,7 +873,49 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 9,
-      "tier_size": 18,
+      "tier_size": 19,
+      "cheaper_alternatives": [
+        {
+          "name": "Gemini 3.6 Flash",
+          "blended": 1.5,
+          "saves_percent": 62.5,
+          "on_offer": true,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Gemini 3.7 Flash",
+          "blended": 1.5,
+          "saves_percent": 62.5,
+          "on_offer": true,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Gemini 3.8 Flash",
+          "blended": 1.5,
+          "saves_percent": 62.5,
+          "on_offer": true,
+          "offer_lapsed": false
+        }
+      ]
+    },
+    {
+      "name": "Claude Sonnet 5.5",
+      "base_name": "Claude Sonnet 5.5",
+      "vendor": "Copilot",
+      "tier": "Versatile",
+      "input": 2.0,
+      "output": 10.0,
+      "blended": 4.0,
+      "available": true,
+      "status": "GA",
+      "on_offer": false,
+      "offer_ends": null,
+      "offer_days_left": null,
+      "offer_text": null,
+      "retires": null,
+      "replacement": null,
+      "rank_in_tier": 10,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.6 Flash",
@@ -984,8 +1026,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 18,
-      "tier_size": 18,
+      "rank_in_tier": 19,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.6 Flash",
@@ -1026,8 +1068,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 11,
-      "tier_size": 18,
+      "rank_in_tier": 12,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.6 Flash",
@@ -1390,8 +1432,8 @@
       "offer_text": "input fell 20% from $2.5 to $2 on 2026-07-30, and is still there.",
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 17,
-      "tier_size": 18,
+      "rank_in_tier": 18,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.6 Flash",
@@ -1432,8 +1474,8 @@
       "offer_text": "input fell 20% from $2.5 to $2 on 2026-07-30, and is still there.",
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 10,
-      "tier_size": 18,
+      "rank_in_tier": 11,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.6 Flash",
@@ -1633,10 +1675,6 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "bargain": {
-        "compared_tier": "Versatile",
-        "percent_below": 5.9
-      },
       "rank_in_tier": 1,
       "tier_size": 17,
       "cheaper_alternatives": []
@@ -1695,12 +1733,12 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 94,
+      "offer_days_left": 93,
       "offer_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": "2026-10-02",
       "replacement": "Gemini 3.8 Flash",
       "rank_in_tier": 1,
-      "tier_size": 18,
+      "tier_size": 19,
       "cheaper_alternatives": []
     },
     {
@@ -1715,12 +1753,12 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 94,
+      "offer_days_left": 93,
       "offer_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
       "rank_in_tier": 2,
-      "tier_size": 18,
+      "tier_size": 19,
       "cheaper_alternatives": []
     },
     {
@@ -1735,12 +1773,12 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 94,
+      "offer_days_left": 93,
       "offer_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
       "rank_in_tier": 3,
-      "tier_size": 18,
+      "tier_size": 19,
       "cheaper_alternatives": []
     },
     {
@@ -1759,8 +1797,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 14,
-      "tier_size": 18,
+      "rank_in_tier": 15,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.6 Flash",
@@ -1802,7 +1840,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 6,
-      "tier_size": 18,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.6 Flash",
@@ -1843,8 +1881,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 15,
-      "tier_size": 18,
+      "rank_in_tier": 16,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.6 Flash",
@@ -1886,7 +1924,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 7,
-      "tier_size": 18,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.6 Flash",
@@ -1927,8 +1965,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 16,
-      "tier_size": 18,
+      "rank_in_tier": 17,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.6 Flash",
@@ -1970,7 +2008,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 8,
-      "tier_size": 18,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.6 Flash",
@@ -2012,7 +2050,7 @@
       "retires": "2026-10-02",
       "replacement": "Kimi K3",
       "rank_in_tier": 4,
-      "tier_size": 18,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.6 Flash",
@@ -2119,7 +2157,7 @@
       ],
       "lapsed": false,
       "expires": "2026-12-31",
-      "days_left": 94,
+      "days_left": 93,
       "text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026."
     },
     {
@@ -2149,25 +2187,25 @@
     {
       "model": "Claude Opus 4.7",
       "date": "2026-10-02",
-      "days_left": 4,
+      "days_left": 3,
       "alternative": "Claude Opus 5"
     },
     {
       "model": "Gemini 3.5 Flash",
       "date": "2026-10-02",
-      "days_left": 4,
+      "days_left": 3,
       "alternative": "Gemini 3.8 Flash"
     },
     {
       "model": "Gemini 3.6 Flash",
       "date": "2026-10-02",
-      "days_left": 4,
+      "days_left": 3,
       "alternative": "Gemini 3.8 Flash"
     },
     {
       "model": "Kimi K2.7 Code",
       "date": "2026-10-02",
-      "days_left": 4,
+      "days_left": 3,
       "alternative": "Kimi K3"
     }
   ],

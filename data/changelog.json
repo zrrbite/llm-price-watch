@@ -1,7 +1,15 @@
 {
   "schema": 1,
-  "count": 173,
+  "count": 174,
   "entries": [
+    {
+      "id": "92ac896779d9f525",
+      "date": "2026-09-29",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Claude Sonnet 5.5",
+      "summary": "Claude Sonnet 5.5 added"
+    },
     {
       "id": "a6eb3d9ed214817c",
       "date": "2026-09-28",
