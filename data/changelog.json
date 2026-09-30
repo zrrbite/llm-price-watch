@@ -1,7 +1,23 @@
 {
   "schema": 1,
-  "count": 174,
+  "count": 176,
   "entries": [
+    {
+      "id": "de888f7b475cfffd",
+      "date": "2026-09-30",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-6.1 Sol (≤ 272K)",
+      "summary": "GPT-6.1 Sol (≤ 272K) added"
+    },
+    {
+      "id": "91cbbd8c92b80bfc",
+      "date": "2026-09-30",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-6.1 Sol (> 272K)",
+      "summary": "GPT-6.1 Sol (> 272K) added"
+    },
     {
       "id": "92ac896779d9f525",
       "date": "2026-09-29",

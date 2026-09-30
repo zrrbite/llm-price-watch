@@ -1,4 +1,4 @@
-# llm-price-watch  generated=2026-09-29T18:34:10Z  USD per million tokens
+# llm-price-watch  generated=2026-09-30T06:42:45Z  USD per million tokens
 # blended=0.75*input + 0.25*output  class=vendor's own capability tier
 # offer: none | promo | LAPSED (past its end date, price not yet reverted)
 model	vendor	class	in	out	blended	offer	ends	retires
@@ -47,6 +47,8 @@ GPT-6 Luna (> 272K)	Copilot	Lightweight	0.2	0.75	0.3375	none	-	-
 GPT-6 Luna (≤ 272K)	Copilot	Lightweight	0.1	0.5	0.2	none	-	-
 GPT-6 Sol (> 272K)	Copilot	Powerful	4	15	6.75	none	-	-
 GPT-6 Sol (≤ 272K)	Copilot	Powerful	2	10	4	none	-	-
+GPT-6.1 Sol (> 272K)	Copilot	Powerful	4	15	6.75	none	-	-
+GPT-6.1 Sol (≤ 272K)	Copilot	Powerful	2	10	4	none	-	-
 Gemini 3.5 Flash	Copilot	Lightweight	1.5	9	3.375	none	-	2026-10-02
 Gemini 3.6 Flash	Copilot	Versatile	0.75	3.75	1.5	promo	2026-12-31	2026-10-02
 Gemini 3.7 Flash	Copilot	Versatile	0.75	3.75	1.5	promo	2026-12-31	-
