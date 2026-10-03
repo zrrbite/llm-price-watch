@@ -2,19 +2,13 @@
   "source": "copilot-multipliers",
   "title": "GitHub Copilot — legacy premium-request multipliers",
   "url": "https://github.com/github/docs/blob/main/data/tables/copilot/annual-subscriber-model-multipliers.yml",
-  "fetched": "2026-10-02T18:32:58Z",
+  "fetched": "2026-10-03T06:46:52Z",
   "floor": 10,
   "rows": [
     {
       "key": "Claude Haiku 4.5",
       "values": {
         "multiplier": 0.33
-      }
-    },
-    {
-      "key": "Claude Opus 4.7",
-      "values": {
-        "multiplier": 27.0
       }
     },
     {
@@ -99,12 +93,6 @@
       "key": "Gemini 3 Pro",
       "values": {
         "multiplier": 6.0
-      }
-    },
-    {
-      "key": "Gemini 3.5 Flash",
-      "values": {
-        "multiplier": 14.0
       }
     },
     {

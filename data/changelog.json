@@ -1,7 +1,605 @@
 {
   "schema": 1,
-  "count": 176,
+  "count": 219,
   "entries": [
+    {
+      "id": "f5c4abc17c108cd7",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "o3-mini",
+      "summary": "o3-mini: suggested_alternative GPT-5 mini → Latest GPT mini model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5 mini",
+          "new": "Latest GPT mini model"
+        }
+      ]
+    },
+    {
+      "id": "f2f808467c1e181e",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Raptor mini",
+      "summary": "Raptor mini: suggested_alternative MAI-Code-1.1-Flash → Latest MAI-Code model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "MAI-Code-1.1-Flash",
+          "new": "Latest MAI-Code model"
+        }
+      ]
+    },
+    {
+      "id": "efbe446bd1a315ca",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "GPT-4.1",
+      "summary": "GPT-4.1: suggested_alternative GPT-5.5 → Latest GPT model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5.5",
+          "new": "Latest GPT model"
+        }
+      ]
+    },
+    {
+      "id": "ea9e732de929ac38",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "GPT-5.1-Codex",
+      "summary": "GPT-5.1-Codex: suggested_alternative GPT-5.3-Codex → Latest GPT Codex model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5.3-Codex",
+          "new": "Latest GPT Codex model"
+        }
+      ]
+    },
+    {
+      "id": "e889f889ec7446e4",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "MAI-Code-1-Flash",
+      "summary": "MAI-Code-1-Flash: suggested_alternative MAI-Code-1.1-Flash → Latest MAI-Code model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "MAI-Code-1.1-Flash",
+          "new": "Latest MAI-Code model"
+        }
+      ]
+    },
+    {
+      "id": "e5b35d08d7fc07ee",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "GPT-5.2",
+      "summary": "GPT-5.2: suggested_alternative GPT-5.5 → Latest GPT model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5.5",
+          "new": "Latest GPT model"
+        }
+      ]
+    },
+    {
+      "id": "e3a5fab2e807df2f",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Opus 4",
+      "summary": "Claude Opus 4: suggested_alternative Claude Opus 5 → Latest Claude Opus model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Opus 5",
+          "new": "Latest Claude Opus model"
+        }
+      ]
+    },
+    {
+      "id": "e13822797d0869be",
+      "date": "2026-10-03",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "Kimi K2.7 Code",
+      "summary": "Kimi K2.7 Code removed"
+    },
+    {
+      "id": "df1bfb174957fb95",
+      "date": "2026-10-03",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "Gemini 3.5 Flash",
+      "summary": "Gemini 3.5 Flash removed"
+    },
+    {
+      "id": "db1e819f12a862b2",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Sonnet 3.7 Thinking",
+      "summary": "Claude Sonnet 3.7 Thinking: suggested_alternative Claude Sonnet 4.6 → Latest Claude Sonnet model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Sonnet 4.6",
+          "new": "Latest Claude Sonnet model"
+        }
+      ]
+    },
+    {
+      "id": "d6f09950627a039f",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "o4-mini",
+      "summary": "o4-mini: suggested_alternative GPT-5 mini → Latest GPT mini model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5 mini",
+          "new": "Latest GPT mini model"
+        }
+      ]
+    },
+    {
+      "id": "cffa428fd7410a30",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Gemini 3 Flash",
+      "summary": "Gemini 3 Flash: suggested_alternative Gemini 3.6 Flash → Latest Gemini Flash model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Gemini 3.6 Flash",
+          "new": "Latest Gemini Flash model"
+        }
+      ]
+    },
+    {
+      "id": "c2c08470cd205c3d",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "GPT-5.1-Codex-Max",
+      "summary": "GPT-5.1-Codex-Max: suggested_alternative GPT-5.3-Codex → Latest GPT Codex model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5.3-Codex",
+          "new": "Latest GPT Codex model"
+        }
+      ]
+    },
+    {
+      "id": "b76a7767e9651360",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "GPT-5.1",
+      "summary": "GPT-5.1: suggested_alternative GPT-5.3-Codex → Latest GPT Codex model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5.3-Codex",
+          "new": "Latest GPT Codex model"
+        }
+      ]
+    },
+    {
+      "id": "b48bb338d6fdbef8",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Gemini 3 Pro",
+      "summary": "Gemini 3 Pro: suggested_alternative Gemini 3.8 Flash → Latest Gemini Flash model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Gemini 3.8 Flash",
+          "new": "Latest Gemini Flash model"
+        }
+      ]
+    },
+    {
+      "id": "b33bdc56ef09414e",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Gemini 3.6 Flash",
+      "summary": "Gemini 3.6 Flash: suggested_alternative Gemini 3.8 Flash → Latest Gemini Flash model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Gemini 3.8 Flash",
+          "new": "Latest Gemini Flash model"
+        }
+      ]
+    },
+    {
+      "id": "a8a99d51700c8b47",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Opus 4.5",
+      "summary": "Claude Opus 4.5: suggested_alternative Claude Opus 5 → Latest Claude Opus model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Opus 5",
+          "new": "Latest Claude Opus model"
+        }
+      ]
+    },
+    {
+      "id": "9c840a70ec56ca12",
+      "date": "2026-10-03",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "Claude Opus 4.7",
+      "summary": "Claude Opus 4.7 removed"
+    },
+    {
+      "id": "9bc6b31e0fe84ceb",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Sonnet 4",
+      "summary": "Claude Sonnet 4: suggested_alternative Claude Sonnet 4.6 → Latest Claude Sonnet model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Sonnet 4.6",
+          "new": "Latest Claude Sonnet model"
+        }
+      ]
+    },
+    {
+      "id": "95d6aea609ecf875",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "GPT-5.1-Codex-Mini",
+      "summary": "GPT-5.1-Codex-Mini: suggested_alternative GPT-5.3-Codex → Latest GPT Codex model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5.3-Codex",
+          "new": "Latest GPT Codex model"
+        }
+      ]
+    },
+    {
+      "id": "94b62ebbeb28d5f3",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Gemini 2.0 Flash",
+      "summary": "Gemini 2.0 Flash: suggested_alternative Gemini 3.8 Flash → Latest Gemini Flash model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Gemini 3.8 Flash",
+          "new": "Latest Gemini Flash model"
+        }
+      ]
+    },
+    {
+      "id": "90b337511463e271",
+      "date": "2026-10-03",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "Gemini 3.6 Flash",
+      "summary": "Gemini 3.6 Flash removed"
+    },
+    {
+      "id": "9052fe082f552697",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Gemini 3.1 Pro",
+      "summary": "Gemini 3.1 Pro: suggested_alternative Gemini 3.6 Flash → Latest Gemini Flash model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Gemini 3.6 Flash",
+          "new": "Latest Gemini Flash model"
+        }
+      ]
+    },
+    {
+      "id": "83efd15c9d984b66",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "GPT-5.2-Codex",
+      "summary": "GPT-5.2-Codex: suggested_alternative GPT-5.3-Codex → Latest GPT Codex model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5.3-Codex",
+          "new": "Latest GPT Codex model"
+        }
+      ]
+    },
+    {
+      "id": "81bf9afef2eece18",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Opus 4.1",
+      "summary": "Claude Opus 4.1: suggested_alternative Claude Opus 5 → Latest Claude Opus model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Opus 5",
+          "new": "Latest Claude Opus model"
+        }
+      ]
+    },
+    {
+      "id": "79b62a08bf664b7e",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Sonnet 3.5",
+      "summary": "Claude Sonnet 3.5: suggested_alternative Claude Haiku 4.5 → Latest Claude Haiku model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Haiku 4.5",
+          "new": "Latest Claude Haiku model"
+        }
+      ]
+    },
+    {
+      "id": "742e25e0b2dc222f",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Kimi K2.7 Code",
+      "summary": "Kimi K2.7 Code: suggested_alternative Kimi K3 → Latest Kimi model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Kimi K3",
+          "new": "Latest Kimi model"
+        }
+      ]
+    },
+    {
+      "id": "711ea1db8de42be8",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Sonnet 3.7",
+      "summary": "Claude Sonnet 3.7: suggested_alternative Claude Sonnet 4.6 → Latest Claude Sonnet model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Sonnet 4.6",
+          "new": "Latest Claude Sonnet model"
+        }
+      ]
+    },
+    {
+      "id": "662686a73b81af89",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Grok Code Fast 1",
+      "summary": "Grok Code Fast 1: suggested_alternative GPT-5 mini → Latest GPT mini model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5 mini",
+          "new": "Latest GPT mini model"
+        }
+      ]
+    },
+    {
+      "id": "661edba5338b8c40",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Opus 4.6 (fast mode) (preview)",
+      "summary": "Claude Opus 4.6 (fast mode) (preview): suggested_alternative Claude Opus 4.8 (fast mode) (preview) → Latest Claude Opus model in fast mode",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Opus 4.8 (fast mode) (preview)",
+          "new": "Latest Claude Opus model in fast mode"
+        }
+      ]
+    },
+    {
+      "id": "6268b82f2df635be",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Opus 4.7",
+      "summary": "Claude Opus 4.7: suggested_alternative Claude Opus 5 → Latest Claude Opus model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Opus 5",
+          "new": "Latest Claude Opus model"
+        }
+      ]
+    },
+    {
+      "id": "56cd0a7a1f98589a",
+      "date": "2026-10-03",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "Claude Opus 4.7",
+      "summary": "Claude Opus 4.7 removed"
+    },
+    {
+      "id": "5498f4e710e84da6",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Sonnet 4.5",
+      "summary": "Claude Sonnet 4.5: suggested_alternative Claude Sonnet 5 → Latest Claude Sonnet model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Sonnet 5",
+          "new": "Latest Claude Sonnet model"
+        }
+      ]
+    },
+    {
+      "id": "53ccf34d2c2a2b87",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "o3",
+      "summary": "o3: suggested_alternative GPT-5.5 → Latest GPT model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5.5",
+          "new": "Latest GPT model"
+        }
+      ]
+    },
+    {
+      "id": "450fc914533a8545",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Gemini 3.5 Flash",
+      "summary": "Gemini 3.5 Flash: suggested_alternative Gemini 3.8 Flash → Latest Gemini Flash model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Gemini 3.8 Flash",
+          "new": "Latest Gemini Flash model"
+        }
+      ]
+    },
+    {
+      "id": "3f95b0903b335db9",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "GPT-5-Codex",
+      "summary": "GPT-5-Codex: suggested_alternative GPT-5.3-Codex → Latest GPT Codex model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5.3-Codex",
+          "new": "Latest GPT Codex model"
+        }
+      ]
+    },
+    {
+      "id": "352e08f3bf58cd4f",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Opus 4.6",
+      "summary": "Claude Opus 4.6: suggested_alternative Claude Opus 5 → Latest Claude Opus model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Opus 5",
+          "new": "Latest Claude Opus model"
+        }
+      ]
+    },
+    {
+      "id": "2e4b2a4495e37dc6",
+      "date": "2026-10-03",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "Gemini 3.5 Flash",
+      "summary": "Gemini 3.5 Flash removed"
+    },
+    {
+      "id": "266fb693a5324be2",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "o1-mini",
+      "summary": "o1-mini: suggested_alternative GPT-5 mini → Latest GPT mini model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5 mini",
+          "new": "Latest GPT mini model"
+        }
+      ]
+    },
+    {
+      "id": "1eee8a6e116f1702",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Gemini 2.5 Pro",
+      "summary": "Gemini 2.5 Pro: suggested_alternative Gemini 3.8 Flash → Latest Gemini Flash model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Gemini 3.8 Flash",
+          "new": "Latest Gemini Flash model"
+        }
+      ]
+    },
+    {
+      "id": "14199f0177524051",
+      "date": "2026-10-03",
+      "source": "copilot-pricing",
+      "class": "advisory_changed",
+      "key": "gemini-flash-promo",
+      "summary": "Gemini 3.7 Flash and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
+      "text": "Gemini 3.7 Flash and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
+      "previous_text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026."
+    },
+    {
+      "id": "1364547b8eb1f254",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "Claude Sonnet 4.6",
+      "summary": "Claude Sonnet 4.6: suggested_alternative Claude Sonnet 5 → Latest Claude Sonnet model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "Claude Sonnet 5",
+          "new": "Latest Claude Sonnet model"
+        }
+      ]
+    },
+    {
+      "id": "0666eb6d3cc916e8",
+      "date": "2026-10-03",
+      "source": "copilot-deprecations",
+      "class": "detail_changed",
+      "key": "GPT-5",
+      "summary": "GPT-5: suggested_alternative GPT-5.5 → Latest GPT model",
+      "fields": [
+        {
+          "field": "suggested_alternative",
+          "old": "GPT-5.5",
+          "new": "Latest GPT model"
+        }
+      ]
+    },
     {
       "id": "de888f7b475cfffd",
       "date": "2026-09-30",

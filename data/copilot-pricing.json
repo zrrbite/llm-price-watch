@@ -2,7 +2,7 @@
   "source": "copilot-pricing",
   "title": "GitHub Copilot — usage-based token pricing",
   "url": "https://github.com/github/docs/blob/main/data/tables/copilot/models-and-pricing.yml",
-  "fetched": "2026-10-02T18:32:58Z",
+  "fetched": "2026-10-03T06:46:52Z",
   "floor": 15,
   "rows": [
     {
@@ -39,18 +39,6 @@
         "provider": "anthropic",
         "release_status": "GA",
         "category": "Versatile"
-      }
-    },
-    {
-      "key": "Claude Opus 4.7",
-      "values": {
-        "input": 5.0,
-        "cached_input": 0.5,
-        "output": 25.0,
-        "cache_write": 6.25,
-        "provider": "anthropic",
-        "release_status": "GA",
-        "category": "Powerful"
       }
     },
     {
@@ -414,29 +402,6 @@
       }
     },
     {
-      "key": "Gemini 3.5 Flash",
-      "values": {
-        "input": 1.5,
-        "cached_input": 0.15,
-        "output": 9.0,
-        "provider": "google",
-        "release_status": "GA",
-        "category": "Lightweight"
-      }
-    },
-    {
-      "key": "Gemini 3.6 Flash",
-      "values": {
-        "input": 0.75,
-        "cached_input": 0.075,
-        "output": 3.75,
-        "provider": "google",
-        "release_status": "GA",
-        "category": "Versatile",
-        "offer": "gemini-flash-promo"
-      }
-    },
-    {
       "key": "Gemini 3.7 Flash",
       "values": {
         "input": 0.75,
@@ -527,17 +492,6 @@
       }
     },
     {
-      "key": "Kimi K2.7 Code",
-      "values": {
-        "input": 0.95,
-        "cached_input": 0.19,
-        "output": 4.0,
-        "provider": "moonshot_ai",
-        "release_status": "GA",
-        "category": "Versatile"
-      }
-    },
-    {
       "key": "Kimi K3",
       "values": {
         "input": 3.0,
@@ -563,7 +517,7 @@
   "advisories": [
     {
       "key": "gemini-flash-promo",
-      "text": "Gemini 3.6 Flash, Gemini 3.7 Flash, and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
+      "text": "Gemini 3.7 Flash and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "expires": "2026-12-31"
     }
   ]
