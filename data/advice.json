@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-07T06:42:08Z",
+  "generated": "2026-10-07T18:34:26Z",
   "site": "https://zrrbite.github.io/llm-price-watch/",
   "units": "USD per million tokens",
   "blended_formula": "0.75*input + 0.25*output",
@@ -77,8 +77,63 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
+      "rank_in_tier": 3,
+      "tier_size": 3,
+      "cheaper_alternatives": [
+        {
+          "name": "Claude Haiku 5.5 (for prompts up to 100,000 tokens)",
+          "blended": 0.2,
+          "saves_percent": 90.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Claude Haiku 5.5 (for prompts over 100,000 tokens)",
+          "blended": 1.0,
+          "saves_percent": 50.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        }
+      ]
+    },
+    {
+      "name": "Claude Haiku 5.5 (for prompts over 100,000 tokens)",
+      "base_name": "Claude Haiku 5.5",
+      "vendor": "Anthropic",
+      "tier": "Lightweight",
+      "input": 0.5,
+      "output": 2.5,
+      "blended": 1.0,
+      "available": true,
+      "status": null,
+      "on_offer": false,
+      "offer_ends": null,
+      "offer_days_left": null,
+      "offer_text": null,
+      "retires": null,
+      "replacement": null,
+      "rank_in_tier": 2,
+      "tier_size": 3,
+      "cheaper_alternatives": []
+    },
+    {
+      "name": "Claude Haiku 5.5 (for prompts up to 100,000 tokens)",
+      "base_name": "Claude Haiku 5.5",
+      "vendor": "Anthropic",
+      "tier": "Lightweight",
+      "input": 0.1,
+      "output": 0.5,
+      "blended": 0.2,
+      "available": true,
+      "status": null,
+      "on_offer": false,
+      "offer_ends": null,
+      "offer_days_left": null,
+      "offer_text": null,
+      "retires": null,
+      "replacement": null,
       "rank_in_tier": 1,
-      "tier_size": 1,
+      "tier_size": 3,
       "cheaper_alternatives": []
     },
     {
@@ -2123,8 +2178,8 @@
   "retiring_soon": [],
   "cheapest_by_tier": {
     "Anthropic/Lightweight": {
-      "model": "Claude Haiku 4.5",
-      "blended": 2.0
+      "model": "Claude Haiku 5.5 (for prompts up to 100,000 tokens)",
+      "blended": 0.2
     },
     "Copilot/Lightweight": {
       "model": "GPT-6 Luna (≤ 272K)",

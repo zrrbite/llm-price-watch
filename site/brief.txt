@@ -1,7 +1,7 @@
-llm-price-watch brief, 2026-10-07T06:42:08Z. USD per million tokens.
+llm-price-watch brief, 2026-10-07T18:34:26Z. USD per million tokens.
 
 CHEAPEST PER CLASS (blended = 0.75*in + 0.25*out):
-  Anthropic/Lightweight: Claude Haiku 4.5 2
+  Anthropic/Lightweight: Claude Haiku 5.5 (for prompts up to 100,000 tokens) 0.2
   Copilot/Lightweight: GPT-6 Luna (≤ 272K) 0.2
   Anthropic/Versatile: Claude Sonnet 5.5 4
   Copilot/Versatile: Gemini 3.8 Flash 1.5
