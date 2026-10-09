@@ -5,7 +5,14 @@
   <link href="https://zrrbite.github.io/llm-price-watch/"/>
   <link rel="self" href="https://zrrbite.github.io/llm-price-watch/feed.xml"/>
   <id>tag:zrrbite.github.io,2026:llm-price-watch</id>
-  <updated>2026-10-09T06:43:57Z</updated>
+  <updated>2026-10-09T18:32:26Z</updated>
+  <entry>
+    <title>2026-10-09: 1 pricing change</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-10-09</id>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;**Regional and multi-region endpoint pricing for Claude 4.5 models and beyond** Starting with Claude Sonnet 4.5, Haiku 4.5, and Opus 4.5: * **Bedrock** offers two endpoint types: global endpoints (dynamic routing for maximum availability) and regional endpoints (guaranteed data routing through specific geographic regions). * **Google Cloud** offers global endpoints and multi-region endpoints (dynamic routing within a geographic area) for these models, and regional endpoints for Claude Sonnet 4.6 and earlier models. Regional and multi-region endpoints include a 10% premium over global endpoints. The Claude API (first-party) is global by default; for first-party data residency options and pricing, see Data residency pricing. **Scope:** This pricing structure applies to Claude Sonnet 4.5 (deprecated), Haiku 4.5, Opus 4.5, and all future models. Earlier models (Claude Opus 4.1 and prior releases) retain their existing pricing. For implementation details and code examples: * Amazon Bedrock global vs regional endpoints for Opus 4.7, Haiku 4.5, and later models, or the legacy integration for all other models on Bedrock * Google Cloud global, multi-region, and regional endpoints&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>2026-10-08: 6 pricing changes</title>
     <link href="https://zrrbite.github.io/llm-price-watch/"/>
