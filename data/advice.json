@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T18:35:35Z",
+  "generated": "2026-10-14T06:39:37Z",
   "site": "https://zrrbite.github.io/llm-price-watch/",
   "units": "USD per million tokens",
   "blended_formula": "0.75*input + 0.25*output",
@@ -507,8 +507,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 14,
-      "tier_size": 18,
+      "rank_in_tier": 15,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -525,10 +525,10 @@
           "offer_lapsed": false
         },
         {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 75.9,
-          "on_offer": false,
+          "name": "Gemini 4 Argon",
+          "blended": 4.0,
+          "saves_percent": 80.0,
+          "on_offer": true,
           "offer_lapsed": false
         }
       ]
@@ -549,8 +549,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 15,
-      "tier_size": 18,
+      "rank_in_tier": 16,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -567,10 +567,10 @@
           "offer_lapsed": false
         },
         {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 75.9,
-          "on_offer": false,
+          "name": "Gemini 4 Argon",
+          "blended": 4.0,
+          "saves_percent": 80.0,
+          "on_offer": true,
           "offer_lapsed": false
         }
       ]
@@ -688,8 +688,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 9,
-      "tier_size": 18,
+      "rank_in_tier": 10,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -706,10 +706,10 @@
           "offer_lapsed": false
         },
         {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 51.9,
-          "on_offer": false,
+          "name": "Gemini 4 Argon",
+          "blended": 4.0,
+          "saves_percent": 60.0,
+          "on_offer": true,
           "offer_lapsed": false
         }
       ]
@@ -730,8 +730,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 16,
-      "tier_size": 18,
+      "rank_in_tier": 17,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -748,10 +748,10 @@
           "offer_lapsed": false
         },
         {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 75.9,
-          "on_offer": false,
+          "name": "Gemini 4 Argon",
+          "blended": 4.0,
+          "saves_percent": 80.0,
+          "on_offer": true,
           "offer_lapsed": false
         }
       ]
@@ -772,8 +772,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 10,
-      "tier_size": 18,
+      "rank_in_tier": 11,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -790,10 +790,10 @@
           "offer_lapsed": false
         },
         {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 51.9,
-          "on_offer": false,
+          "name": "Gemini 4 Argon",
+          "blended": 4.0,
+          "saves_percent": 60.0,
+          "on_offer": true,
           "offer_lapsed": false
         }
       ]
@@ -814,8 +814,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 7,
-      "tier_size": 18,
+      "rank_in_tier": 8,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -832,10 +832,10 @@
           "offer_lapsed": false
         },
         {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 39.8,
-          "on_offer": false,
+          "name": "Gemini 4 Argon",
+          "blended": 4.0,
+          "saves_percent": 50.0,
+          "on_offer": true,
           "offer_lapsed": false
         }
       ]
@@ -1066,8 +1066,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 3,
-      "tier_size": 18,
+      "rank_in_tier": 4,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1081,6 +1081,13 @@
           "blended": 4.0,
           "saves_percent": 16.9,
           "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Gemini 4 Argon",
+          "blended": 4.0,
+          "saves_percent": 16.9,
+          "on_offer": true,
           "offer_lapsed": false
         }
       ]
@@ -1269,8 +1276,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 13,
-      "tier_size": 18,
+      "rank_in_tier": 14,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1287,10 +1294,10 @@
           "offer_lapsed": false
         },
         {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 74.3,
-          "on_offer": false,
+          "name": "Gemini 4 Argon",
+          "blended": 4.0,
+          "saves_percent": 78.7,
+          "on_offer": true,
           "offer_lapsed": false
         }
       ]
@@ -1311,8 +1318,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 11,
-      "tier_size": 18,
+      "rank_in_tier": 12,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1329,10 +1336,10 @@
           "offer_lapsed": false
         },
         {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 57.2,
-          "on_offer": false,
+          "name": "Gemini 4 Argon",
+          "blended": 4.0,
+          "saves_percent": 64.4,
+          "on_offer": true,
           "offer_lapsed": false
         }
       ]
@@ -1437,8 +1444,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 12,
-      "tier_size": 18,
+      "rank_in_tier": 13,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1455,10 +1462,10 @@
           "offer_lapsed": false
         },
         {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 64.4,
-          "on_offer": false,
+          "name": "Gemini 4 Argon",
+          "blended": 4.0,
+          "saves_percent": 70.4,
+          "on_offer": true,
           "offer_lapsed": false
         }
       ]
@@ -1479,8 +1486,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 8,
-      "tier_size": 18,
+      "rank_in_tier": 9,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1497,10 +1504,10 @@
           "offer_lapsed": false
         },
         {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 39.8,
-          "on_offer": false,
+          "name": "Gemini 4 Argon",
+          "blended": 4.0,
+          "saves_percent": 50.0,
+          "on_offer": true,
           "offer_lapsed": false
         }
       ]
@@ -1605,8 +1612,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 18,
-      "tier_size": 18,
+      "rank_in_tier": 19,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1623,10 +1630,10 @@
           "offer_lapsed": false
         },
         {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 85.7,
-          "on_offer": false,
+          "name": "Gemini 4 Argon",
+          "blended": 4.0,
+          "saves_percent": 88.1,
+          "on_offer": true,
           "offer_lapsed": false
         }
       ]
@@ -1647,8 +1654,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 17,
-      "tier_size": 18,
+      "rank_in_tier": 18,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1665,10 +1672,10 @@
           "offer_lapsed": false
         },
         {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 75.9,
-          "on_offer": false,
+          "name": "Gemini 4 Argon",
+          "blended": 4.0,
+          "saves_percent": 80.0,
+          "on_offer": true,
           "offer_lapsed": false
         }
       ]
@@ -1737,8 +1744,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 5,
-      "tier_size": 18,
+      "rank_in_tier": 6,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6.1 Sol (≤ 272K)",
@@ -1748,16 +1755,16 @@
           "offer_lapsed": false
         },
         {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 28.7,
-          "on_offer": false,
+          "name": "Gemini 4 Argon",
+          "blended": 4.0,
+          "saves_percent": 40.7,
+          "on_offer": true,
           "offer_lapsed": false
         },
         {
-          "name": "Kimi K3",
-          "blended": 6.0,
-          "saves_percent": 11.1,
+          "name": "GPT-5.3-Codex",
+          "blended": 4.8125,
+          "saves_percent": 28.7,
           "on_offer": false,
           "offer_lapsed": false
         }
@@ -1784,7 +1791,7 @@
         "percent_below": 11.1
       },
       "rank_in_tier": 1,
-      "tier_size": 18,
+      "tier_size": 19,
       "cheaper_alternatives": []
     },
     {
@@ -1803,8 +1810,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 6,
-      "tier_size": 18,
+      "rank_in_tier": 7,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1814,16 +1821,16 @@
           "offer_lapsed": false
         },
         {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 28.7,
-          "on_offer": false,
+          "name": "Gemini 4 Argon",
+          "blended": 4.0,
+          "saves_percent": 40.7,
+          "on_offer": true,
           "offer_lapsed": false
         },
         {
-          "name": "Kimi K3",
-          "blended": 6.0,
-          "saves_percent": 11.1,
+          "name": "GPT-5.3-Codex",
+          "blended": 4.8125,
+          "saves_percent": 28.7,
           "on_offer": false,
           "offer_lapsed": false
         }
@@ -1850,7 +1857,7 @@
         "percent_below": 11.1
       },
       "rank_in_tier": 2,
-      "tier_size": 18,
+      "tier_size": 19,
       "cheaper_alternatives": []
     },
     {
@@ -1865,7 +1872,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 79,
+      "offer_days_left": 78,
       "offer_text": "Gemini 3.7 Flash and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
@@ -1885,12 +1892,36 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 79,
+      "offer_days_left": 78,
       "offer_text": "Gemini 3.7 Flash and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
       "rank_in_tier": 2,
       "tier_size": 17,
+      "cheaper_alternatives": []
+    },
+    {
+      "name": "Gemini 4 Argon",
+      "base_name": "Gemini 4 Argon",
+      "vendor": "Copilot",
+      "tier": "Powerful",
+      "input": 2.0,
+      "output": 10.0,
+      "blended": 4.0,
+      "available": true,
+      "status": "GA",
+      "on_offer": true,
+      "offer_ends": "2026-12-01",
+      "offer_days_left": 48,
+      "offer_text": "Gemini 4 Argon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026.",
+      "retires": null,
+      "replacement": null,
+      "bargain": {
+        "compared_tier": "Versatile",
+        "percent_below": 11.1
+      },
+      "rank_in_tier": 3,
+      "tier_size": 19,
       "cheaper_alternatives": []
     },
     {
@@ -2161,8 +2192,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 4,
-      "tier_size": 18,
+      "rank_in_tier": 5,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -2179,10 +2210,10 @@
           "offer_lapsed": false
         },
         {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 19.8,
-          "on_offer": false,
+          "name": "Gemini 4 Argon",
+          "blended": 4.0,
+          "saves_percent": 33.3,
+          "on_offer": true,
           "offer_lapsed": false
         }
       ]
@@ -2235,12 +2266,23 @@
       "vendor": "Copilot",
       "kind": "promotion",
       "models": [
+        "Gemini 4 Argon"
+      ],
+      "lapsed": false,
+      "expires": "2026-12-01",
+      "days_left": 48,
+      "text": "Gemini 4 Argon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026."
+    },
+    {
+      "vendor": "Copilot",
+      "kind": "promotion",
+      "models": [
         "Gemini 3.7 Flash",
         "Gemini 3.8 Flash"
       ],
       "lapsed": false,
       "expires": "2026-12-31",
-      "days_left": 79,
+      "days_left": 78,
       "text": "Gemini 3.7 Flash and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026."
     },
     {

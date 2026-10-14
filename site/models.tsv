@@ -1,4 +1,4 @@
-# llm-price-watch  generated=2026-10-13T18:35:35Z  USD per million tokens
+# llm-price-watch  generated=2026-10-14T06:39:37Z  USD per million tokens
 # blended=0.75*input + 0.25*output  class=vendor's own capability tier
 # offer: none | promo | LAPSED (past its end date, price not yet reverted)
 model	vendor	class	in	out	blended	offer	ends	retires
@@ -54,6 +54,7 @@ GPT-6.1 Sol (> 272K)	Copilot	Powerful	4	15	6.75	none	-	-
 GPT-6.1 Sol (≤ 272K)	Copilot	Powerful	2	10	4	none	-	-
 Gemini 3.7 Flash	Copilot	Versatile	0.75	3.75	1.5	promo	2026-12-31	-
 Gemini 3.8 Flash	Copilot	Versatile	0.75	3.75	1.5	promo	2026-12-31	-
+Gemini 4 Argon	Copilot	Powerful	2	10	4	promo	2026-12-01	-
 Grok 4.5 (> 200K)	Copilot	Versatile	4	12	6	none	-	-
 Grok 4.5 (≤ 200K)	Copilot	Versatile	2	6	3	none	-	-
 Grok 4.6 (> 200K)	Copilot	Versatile	4	12	6	none	-	-

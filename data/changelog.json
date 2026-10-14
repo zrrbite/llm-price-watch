@@ -1,7 +1,24 @@
 {
   "schema": 1,
-  "count": 229,
+  "count": 231,
   "entries": [
+    {
+      "id": "915057eb6859a6ea",
+      "date": "2026-10-14",
+      "source": "copilot-pricing",
+      "class": "advisory_added",
+      "key": "gemini-4-argon-promo",
+      "summary": "Gemini 4 Argon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026.",
+      "text": "Gemini 4 Argon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026."
+    },
+    {
+      "id": "1db3d19956fe80be",
+      "date": "2026-10-14",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Gemini 4 Argon",
+      "summary": "Gemini 4 Argon added"
+    },
     {
       "id": "7afac77352c18b69",
       "date": "2026-10-09",
