@@ -1,4 +1,4 @@
-llm-price-watch brief, 2026-10-19T06:50:52Z. USD per million tokens.
+llm-price-watch brief, 2026-10-19T18:32:49Z. USD per million tokens.
 
 CHEAPEST PER CLASS (blended = 0.75*in + 0.25*out):
   Anthropic/Lightweight: Claude Haiku 5.5 (for prompts up to 100,000 tokens) 0.2
