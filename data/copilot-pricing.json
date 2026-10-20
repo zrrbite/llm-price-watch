@@ -2,7 +2,7 @@
   "source": "copilot-pricing",
   "title": "GitHub Copilot — usage-based token pricing",
   "url": "https://github.com/github/docs/blob/main/data/tables/copilot/models-and-pricing.yml",
-  "fetched": "2026-10-19T18:32:49Z",
+  "fetched": "2026-10-20T06:38:57Z",
   "floor": 15,
   "rows": [
     {
@@ -162,18 +162,6 @@
       }
     },
     {
-      "key": "GPT-5 mini",
-      "values": {
-        "input": 0.25,
-        "cached_input": 0.025,
-        "output": 2.0,
-        "cache_write": "Not applicable",
-        "provider": "openai",
-        "release_status": "GA",
-        "category": "Lightweight"
-      }
-    },
-    {
       "key": "GPT-5.3-Codex",
       "values": {
         "input": 1.75,
@@ -186,42 +174,6 @@
       }
     },
     {
-      "key": "GPT-5.4 (> 272K)",
-      "values": {
-        "input": 5.0,
-        "cached_input": 0.5,
-        "output": 22.5,
-        "cache_write": "Not applicable",
-        "provider": "openai",
-        "release_status": "GA",
-        "category": "Versatile"
-      }
-    },
-    {
-      "key": "GPT-5.4 (≤ 272K)",
-      "values": {
-        "input": 2.5,
-        "cached_input": 0.25,
-        "output": 15.0,
-        "cache_write": "Not applicable",
-        "provider": "openai",
-        "release_status": "GA",
-        "category": "Versatile"
-      }
-    },
-    {
-      "key": "GPT-5.4 mini",
-      "values": {
-        "input": 0.75,
-        "cached_input": 0.075,
-        "output": 4.5,
-        "cache_write": "Not applicable",
-        "provider": "openai",
-        "release_status": "GA",
-        "category": "Lightweight"
-      }
-    },
-    {
       "key": "GPT-5.4 nano",
       "values": {
         "input": 0.2,
@@ -231,30 +183,6 @@
         "provider": "openai",
         "release_status": "GA",
         "category": "Lightweight"
-      }
-    },
-    {
-      "key": "GPT-5.5 (> 272K)",
-      "values": {
-        "input": 10.0,
-        "cached_input": 1.0,
-        "output": 45.0,
-        "cache_write": "Not applicable",
-        "provider": "openai",
-        "release_status": "GA",
-        "category": "Powerful"
-      }
-    },
-    {
-      "key": "GPT-5.5 (≤ 272K)",
-      "values": {
-        "input": 5.0,
-        "cached_input": 0.5,
-        "output": 30.0,
-        "cache_write": "Not applicable",
-        "provider": "openai",
-        "release_status": "GA",
-        "category": "Powerful"
       }
     },
     {
@@ -426,18 +354,6 @@
       }
     },
     {
-      "key": "Gemini 3.7 Flash",
-      "values": {
-        "input": 0.75,
-        "cached_input": 0.075,
-        "output": 3.75,
-        "provider": "google",
-        "release_status": "GA",
-        "category": "Versatile",
-        "offer": "gemini-flash-promo"
-      }
-    },
-    {
       "key": "Gemini 3.8 Flash",
       "values": {
         "input": 0.75,
@@ -553,7 +469,7 @@
   "advisories": [
     {
       "key": "gemini-flash-promo",
-      "text": "Gemini 3.7 Flash and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
+      "text": "Gemini 3.8 Flash is available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "expires": "2026-12-31"
     },
     {

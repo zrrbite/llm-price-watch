@@ -2,7 +2,7 @@
   "source": "copilot-deprecations",
   "title": "GitHub Copilot — model retirements",
   "url": "https://github.com/github/docs/blob/main/data/tables/copilot/model-deprecation-history.yml",
-  "fetched": "2026-10-19T18:32:49Z",
+  "fetched": "2026-10-20T06:38:57Z",
   "floor": 3,
   "rows": [
     {
@@ -104,6 +104,13 @@
       }
     },
     {
+      "key": "GPT-5 mini",
+      "values": {
+        "retirement_date": "2026-10-19",
+        "suggested_alternative": "Latest GPT Luna model"
+      }
+    },
+    {
       "key": "GPT-5-Codex",
       "values": {
         "retirement_date": "2026-02-17",
@@ -153,6 +160,27 @@
       }
     },
     {
+      "key": "GPT-5.4",
+      "values": {
+        "retirement_date": "2026-10-19",
+        "suggested_alternative": "Latest GPT Sol model"
+      }
+    },
+    {
+      "key": "GPT-5.4 mini",
+      "values": {
+        "retirement_date": "2026-10-19",
+        "suggested_alternative": "Latest GPT Luna model"
+      }
+    },
+    {
+      "key": "GPT-5.5",
+      "values": {
+        "retirement_date": "2026-10-19",
+        "suggested_alternative": "Latest GPT Sol model"
+      }
+    },
+    {
       "key": "Gemini 2.0 Flash",
       "values": {
         "retirement_date": "2025-10-23",
@@ -198,6 +226,13 @@
       "key": "Gemini 3.6 Flash",
       "values": {
         "retirement_date": "2026-10-02",
+        "suggested_alternative": "Latest Gemini Flash model"
+      }
+    },
+    {
+      "key": "Gemini 3.7 Flash",
+      "values": {
+        "retirement_date": "2026-10-19",
         "suggested_alternative": "Latest Gemini Flash model"
       }
     },

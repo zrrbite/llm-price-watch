@@ -1,7 +1,145 @@
 {
   "schema": 1,
-  "count": 231,
+  "count": 248,
   "entries": [
+    {
+      "id": "fa43a937ea70cc8f",
+      "date": "2026-10-20",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "GPT-5 mini",
+      "summary": "GPT-5 mini added"
+    },
+    {
+      "id": "e79283f226d96308",
+      "date": "2026-10-20",
+      "source": "copilot-pricing",
+      "class": "advisory_changed",
+      "key": "gemini-flash-promo",
+      "summary": "Gemini 3.8 Flash is available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
+      "text": "Gemini 3.8 Flash is available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
+      "previous_text": "Gemini 3.7 Flash and Gemini 3.8 Flash are available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026."
+    },
+    {
+      "id": "ba06b5c0586e0100",
+      "date": "2026-10-20",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "GPT-5.4 (≤ 272K)",
+      "summary": "GPT-5.4 (≤ 272K) removed"
+    },
+    {
+      "id": "aaadb02c6d1c7f37",
+      "date": "2026-10-20",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "GPT-5.4",
+      "summary": "GPT-5.4 removed"
+    },
+    {
+      "id": "92d549b249f4c9e3",
+      "date": "2026-10-20",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "GPT-5 mini",
+      "summary": "GPT-5 mini removed"
+    },
+    {
+      "id": "83092bcb09e1f8fc",
+      "date": "2026-10-20",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "GPT-5.4 mini",
+      "summary": "GPT-5.4 mini added"
+    },
+    {
+      "id": "66888835086d418e",
+      "date": "2026-10-20",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "GPT-5.4 mini",
+      "summary": "GPT-5.4 mini removed"
+    },
+    {
+      "id": "61512e93847a03b7",
+      "date": "2026-10-20",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "GPT-5.5 (≤ 272K)",
+      "summary": "GPT-5.5 (≤ 272K) removed"
+    },
+    {
+      "id": "5dd42b99e72c76a8",
+      "date": "2026-10-20",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "GPT-5.4",
+      "summary": "GPT-5.4 added"
+    },
+    {
+      "id": "55d067431778c75e",
+      "date": "2026-10-20",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "GPT-5.4 mini",
+      "summary": "GPT-5.4 mini removed"
+    },
+    {
+      "id": "517d76be148e7dfa",
+      "date": "2026-10-20",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "Gemini 3.7 Flash",
+      "summary": "Gemini 3.7 Flash removed"
+    },
+    {
+      "id": "4d0e04662facb5e6",
+      "date": "2026-10-20",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "GPT-5.5",
+      "summary": "GPT-5.5 removed"
+    },
+    {
+      "id": "4c13773bc42639f4",
+      "date": "2026-10-20",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "Gemini 3.7 Flash",
+      "summary": "Gemini 3.7 Flash added"
+    },
+    {
+      "id": "435b9fdfdb20b5f6",
+      "date": "2026-10-20",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "GPT-5 mini",
+      "summary": "GPT-5 mini removed"
+    },
+    {
+      "id": "23258e86a07c825f",
+      "date": "2026-10-20",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "GPT-5.5 (> 272K)",
+      "summary": "GPT-5.5 (> 272K) removed"
+    },
+    {
+      "id": "1354def4d0cd0aa9",
+      "date": "2026-10-20",
+      "source": "copilot-pricing",
+      "class": "model_removed",
+      "key": "GPT-5.4 (> 272K)",
+      "summary": "GPT-5.4 (> 272K) removed"
+    },
+    {
+      "id": "0d73399d3f95b7f4",
+      "date": "2026-10-20",
+      "source": "copilot-deprecations",
+      "class": "model_added",
+      "key": "GPT-5.5",
+      "summary": "GPT-5.5 added"
+    },
     {
       "id": "915057eb6859a6ea",
       "date": "2026-10-14",
