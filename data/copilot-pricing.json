@@ -2,7 +2,7 @@
   "source": "copilot-pricing",
   "title": "GitHub Copilot — usage-based token pricing",
   "url": "https://github.com/github/docs/blob/main/data/tables/copilot/models-and-pricing.yml",
-  "fetched": "2026-10-26T18:39:41Z",
+  "fetched": "2026-10-27T06:40:56Z",
   "floor": 15,
   "rows": [
     {
@@ -351,6 +351,30 @@
         "provider": "openai",
         "release_status": "GA",
         "category": "Powerful"
+      }
+    },
+    {
+      "key": "GPT-6.1 Terra (> 272K)",
+      "values": {
+        "input": 2.0,
+        "cached_input": 0.1,
+        "output": 7.5,
+        "cache_write": 2.5,
+        "provider": "openai",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "GPT-6.1 Terra (≤ 272K)",
+      "values": {
+        "input": 1.0,
+        "cached_input": 0.05,
+        "output": 5.0,
+        "cache_write": 1.25,
+        "provider": "openai",
+        "release_status": "GA",
+        "category": "Versatile"
       }
     },
     {

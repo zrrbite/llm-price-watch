@@ -5,7 +5,14 @@
   <link href="https://zrrbite.github.io/llm-price-watch/"/>
   <link rel="self" href="https://zrrbite.github.io/llm-price-watch/feed.xml"/>
   <id>tag:zrrbite.github.io,2026:llm-price-watch</id>
-  <updated>2026-10-26T18:39:41Z</updated>
+  <updated>2026-10-27T06:40:57Z</updated>
+  <entry>
+    <title>2026-10-27: 2 pricing changes</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-10-27</id>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;GPT-6.1 Terra (≤ 272K) added&lt;/li&gt;&lt;li&gt;GPT-6.1 Terra (&amp;gt; 272K) added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>2026-10-23: 5 pricing changes</title>
     <link href="https://zrrbite.github.io/llm-price-watch/"/>

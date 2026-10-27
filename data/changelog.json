@@ -1,7 +1,23 @@
 {
   "schema": 1,
-  "count": 254,
+  "count": 256,
   "entries": [
+    {
+      "id": "d69cde0ff7a25db0",
+      "date": "2026-10-27",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-6.1 Terra (≤ 272K)",
+      "summary": "GPT-6.1 Terra (≤ 272K) added"
+    },
+    {
+      "id": "3cae39137c1f7832",
+      "date": "2026-10-27",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-6.1 Terra (> 272K)",
+      "summary": "GPT-6.1 Terra (> 272K) added"
+    },
     {
       "id": "fe166b28ac766645",
       "date": "2026-10-23",
