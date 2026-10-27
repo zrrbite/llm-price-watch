@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 256,
+  "count": 257,
   "entries": [
     {
       "id": "d69cde0ff7a25db0",
@@ -9,6 +9,16 @@
       "class": "model_added",
       "key": "GPT-6.1 Terra (≤ 272K)",
       "summary": "GPT-6.1 Terra (≤ 272K) added"
+    },
+    {
+      "id": "3e90c1b35ff9c8ff",
+      "date": "2026-10-27",
+      "source": "anthropic",
+      "class": "advisory_changed",
+      "key": "if-youre-also-using-bash-or",
+      "summary": "If you’re also using bash or text editor tools alongside computer use, those tools have their own token costs as documented in their respective pages.",
+      "text": "If you’re also using bash or text editor tools alongside computer use, those tools have their own token costs as documented in their respective pages.",
+      "previous_text": "If you're also using bash or text editor tools alongside computer use, those tools have their own token costs as documented in their respective pages."
     },
     {
       "id": "3cae39137c1f7832",
