@@ -1,6 +1,11 @@
 {
-  "last_checked": "2026-10-30T06:29:44Z",
-  "problems": [],
+  "last_checked": "2026-10-30T18:20:31Z",
+  "problems": [
+    {
+      "source": "copilot-multipliers",
+      "message": "parsed 5 rows, down from 12 (under 50%); refusing to report this as removals"
+    }
+  ],
   "sources": {
     "anthropic": 21,
     "copilot-pricing": 41,
