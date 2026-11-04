@@ -1,7 +1,37 @@
 {
   "schema": 1,
-  "count": 257,
+  "count": 259,
   "entries": [
+    {
+      "id": "fd4c9e6cee8bccc0",
+      "date": "2026-11-04",
+      "source": "anthropic",
+      "class": "detail_changed",
+      "key": "Claude Sonnet 4",
+      "summary": "Claude Sonnet 4: status retired, except on Bedrock and Claude Models on Google Cloud (Google managed) → retired, except on Claude Models on Google Cloud (Google managed) and Bedrock",
+      "fields": [
+        {
+          "field": "status",
+          "old": "retired, except on Bedrock and Claude Models on Google Cloud (Google managed)",
+          "new": "retired, except on Claude Models on Google Cloud (Google managed) and Bedrock"
+        }
+      ]
+    },
+    {
+      "id": "f1e98b6878cc919c",
+      "date": "2026-11-04",
+      "source": "anthropic",
+      "class": "detail_changed",
+      "key": "Claude Opus 4.1",
+      "summary": "Claude Opus 4.1: status retired, except on Bedrock and Claude Models on Google Cloud (Google managed) → retired, except on Claude Models on Google Cloud (Google managed) and Bedrock",
+      "fields": [
+        {
+          "field": "status",
+          "old": "retired, except on Bedrock and Claude Models on Google Cloud (Google managed)",
+          "new": "retired, except on Claude Models on Google Cloud (Google managed) and Bedrock"
+        }
+      ]
+    },
     {
       "id": "d69cde0ff7a25db0",
       "date": "2026-10-27",

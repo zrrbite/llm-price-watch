@@ -2,7 +2,7 @@
   "source": "anthropic",
   "title": "Anthropic API pricing",
   "url": "https://platform.claude.com/docs/en/about-claude/pricing",
-  "fetched": "2026-11-03T18:20:09Z",
+  "fetched": "2026-11-04T06:26:29Z",
   "floor": 10,
   "rows": [
     {
@@ -120,7 +120,7 @@
     {
       "key": "Claude Opus 4.1",
       "values": {
-        "status": "retired, except on Bedrock and Claude Models on Google Cloud (Google managed)",
+        "status": "retired, except on Claude Models on Google Cloud (Google managed) and Bedrock",
         "input": 15.0,
         "cache_write_5m": 18.75,
         "cache_write_1h": 30.0,
@@ -205,7 +205,7 @@
     {
       "key": "Claude Sonnet 4",
       "values": {
-        "status": "retired, except on Bedrock and Claude Models on Google Cloud (Google managed)",
+        "status": "retired, except on Claude Models on Google Cloud (Google managed) and Bedrock",
         "input": 3.0,
         "cache_write_5m": 3.75,
         "cache_write_1h": 6.0,
