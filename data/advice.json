@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05T06:26:27Z",
+  "generated": "2026-11-05T18:22:11Z",
   "site": "https://zrrbite.github.io/llm-price-watch/",
   "units": "USD per million tokens",
   "blended_formula": "0.75*input + 0.25*output",
