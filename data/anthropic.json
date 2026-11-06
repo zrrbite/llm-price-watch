@@ -2,7 +2,7 @@
   "source": "anthropic",
   "title": "Anthropic API pricing",
   "url": "https://platform.claude.com/docs/en/about-claude/pricing",
-  "fetched": "2026-11-05T18:22:11Z",
+  "fetched": "2026-11-06T06:26:23Z",
   "floor": 10,
   "rows": [
     {
@@ -27,19 +27,6 @@
         "output": 50.0,
         "batch_input": 5.0,
         "batch_output": 25.0
-      }
-    },
-    {
-      "key": "Claude Haiku 3.5",
-      "values": {
-        "status": "retired, except on Claude Models on Google Cloud (Google managed)",
-        "input": 0.8,
-        "cache_write_5m": 1.0,
-        "cache_write_1h": 1.6,
-        "cache_read": 0.08,
-        "output": 4.0,
-        "batch_input": 0.4,
-        "batch_output": 2.0
       }
     },
     {

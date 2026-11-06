@@ -1,7 +1,15 @@
 {
   "schema": 1,
-  "count": 259,
+  "count": 260,
   "entries": [
+    {
+      "id": "c24e2fddf38427bf",
+      "date": "2026-11-06",
+      "source": "anthropic",
+      "class": "model_removed",
+      "key": "Claude Haiku 3.5",
+      "summary": "Claude Haiku 3.5 removed"
+    },
     {
       "id": "fd4c9e6cee8bccc0",
       "date": "2026-11-04",

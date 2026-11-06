@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05T18:22:11Z",
+  "generated": "2026-11-06T06:26:23Z",
   "site": "https://zrrbite.github.io/llm-price-watch/",
   "units": "USD per million tokens",
   "blended_formula": "0.75*input + 0.25*output",
@@ -43,23 +43,6 @@
       "rank_in_tier": 2,
       "tier_size": 2,
       "cheaper_alternatives": []
-    },
-    {
-      "name": "Claude Haiku 3.5",
-      "base_name": "Claude Haiku 3.5",
-      "vendor": "Anthropic",
-      "tier": "Lightweight",
-      "input": 0.8,
-      "output": 4.0,
-      "blended": 1.6,
-      "available": false,
-      "status": "retired, except on Claude Models on Google Cloud (Google managed)",
-      "on_offer": false,
-      "offer_ends": null,
-      "offer_days_left": null,
-      "offer_text": null,
-      "retires": null,
-      "replacement": null
     },
     {
       "name": "Claude Haiku 4.5",
@@ -1675,7 +1658,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 56,
+      "offer_days_left": 55,
       "offer_text": "Gemini 3.8 Flash is available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
@@ -1695,7 +1678,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-01",
-      "offer_days_left": 26,
+      "offer_days_left": 25,
       "offer_text": "Gemini 4 Argon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026.",
       "retires": null,
       "replacement": null,
@@ -2049,7 +2032,7 @@
       ],
       "lapsed": false,
       "expires": "2026-12-01",
-      "days_left": 26,
+      "days_left": 25,
       "text": "Gemini 4 Argon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026."
     },
     {
@@ -2060,7 +2043,7 @@
       ],
       "lapsed": false,
       "expires": "2026-12-31",
-      "days_left": 56,
+      "days_left": 55,
       "text": "Gemini 3.8 Flash is available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026."
     },
     {
