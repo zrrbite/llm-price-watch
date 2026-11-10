@@ -1,7 +1,31 @@
 {
   "schema": 1,
-  "count": 261,
+  "count": 264,
   "entries": [
+    {
+      "id": "f18c25d3e4018e15",
+      "date": "2026-11-10",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Claude Fable 5.2",
+      "summary": "Claude Fable 5.2 added"
+    },
+    {
+      "id": "b82770971d0592f8",
+      "date": "2026-11-10",
+      "source": "anthropic",
+      "class": "model_added",
+      "key": "Claude Fable 5.2",
+      "summary": "Claude Fable 5.2 added"
+    },
+    {
+      "id": "b132edd469cb171d",
+      "date": "2026-11-10",
+      "source": "anthropic",
+      "class": "model_added",
+      "key": "Claude Mythos 5.2",
+      "summary": "Claude Mythos 5.2 added"
+    },
     {
       "id": "2dfd189a8cadce95",
       "date": "2026-11-09",

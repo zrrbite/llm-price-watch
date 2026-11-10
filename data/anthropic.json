@@ -2,7 +2,7 @@
   "source": "anthropic",
   "title": "Anthropic API pricing",
   "url": "https://platform.claude.com/docs/en/about-claude/pricing",
-  "fetched": "2026-11-09T18:21:11Z",
+  "fetched": "2026-11-10T06:25:41Z",
   "floor": 10,
   "rows": [
     {
@@ -27,6 +27,18 @@
         "output": 50.0,
         "batch_input": 5.0,
         "batch_output": 25.0
+      }
+    },
+    {
+      "key": "Claude Fable 5.2",
+      "values": {
+        "input": 8.0,
+        "cache_write_5m": 10.0,
+        "cache_write_1h": 16.0,
+        "cache_read": 0.2,
+        "output": 40.0,
+        "batch_input": 4.0,
+        "batch_output": 20.0
       }
     },
     {
@@ -89,6 +101,19 @@
         "output": 50.0,
         "batch_input": 5.0,
         "batch_output": 25.0
+      }
+    },
+    {
+      "key": "Claude Mythos 5.2",
+      "values": {
+        "status": "limited availability",
+        "input": 8.0,
+        "cache_write_5m": 10.0,
+        "cache_write_1h": 16.0,
+        "cache_read": 0.2,
+        "output": 40.0,
+        "batch_input": 4.0,
+        "batch_output": 20.0
       }
     },
     {

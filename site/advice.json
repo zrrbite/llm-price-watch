@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T18:21:12Z",
+  "generated": "2026-11-10T06:25:41Z",
   "site": "https://zrrbite.github.io/llm-price-watch/",
   "units": "USD per million tokens",
   "blended_formula": "0.75*input + 0.25*output",
@@ -20,9 +20,17 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 1,
-      "tier_size": 2,
-      "cheaper_alternatives": []
+      "rank_in_tier": 2,
+      "tier_size": 3,
+      "cheaper_alternatives": [
+        {
+          "name": "Claude Fable 5.2",
+          "blended": 16.0,
+          "saves_percent": 20.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        }
+      ]
     },
     {
       "name": "Claude Fable 5.1",
@@ -40,8 +48,36 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 2,
-      "tier_size": 2,
+      "rank_in_tier": 3,
+      "tier_size": 3,
+      "cheaper_alternatives": [
+        {
+          "name": "Claude Fable 5.2",
+          "blended": 16.0,
+          "saves_percent": 20.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        }
+      ]
+    },
+    {
+      "name": "Claude Fable 5.2",
+      "base_name": "Claude Fable 5.2",
+      "vendor": "Anthropic",
+      "tier": "Frontier",
+      "input": 8.0,
+      "output": 40.0,
+      "blended": 16.0,
+      "available": true,
+      "status": null,
+      "on_offer": false,
+      "offer_ends": null,
+      "offer_days_left": null,
+      "offer_text": null,
+      "retires": null,
+      "replacement": null,
+      "rank_in_tier": 1,
+      "tier_size": 3,
       "cheaper_alternatives": []
     },
     {
@@ -144,6 +180,23 @@
       "input": 10.0,
       "output": 50.0,
       "blended": 20.0,
+      "available": false,
+      "status": "limited availability",
+      "on_offer": false,
+      "offer_ends": null,
+      "offer_days_left": null,
+      "offer_text": null,
+      "retires": null,
+      "replacement": null
+    },
+    {
+      "name": "Claude Mythos 5.2",
+      "base_name": "Claude Mythos 5.2",
+      "vendor": "Anthropic",
+      "tier": "Frontier",
+      "input": 8.0,
+      "output": 40.0,
+      "blended": 16.0,
       "available": false,
       "status": "limited availability",
       "on_offer": false,
@@ -490,8 +543,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 13,
-      "tier_size": 17,
+      "rank_in_tier": 14,
+      "tier_size": 18,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -532,8 +585,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 14,
-      "tier_size": 17,
+      "rank_in_tier": 15,
+      "tier_size": 18,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -553,6 +606,48 @@
           "name": "Gemini 4 Argon",
           "blended": 4.0,
           "saves_percent": 80.0,
+          "on_offer": true,
+          "offer_lapsed": false
+        }
+      ]
+    },
+    {
+      "name": "Claude Fable 5.2",
+      "base_name": "Claude Fable 5.2",
+      "vendor": "Copilot",
+      "tier": "Powerful",
+      "input": 8.0,
+      "output": 40.0,
+      "blended": 16.0,
+      "available": true,
+      "status": "GA",
+      "on_offer": false,
+      "offer_ends": null,
+      "offer_days_left": null,
+      "offer_text": null,
+      "retires": null,
+      "replacement": null,
+      "rank_in_tier": 13,
+      "tier_size": 18,
+      "cheaper_alternatives": [
+        {
+          "name": "GPT-6 Sol (≤ 272K)",
+          "blended": 4.0,
+          "saves_percent": 75.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "GPT-6.1 Sol (≤ 272K)",
+          "blended": 4.0,
+          "saves_percent": 75.0,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Gemini 4 Argon",
+          "blended": 4.0,
+          "saves_percent": 75.0,
           "on_offer": true,
           "offer_lapsed": false
         }
@@ -665,7 +760,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 10,
-      "tier_size": 17,
+      "tier_size": 18,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -706,8 +801,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 15,
-      "tier_size": 17,
+      "rank_in_tier": 16,
+      "tier_size": 18,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -749,7 +844,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 11,
-      "tier_size": 17,
+      "tier_size": 18,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -791,7 +886,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 8,
-      "tier_size": 17,
+      "tier_size": 18,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1001,7 +1096,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 4,
-      "tier_size": 17,
+      "tier_size": 18,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1169,7 +1264,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 12,
-      "tier_size": 17,
+      "tier_size": 18,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1211,7 +1306,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 9,
-      "tier_size": 17,
+      "tier_size": 18,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1336,8 +1431,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 17,
-      "tier_size": 17,
+      "rank_in_tier": 18,
+      "tier_size": 18,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1378,8 +1473,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 16,
-      "tier_size": 17,
+      "rank_in_tier": 17,
+      "tier_size": 18,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1469,7 +1564,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 6,
-      "tier_size": 17,
+      "tier_size": 18,
       "cheaper_alternatives": [
         {
           "name": "GPT-6.1 Sol (≤ 272K)",
@@ -1511,7 +1606,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 1,
-      "tier_size": 17,
+      "tier_size": 18,
       "cheaper_alternatives": []
     },
     {
@@ -1531,7 +1626,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 7,
-      "tier_size": 17,
+      "tier_size": 18,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1573,7 +1668,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 2,
-      "tier_size": 17,
+      "tier_size": 18,
       "cheaper_alternatives": []
     },
     {
@@ -1658,7 +1753,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 52,
+      "offer_days_left": 51,
       "offer_text": "Gemini 3.8 Flash is available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
@@ -1678,12 +1773,12 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-01",
-      "offer_days_left": 22,
+      "offer_days_left": 21,
       "offer_text": "Gemini 4 Argon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026.",
       "retires": null,
       "replacement": null,
       "rank_in_tier": 3,
-      "tier_size": 17,
+      "tier_size": 18,
       "cheaper_alternatives": []
     },
     {
@@ -1955,7 +2050,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 5,
-      "tier_size": 17,
+      "tier_size": 18,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -2032,7 +2127,7 @@
       ],
       "lapsed": false,
       "expires": "2026-12-01",
-      "days_left": 22,
+      "days_left": 21,
       "text": "Gemini 4 Argon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026."
     },
     {
@@ -2043,7 +2138,7 @@
       ],
       "lapsed": false,
       "expires": "2026-12-31",
-      "days_left": 52,
+      "days_left": 51,
       "text": "Gemini 3.8 Flash is available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026."
     },
     {
@@ -2096,8 +2191,8 @@
       "blended": 4.0
     },
     "Anthropic/Frontier": {
-      "model": "Claude Fable 5.1",
-      "blended": 20.0
+      "model": "Claude Fable 5.2",
+      "blended": 16.0
     }
   }
 }
