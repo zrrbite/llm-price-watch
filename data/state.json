@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-11-10T18:19:37Z",
+  "last_checked": "2026-11-11T06:26:21Z",
   "problems": [
     {
       "source": "copilot-multipliers",
@@ -8,9 +8,9 @@
   ],
   "sources": {
     "anthropic": 22,
-    "copilot-pricing": 42,
+    "copilot-pricing": 43,
     "copilot-multipliers": 12,
     "copilot-deprecations": 41
   },
-  "changelog_entries": 264
+  "changelog_entries": 266
 }

@@ -2,7 +2,7 @@
   "source": "copilot-pricing",
   "title": "GitHub Copilot — usage-based token pricing",
   "url": "https://github.com/github/docs/blob/main/data/tables/copilot/models-and-pricing.yml",
-  "fetched": "2026-11-10T18:19:36Z",
+  "fetched": "2026-11-11T06:26:21Z",
   "floor": 15,
   "rows": [
     {
@@ -414,6 +414,18 @@
       }
     },
     {
+      "key": "Gemini 4 Carbon",
+      "values": {
+        "input": 2.0,
+        "cached_input": 0.1,
+        "output": 10.0,
+        "provider": "google",
+        "release_status": "GA",
+        "category": "Powerful",
+        "offer": "gemini-4-carbon-promo"
+      }
+    },
+    {
       "key": "Grok 4.5 (> 200K)",
       "values": {
         "input": 4.0,
@@ -511,6 +523,11 @@
     {
       "key": "gemini-4-argon-promo",
       "text": "Gemini 4 Argon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026.",
+      "expires": "2026-12-01"
+    },
+    {
+      "key": "gemini-4-carbon-promo",
+      "text": "Gemini 4 Carbon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026. Starting December 1, 2026, pricing is $4.00 per 1M input tokens, $0.20 per 1M cached input tokens, and $20.00 per 1M output tokens.",
       "expires": "2026-12-01"
     }
   ]

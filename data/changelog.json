@@ -1,7 +1,24 @@
 {
   "schema": 1,
-  "count": 264,
+  "count": 266,
   "entries": [
+    {
+      "id": "fabfb983051dccb2",
+      "date": "2026-11-11",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Gemini 4 Carbon",
+      "summary": "Gemini 4 Carbon added"
+    },
+    {
+      "id": "c6c7daaad514fc5f",
+      "date": "2026-11-11",
+      "source": "copilot-pricing",
+      "class": "advisory_added",
+      "key": "gemini-4-carbon-promo",
+      "summary": "Gemini 4 Carbon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026. Starting December 1, 2026, pricing is $4.00 per 1M input tokens, $0.20 per 1M cached input tokens, and $20.00 per 1M output tokens.",
+      "text": "Gemini 4 Carbon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026. Starting December 1, 2026, pricing is $4.00 per 1M input tokens, $0.20 per 1M cached input tokens, and $20.00 per 1M output tokens."
+    },
     {
       "id": "f18c25d3e4018e15",
       "date": "2026-11-10",

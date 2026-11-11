@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-10T18:19:37Z",
+  "generated": "2026-11-11T06:26:22Z",
   "site": "https://zrrbite.github.io/llm-price-watch/",
   "units": "USD per million tokens",
   "blended_formula": "0.75*input + 0.25*output",
@@ -543,8 +543,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 14,
-      "tier_size": 18,
+      "rank_in_tier": 15,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -585,8 +585,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 15,
-      "tier_size": 18,
+      "rank_in_tier": 16,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -627,8 +627,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 13,
-      "tier_size": 18,
+      "rank_in_tier": 14,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -759,8 +759,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 10,
-      "tier_size": 18,
+      "rank_in_tier": 11,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -801,8 +801,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 16,
-      "tier_size": 18,
+      "rank_in_tier": 17,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -843,8 +843,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 11,
-      "tier_size": 18,
+      "rank_in_tier": 12,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -885,8 +885,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 8,
-      "tier_size": 18,
+      "rank_in_tier": 9,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1095,8 +1095,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 4,
-      "tier_size": 18,
+      "rank_in_tier": 5,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1263,8 +1263,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 12,
-      "tier_size": 18,
+      "rank_in_tier": 13,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1305,8 +1305,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 9,
-      "tier_size": 18,
+      "rank_in_tier": 10,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1431,8 +1431,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 18,
-      "tier_size": 18,
+      "rank_in_tier": 19,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1473,8 +1473,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 17,
-      "tier_size": 18,
+      "rank_in_tier": 18,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1563,8 +1563,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 6,
-      "tier_size": 18,
+      "rank_in_tier": 7,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6.1 Sol (≤ 272K)",
@@ -1581,10 +1581,10 @@
           "offer_lapsed": false
         },
         {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 28.7,
-          "on_offer": false,
+          "name": "Gemini 4 Carbon",
+          "blended": 4.0,
+          "saves_percent": 40.7,
+          "on_offer": true,
           "offer_lapsed": false
         }
       ]
@@ -1606,7 +1606,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 1,
-      "tier_size": 18,
+      "tier_size": 19,
       "cheaper_alternatives": []
     },
     {
@@ -1625,8 +1625,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 7,
-      "tier_size": 18,
+      "rank_in_tier": 8,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -1643,10 +1643,10 @@
           "offer_lapsed": false
         },
         {
-          "name": "GPT-5.3-Codex",
-          "blended": 4.8125,
-          "saves_percent": 28.7,
-          "on_offer": false,
+          "name": "Gemini 4 Carbon",
+          "blended": 4.0,
+          "saves_percent": 40.7,
+          "on_offer": true,
           "offer_lapsed": false
         }
       ]
@@ -1668,7 +1668,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 2,
-      "tier_size": 18,
+      "tier_size": 19,
       "cheaper_alternatives": []
     },
     {
@@ -1753,7 +1753,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 51,
+      "offer_days_left": 50,
       "offer_text": "Gemini 3.8 Flash is available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
@@ -1773,12 +1773,32 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-01",
-      "offer_days_left": 21,
+      "offer_days_left": 20,
       "offer_text": "Gemini 4 Argon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026.",
       "retires": null,
       "replacement": null,
       "rank_in_tier": 3,
-      "tier_size": 18,
+      "tier_size": 19,
+      "cheaper_alternatives": []
+    },
+    {
+      "name": "Gemini 4 Carbon",
+      "base_name": "Gemini 4 Carbon",
+      "vendor": "Copilot",
+      "tier": "Powerful",
+      "input": 2.0,
+      "output": 10.0,
+      "blended": 4.0,
+      "available": true,
+      "status": "GA",
+      "on_offer": true,
+      "offer_ends": "2026-12-01",
+      "offer_days_left": 20,
+      "offer_text": "Gemini 4 Carbon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026. Starting December 1, 2026, pricing is $4.00 per 1M input tokens, $0.20 per 1M cached input tokens, and $20.00 per 1M output tokens.",
+      "retires": null,
+      "replacement": null,
+      "rank_in_tier": 4,
+      "tier_size": 19,
       "cheaper_alternatives": []
     },
     {
@@ -2049,8 +2069,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 5,
-      "tier_size": 18,
+      "rank_in_tier": 6,
+      "tier_size": 19,
       "cheaper_alternatives": [
         {
           "name": "GPT-6 Sol (≤ 272K)",
@@ -2127,8 +2147,19 @@
       ],
       "lapsed": false,
       "expires": "2026-12-01",
-      "days_left": 21,
+      "days_left": 20,
       "text": "Gemini 4 Argon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026."
+    },
+    {
+      "vendor": "Copilot",
+      "kind": "promotion",
+      "models": [
+        "Gemini 4 Carbon"
+      ],
+      "lapsed": false,
+      "expires": "2026-12-01",
+      "days_left": 20,
+      "text": "Gemini 4 Carbon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026. Starting December 1, 2026, pricing is $4.00 per 1M input tokens, $0.20 per 1M cached input tokens, and $20.00 per 1M output tokens."
     },
     {
       "vendor": "Copilot",
@@ -2138,7 +2169,7 @@
       ],
       "lapsed": false,
       "expires": "2026-12-31",
-      "days_left": 51,
+      "days_left": 50,
       "text": "Gemini 3.8 Flash is available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026."
     },
     {
