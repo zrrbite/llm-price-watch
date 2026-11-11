@@ -5,13 +5,13 @@
   <link href="https://zrrbite.github.io/llm-price-watch/"/>
   <link rel="self" href="https://zrrbite.github.io/llm-price-watch/feed.xml"/>
   <id>tag:zrrbite.github.io,2026:llm-price-watch</id>
-  <updated>2026-11-11T06:26:21Z</updated>
+  <updated>2026-11-11T18:19:32Z</updated>
   <entry>
-    <title>2026-11-11: 2 pricing changes</title>
+    <title>2026-11-11: 3 pricing changes</title>
     <link href="https://zrrbite.github.io/llm-price-watch/"/>
     <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-11-11</id>
     <updated>2026-11-11T00:00:00Z</updated>
-    <content type="html">&lt;ul&gt;&lt;li&gt;Gemini 4 Carbon added&lt;/li&gt;&lt;li&gt;Gemini 4 Carbon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026. Starting December 1, 2026, pricing is $4.00 per 1M input tokens, $0.20 per 1M cached input tokens, and $20.00 per 1M output tokens.&lt;/li&gt;&lt;/ul&gt;</content>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Gemini 4 Carbon added&lt;/li&gt;&lt;li&gt;Gemini 4 Carbon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026. Starting December 1, 2026, pricing is $4.00 per 1M input tokens, $0.20 per 1M cached input tokens, and $20.00 per 1M output tokens.&lt;/li&gt;&lt;li&gt;**Regional and multi-region endpoint pricing for Claude 4.5 models and beyond** Starting with Claude Sonnet 4.5, Haiku 4.5, and Opus 4.5: * **Bedrock** offers two endpoint types: global endpoints (dynamic routing for maximum availability) and regional endpoints (guaranteed data routing through specific geographic regions). * **Claude Models on Google Cloud (Google managed)** offers global endpoints and multi-region endpoints (dynamic routing within a geographic area) for these models, and regional endpoints for Claude Sonnet 4.6 and earlier models. Regional and multi-region endpoints include a 10 percent premium over global endpoints. The Claude API (first-party) is global by default; for first-party data residency options and pricing, see Data residency pricing. **Scope:** This pricing structure applies to Claude Sonnet 4.5 (deprecated), Haiku 4.5, Opus 4.5, and later models. It doesn’t apply to earlier models (Claude Opus 4.1 and prior releases). For implementation details and code examples: * Amazon Bedrock global versus regional endpoints: Claude in Amazon Bedrock (`bedrock-mantle`) or Claude on Amazon Bedrock (`bedrock-runtime`), depending on whether you call `bedrock-mantle` or `bedrock-runtime` * Google Cloud global, multi-region, and regional endpoints: Claude Models on Google Cloud (Google managed)&lt;/li&gt;&lt;/ul&gt;</content>
   </entry>
   <entry>
     <title>2026-11-10: 3 pricing changes</title>
