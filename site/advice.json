@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-11T18:19:32Z",
+  "generated": "2026-11-12T06:26:54Z",
   "site": "https://zrrbite.github.io/llm-price-watch/",
   "units": "USD per million tokens",
   "blended_formula": "0.75*input + 0.25*output",
@@ -1753,7 +1753,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 50,
+      "offer_days_left": 49,
       "offer_text": "Gemini 3.8 Flash is available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
@@ -1773,7 +1773,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-01",
-      "offer_days_left": 20,
+      "offer_days_left": 19,
       "offer_text": "Gemini 4 Argon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026.",
       "retires": null,
       "replacement": null,
@@ -1793,7 +1793,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-01",
-      "offer_days_left": 20,
+      "offer_days_left": 19,
       "offer_text": "Gemini 4 Carbon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026. Starting December 1, 2026, pricing is $4.00 per 1M input tokens, $0.20 per 1M cached input tokens, and $20.00 per 1M output tokens.",
       "retires": null,
       "replacement": null,
@@ -2147,7 +2147,7 @@
       ],
       "lapsed": false,
       "expires": "2026-12-01",
-      "days_left": 20,
+      "days_left": 19,
       "text": "Gemini 4 Argon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026."
     },
     {
@@ -2158,7 +2158,7 @@
       ],
       "lapsed": false,
       "expires": "2026-12-01",
-      "days_left": 20,
+      "days_left": 19,
       "text": "Gemini 4 Carbon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026. Starting December 1, 2026, pricing is $4.00 per 1M input tokens, $0.20 per 1M cached input tokens, and $20.00 per 1M output tokens."
     },
     {
@@ -2169,7 +2169,7 @@
       ],
       "lapsed": false,
       "expires": "2026-12-31",
-      "days_left": 50,
+      "days_left": 49,
       "text": "Gemini 3.8 Flash is available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026."
     },
     {
