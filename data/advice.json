@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T18:19:08Z",
+  "generated": "2026-11-14T06:23:34Z",
   "site": "https://zrrbite.github.io/llm-price-watch/",
   "units": "USD per million tokens",
   "blended_formula": "0.75*input + 0.25*output",
@@ -670,7 +670,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 2,
-      "tier_size": 16,
+      "tier_size": 17,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.8 Flash",
@@ -927,8 +927,8 @@
       "offer_text": null,
       "retires": "2026-05-01",
       "replacement": "Latest Claude Sonnet model",
-      "rank_in_tier": 11,
-      "tier_size": 16,
+      "rank_in_tier": 12,
+      "tier_size": 17,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.8 Flash",
@@ -969,8 +969,8 @@
       "offer_text": null,
       "retires": "2026-09-01",
       "replacement": "Latest Claude Sonnet model",
-      "rank_in_tier": 12,
-      "tier_size": 16,
+      "rank_in_tier": 13,
+      "tier_size": 17,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.8 Flash",
@@ -1011,8 +1011,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 8,
-      "tier_size": 16,
+      "rank_in_tier": 9,
+      "tier_size": 17,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.8 Flash",
@@ -1053,8 +1053,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 9,
-      "tier_size": 16,
+      "rank_in_tier": 10,
+      "tier_size": 17,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.8 Flash",
@@ -1347,8 +1347,8 @@
       "offer_text": "input fell 20% from $2.5 to $2 on 2026-07-30, and is still there.",
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 16,
-      "tier_size": 16,
+      "rank_in_tier": 17,
+      "tier_size": 17,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.8 Flash",
@@ -1389,8 +1389,8 @@
       "offer_text": "input fell 20% from $2.5 to $2 on 2026-07-30, and is still there.",
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 10,
-      "tier_size": 16,
+      "rank_in_tier": 11,
+      "tier_size": 17,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.8 Flash",
@@ -1687,8 +1687,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 7,
-      "tier_size": 16,
+      "rank_in_tier": 8,
+      "tier_size": 17,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.8 Flash",
@@ -1705,7 +1705,7 @@
           "offer_lapsed": false
         },
         {
-          "name": "Grok 4.5 (≤ 200K)",
+          "name": "Gemini 4 Hydrogen",
           "blended": 3.0,
           "saves_percent": 11.1,
           "on_offer": false,
@@ -1730,7 +1730,7 @@
       "retires": null,
       "replacement": null,
       "rank_in_tier": 3,
-      "tier_size": 16,
+      "tier_size": 17,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.8 Flash",
@@ -1753,12 +1753,12 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-31",
-      "offer_days_left": 48,
+      "offer_days_left": 47,
       "offer_text": "Gemini 3.8 Flash is available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026.",
       "retires": null,
       "replacement": null,
       "rank_in_tier": 1,
-      "tier_size": 16,
+      "tier_size": 17,
       "cheaper_alternatives": []
     },
     {
@@ -1773,7 +1773,7 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-01",
-      "offer_days_left": 18,
+      "offer_days_left": 17,
       "offer_text": "Gemini 4 Argon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026.",
       "retires": null,
       "replacement": null,
@@ -1793,13 +1793,55 @@
       "status": "GA",
       "on_offer": true,
       "offer_ends": "2026-12-01",
-      "offer_days_left": 18,
+      "offer_days_left": 17,
       "offer_text": "Gemini 4 Carbon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026. Starting December 1, 2026, pricing is $4.00 per 1M input tokens, $0.20 per 1M cached input tokens, and $20.00 per 1M output tokens.",
       "retires": null,
       "replacement": null,
       "rank_in_tier": 4,
       "tier_size": 19,
       "cheaper_alternatives": []
+    },
+    {
+      "name": "Gemini 4 Hydrogen",
+      "base_name": "Gemini 4 Hydrogen",
+      "vendor": "Copilot",
+      "tier": "Versatile",
+      "input": 1.5,
+      "output": 7.5,
+      "blended": 3.0,
+      "available": true,
+      "status": "GA",
+      "on_offer": false,
+      "offer_ends": null,
+      "offer_days_left": null,
+      "offer_text": null,
+      "retires": null,
+      "replacement": null,
+      "rank_in_tier": 4,
+      "tier_size": 17,
+      "cheaper_alternatives": [
+        {
+          "name": "Gemini 3.8 Flash",
+          "blended": 1.5,
+          "saves_percent": 50.0,
+          "on_offer": true,
+          "offer_lapsed": false
+        },
+        {
+          "name": "Claude Haiku 4.5",
+          "blended": 2.0,
+          "saves_percent": 33.3,
+          "on_offer": false,
+          "offer_lapsed": false
+        },
+        {
+          "name": "GPT-6.1 Terra (≤ 272K)",
+          "blended": 2.0,
+          "saves_percent": 33.3,
+          "on_offer": false,
+          "offer_lapsed": false
+        }
+      ]
     },
     {
       "name": "Grok 4.5 (> 200K)",
@@ -1817,8 +1859,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 13,
-      "tier_size": 16,
+      "rank_in_tier": 14,
+      "tier_size": 17,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.8 Flash",
@@ -1859,8 +1901,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 4,
-      "tier_size": 16,
+      "rank_in_tier": 5,
+      "tier_size": 17,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.8 Flash",
@@ -1901,8 +1943,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 14,
-      "tier_size": 16,
+      "rank_in_tier": 15,
+      "tier_size": 17,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.8 Flash",
@@ -1943,8 +1985,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 5,
-      "tier_size": 16,
+      "rank_in_tier": 6,
+      "tier_size": 17,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.8 Flash",
@@ -1985,8 +2027,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 15,
-      "tier_size": 16,
+      "rank_in_tier": 16,
+      "tier_size": 17,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.8 Flash",
@@ -2027,8 +2069,8 @@
       "offer_text": null,
       "retires": null,
       "replacement": null,
-      "rank_in_tier": 6,
-      "tier_size": 16,
+      "rank_in_tier": 7,
+      "tier_size": 17,
       "cheaper_alternatives": [
         {
           "name": "Gemini 3.8 Flash",
@@ -2147,7 +2189,7 @@
       ],
       "lapsed": false,
       "expires": "2026-12-01",
-      "days_left": 18,
+      "days_left": 17,
       "text": "Gemini 4 Argon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026."
     },
     {
@@ -2158,7 +2200,7 @@
       ],
       "lapsed": false,
       "expires": "2026-12-01",
-      "days_left": 18,
+      "days_left": 17,
       "text": "Gemini 4 Carbon is available at the promotional pricing of $2.00 per 1M input tokens, $0.10 per 1M cached input tokens, and $10.00 per 1M output tokens until December 1, 2026. Starting December 1, 2026, pricing is $4.00 per 1M input tokens, $0.20 per 1M cached input tokens, and $20.00 per 1M output tokens."
     },
     {
@@ -2169,7 +2211,7 @@
       ],
       "lapsed": false,
       "expires": "2026-12-31",
-      "days_left": 48,
+      "days_left": 47,
       "text": "Gemini 3.8 Flash is available at the promotional pricing of $0.75 per 1M input tokens, $0.075 per 1M cached input tokens, and $3.75 per 1M output tokens through December 31, 2026."
     },
     {

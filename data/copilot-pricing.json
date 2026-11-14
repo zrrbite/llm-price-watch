@@ -2,7 +2,7 @@
   "source": "copilot-pricing",
   "title": "GitHub Copilot — usage-based token pricing",
   "url": "https://github.com/github/docs/blob/main/data/tables/copilot/models-and-pricing.yml",
-  "fetched": "2026-11-13T18:19:08Z",
+  "fetched": "2026-11-14T06:23:34Z",
   "floor": 15,
   "rows": [
     {
@@ -423,6 +423,17 @@
         "release_status": "GA",
         "category": "Powerful",
         "offer": "gemini-4-carbon-promo"
+      }
+    },
+    {
+      "key": "Gemini 4 Hydrogen",
+      "values": {
+        "input": 1.5,
+        "cached_input": 0.075,
+        "output": 7.5,
+        "provider": "google",
+        "release_status": "GA",
+        "category": "Versatile"
       }
     },
     {

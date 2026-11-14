@@ -5,7 +5,14 @@
   <link href="https://zrrbite.github.io/llm-price-watch/"/>
   <link rel="self" href="https://zrrbite.github.io/llm-price-watch/feed.xml"/>
   <id>tag:zrrbite.github.io,2026:llm-price-watch</id>
-  <updated>2026-11-13T18:19:08Z</updated>
+  <updated>2026-11-14T06:23:34Z</updated>
+  <entry>
+    <title>2026-11-14: 1 pricing change</title>
+    <link href="https://zrrbite.github.io/llm-price-watch/"/>
+    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-11-14</id>
+    <updated>2026-11-14T00:00:00Z</updated>
+    <content type="html">&lt;ul&gt;&lt;li&gt;Gemini 4 Hydrogen added&lt;/li&gt;&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>2026-11-11: 3 pricing changes</title>
     <link href="https://zrrbite.github.io/llm-price-watch/"/>
@@ -418,12 +425,5 @@
     <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-02-19</id>
     <updated>2026-02-19T00:00:00Z</updated>
     <content type="html">&lt;ul&gt;&lt;li&gt;&lt;strong&gt;GPT-5-Codex&lt;/strong&gt; — suggested_alternative &lt;code&gt;GPT-5.1-Codex&lt;/code&gt; → &lt;code&gt;GPT-5.2-Codex&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Claude Opus 4.1&lt;/strong&gt; — suggested_alternative &lt;code&gt;Claude Opus 4.5&lt;/code&gt; → &lt;code&gt;Claude Opus 4.6&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Claude Sonnet 3.7&lt;/strong&gt; — suggested_alternative &lt;code&gt;Claude Sonnet 4&lt;/code&gt; → &lt;code&gt;Claude Sonnet 4.6&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Claude Opus 4&lt;/strong&gt; — suggested_alternative &lt;code&gt;Claude Opus 4.1&lt;/code&gt; → &lt;code&gt;Claude Opus 4.6&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Claude Sonnet 3.7 Thinking&lt;/strong&gt; — suggested_alternative &lt;code&gt;Claude Sonnet 4&lt;/code&gt; → &lt;code&gt;Claude Sonnet 4.6&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;o3&lt;/strong&gt; — suggested_alternative &lt;code&gt;GPT-5&lt;/code&gt; → &lt;code&gt;GPT-5.2&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>2026-01-22: 1 pricing change</title>
-    <link href="https://zrrbite.github.io/llm-price-watch/"/>
-    <id>tag:zrrbite.github.io,2026:llm-price-watch/2026-01-22</id>
-    <updated>2026-01-22T00:00:00Z</updated>
-    <content type="html">&lt;ul&gt;&lt;li&gt;Gemini 2.5 Pro removed&lt;/li&gt;&lt;/ul&gt;</content>
   </entry>
 </feed>
