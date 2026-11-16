@@ -1,4 +1,4 @@
-llm-price-watch brief, 2026-11-15T18:19:01Z. USD per million tokens.
+llm-price-watch brief, 2026-11-16T06:39:04Z. USD per million tokens.
 
 CHEAPEST PER CLASS (blended = 0.75*in + 0.25*out):
   Anthropic/Lightweight: Claude Haiku 5.5 (for prompts up to 100,000 tokens) 0.2
@@ -10,9 +10,9 @@ CHEAPEST PER CLASS (blended = 0.75*in + 0.25*out):
   Anthropic/Frontier: Claude Fable 5.2 16
 
 ON OFFER:
-  Gemini 4 Argon (16d left)
-  Gemini 4 Carbon (16d left)
-  Gemini 3.8 Flash (46d left)
+  Gemini 4 Argon (15d left)
+  Gemini 4 Carbon (15d left)
+  Gemini 3.8 Flash (45d left)
   GPT-5.6 Luna (no end date)
   GPT-5.6 Terra (no end date)
 
