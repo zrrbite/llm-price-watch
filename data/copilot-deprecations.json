@@ -2,7 +2,7 @@
   "source": "copilot-deprecations",
   "title": "GitHub Copilot — model retirements",
   "url": "https://github.com/github/docs/blob/main/data/tables/copilot/model-deprecation-history.yml",
-  "fetched": "2026-11-16T18:22:01Z",
+  "fetched": "2026-11-17T06:26:49Z",
   "floor": 3,
   "rows": [
     {
@@ -44,6 +44,20 @@
       "key": "Claude Opus 4.7",
       "values": {
         "retirement_date": "2026-10-02",
+        "suggested_alternative": "Latest Claude Opus model"
+      }
+    },
+    {
+      "key": "Claude Opus 4.8",
+      "values": {
+        "retirement_date": "2026-11-16",
+        "suggested_alternative": "Latest Claude Opus model"
+      }
+    },
+    {
+      "key": "Claude Opus 5",
+      "values": {
+        "retirement_date": "2026-11-16",
         "suggested_alternative": "Latest Claude Opus model"
       }
     },
@@ -178,6 +192,13 @@
       "values": {
         "retirement_date": "2026-10-19",
         "suggested_alternative": "Latest GPT Sol model"
+      }
+    },
+    {
+      "key": "GPT-5.6 Terra",
+      "values": {
+        "retirement_date": "2026-11-16",
+        "suggested_alternative": "Latest GPT Terra model"
       }
     },
     {

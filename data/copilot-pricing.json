@@ -2,7 +2,7 @@
   "source": "copilot-pricing",
   "title": "GitHub Copilot — usage-based token pricing",
   "url": "https://github.com/github/docs/blob/main/data/tables/copilot/models-and-pricing.yml",
-  "fetched": "2026-11-16T18:22:01Z",
+  "fetched": "2026-11-17T06:26:49Z",
   "floor": 15,
   "rows": [
     {
@@ -96,18 +96,6 @@
         "cached_input": 1.0,
         "output": 50.0,
         "cache_write": 12.5,
-        "provider": "anthropic",
-        "release_status": "GA",
-        "category": "Powerful"
-      }
-    },
-    {
-      "key": "Claude Opus 5",
-      "values": {
-        "input": 5.0,
-        "cached_input": 0.5,
-        "output": 25.0,
-        "cache_write": 6.25,
         "provider": "anthropic",
         "release_status": "GA",
         "category": "Powerful"
@@ -243,30 +231,6 @@
         "provider": "openai",
         "release_status": "GA",
         "category": "Powerful"
-      }
-    },
-    {
-      "key": "GPT-5.6 Terra (> 272K)",
-      "values": {
-        "input": 4.0,
-        "cached_input": 0.4,
-        "output": 18.0,
-        "cache_write": 5.0,
-        "provider": "openai",
-        "release_status": "GA",
-        "category": "Versatile"
-      }
-    },
-    {
-      "key": "GPT-5.6 Terra (≤ 272K)",
-      "values": {
-        "input": 2.0,
-        "cached_input": 0.2,
-        "output": 12.0,
-        "cache_write": 2.5,
-        "provider": "openai",
-        "release_status": "GA",
-        "category": "Versatile"
       }
     },
     {
