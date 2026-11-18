@@ -1,4 +1,4 @@
-# llm-price-watch  generated=2026-11-17T18:21:47Z  USD per million tokens
+# llm-price-watch  generated=2026-11-18T06:26:39Z  USD per million tokens
 # blended=0.75*input + 0.25*output  class=vendor's own capability tier
 # offer: none | promo | LAPSED (past its end date, price not yet reverted)
 model	vendor	class	in	out	blended	offer	ends	retires
@@ -47,6 +47,10 @@ GPT-6.1 Sol (> 272K)	Copilot	Powerful	4	15	6.75	none	-	-
 GPT-6.1 Sol (≤ 272K)	Copilot	Powerful	2	10	4	none	-	-
 GPT-6.1 Terra (> 272K)	Copilot	Versatile	2	7.5	3.375	none	-	-
 GPT-6.1 Terra (≤ 272K)	Copilot	Versatile	1	5	2	none	-	-
+GPT-6.2 Astra (> 272K)	Copilot	Powerful	16	60	27	none	-	-
+GPT-6.2 Astra (≤ 272K)	Copilot	Powerful	8	40	16	none	-	-
+GPT-6.2 Sol (> 272K)	Copilot	Powerful	4	15	6.75	none	-	-
+GPT-6.2 Sol (≤ 272K)	Copilot	Powerful	2	10	4	none	-	-
 Gemini 3.8 Flash	Copilot	Versatile	0.75	3.75	1.5	promo	2026-12-31	-
 Gemini 4 Argon	Copilot	Powerful	2	10	4	promo	2026-12-01	-
 Gemini 4 Carbon	Copilot	Powerful	2	10	4	promo	2026-12-01	-
@@ -58,4 +62,6 @@ Grok 4.6 (≤ 200K)	Copilot	Versatile	2	6	3	none	-	-
 Grok 4.7 (> 200K)	Copilot	Versatile	4	12	6	none	-	-
 Grok 4.7 (≤ 200K)	Copilot	Versatile	2	6	3	none	-	-
 Kimi K3	Copilot	Powerful	3	15	6	none	-	-
+MAI Code 2	Copilot	Powerful	0.5	2.5	1	promo	2027-05-17	-
+MAI Code 2 Flash	Copilot	Lightweight	0.05	0.25	0.1	promo	2027-05-17	-
 MAI-Code-1.1-Flash	Copilot	Lightweight	0.2	1.2	0.45	none	-	-

@@ -1,18 +1,20 @@
-llm-price-watch brief, 2026-11-17T18:21:47Z. USD per million tokens.
+llm-price-watch brief, 2026-11-18T06:26:39Z. USD per million tokens.
 
 CHEAPEST PER CLASS (blended = 0.75*in + 0.25*out):
   Anthropic/Lightweight: Claude Haiku 5.5 (for prompts up to 100,000 tokens) 0.2
-  Copilot/Lightweight: GPT-6 Luna (≤ 272K) 0.2
+  Copilot/Lightweight: MAI Code 2 Flash 0.1
   Anthropic/Versatile: Claude Sonnet 5.5 4
   Copilot/Versatile: Gemini 3.8 Flash 1.5
   Anthropic/Powerful: Claude Opus 5.5 8
-  Copilot/Powerful: GPT-6.1 Sol (≤ 272K) 4
+  Copilot/Powerful: MAI Code 2 1
   Anthropic/Frontier: Claude Fable 5.2 16
 
 ON OFFER:
-  Gemini 4 Argon (14d left)
-  Gemini 4 Carbon (14d left)
-  Gemini 3.8 Flash (44d left)
+  Gemini 4 Argon (13d left)
+  Gemini 4 Carbon (13d left)
+  Gemini 3.8 Flash (43d left)
+  MAI Code 2 (180d left)
+  MAI Code 2 Flash (180d left)
   GPT-5.6 Luna (no end date)
 
 Full table: models.tsv   Everything: advice.json

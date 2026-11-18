@@ -1,7 +1,145 @@
 {
   "schema": 1,
-  "count": 274,
+  "count": 291,
   "entries": [
+    {
+      "id": "f7292cd05abdec6f",
+      "date": "2026-11-18",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "GPT-5.1-Codex-Mini",
+      "summary": "GPT-5.1-Codex-Mini removed"
+    },
+    {
+      "id": "e460ca5072098133",
+      "date": "2026-11-18",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "GPT-5.1-Codex-Max",
+      "summary": "GPT-5.1-Codex-Max removed"
+    },
+    {
+      "id": "d92c88378999429d",
+      "date": "2026-11-18",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "MAI Code 2",
+      "summary": "MAI Code 2 added"
+    },
+    {
+      "id": "b89ab16f19c7eaf2",
+      "date": "2026-11-18",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "MAI Code 2 Flash",
+      "summary": "MAI Code 2 Flash added"
+    },
+    {
+      "id": "a70a74bff37da6d1",
+      "date": "2026-11-18",
+      "source": "copilot-pricing",
+      "class": "advisory_added",
+      "key": "mai-code-2-flash-promo",
+      "summary": "MAI Code 2 Flash is available at the promotional pricing of $0.05 per 1M input tokens, $0.005 per 1M cached input tokens, and $0.25 per 1M output tokens until May 17, 2027. Starting May 17, 2027, pricing is $0.10 per 1M input tokens, $0.01 per 1M cached input tokens, and $0.50 per 1M output tokens.",
+      "text": "MAI Code 2 Flash is available at the promotional pricing of $0.05 per 1M input tokens, $0.005 per 1M cached input tokens, and $0.25 per 1M output tokens until May 17, 2027. Starting May 17, 2027, pricing is $0.10 per 1M input tokens, $0.01 per 1M cached input tokens, and $0.50 per 1M output tokens."
+    },
+    {
+      "id": "980f77583a2829b5",
+      "date": "2026-11-18",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "GPT-4o",
+      "summary": "GPT-4o removed"
+    },
+    {
+      "id": "8f0ce3c9ae9d90f9",
+      "date": "2026-11-18",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-6.2 Sol (≤ 272K)",
+      "summary": "GPT-6.2 Sol (≤ 272K) added"
+    },
+    {
+      "id": "8a5d67b8bad45001",
+      "date": "2026-11-18",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "Gemini 3 Pro",
+      "summary": "Gemini 3 Pro removed"
+    },
+    {
+      "id": "82f6c9cf4a61efd9",
+      "date": "2026-11-18",
+      "source": "copilot-multipliers",
+      "class": "model_added",
+      "key": "MAI Code 2 Flash",
+      "summary": "MAI Code 2 Flash added"
+    },
+    {
+      "id": "814c92185e49ccba",
+      "date": "2026-11-18",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-6.2 Astra (> 272K)",
+      "summary": "GPT-6.2 Astra (> 272K) added"
+    },
+    {
+      "id": "7e7a961f5143120d",
+      "date": "2026-11-18",
+      "source": "copilot-multipliers",
+      "class": "model_added",
+      "key": "MAI Code 2",
+      "summary": "MAI Code 2 added"
+    },
+    {
+      "id": "70c1ebfe8202c92c",
+      "date": "2026-11-18",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "GPT-5.1",
+      "summary": "GPT-5.1 removed"
+    },
+    {
+      "id": "643baaa81cfb8b02",
+      "date": "2026-11-18",
+      "source": "copilot-pricing",
+      "class": "advisory_added",
+      "key": "mai-code-2-promo",
+      "summary": "MAI Code 2 is available at the promotional pricing of $0.50 per 1M input tokens, $0.025 per 1M cached input tokens, and $2.50 per 1M output tokens until May 17, 2027. Starting May 17, 2027, pricing is $1.00 per 1M input tokens, $0.05 per 1M cached input tokens, and $5.00 per 1M output tokens.",
+      "text": "MAI Code 2 is available at the promotional pricing of $0.50 per 1M input tokens, $0.025 per 1M cached input tokens, and $2.50 per 1M output tokens until May 17, 2027. Starting May 17, 2027, pricing is $1.00 per 1M input tokens, $0.05 per 1M cached input tokens, and $5.00 per 1M output tokens."
+    },
+    {
+      "id": "63abe5716c911cfb",
+      "date": "2026-11-18",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "GPT-5.1-Codex",
+      "summary": "GPT-5.1-Codex removed"
+    },
+    {
+      "id": "621ffd67140ec926",
+      "date": "2026-11-18",
+      "source": "copilot-multipliers",
+      "class": "model_removed",
+      "key": "GPT-4o mini",
+      "summary": "GPT-4o mini removed"
+    },
+    {
+      "id": "1a242f79d3f2461a",
+      "date": "2026-11-18",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-6.2 Sol (> 272K)",
+      "summary": "GPT-6.2 Sol (> 272K) added"
+    },
+    {
+      "id": "0de1448dcaa666c3",
+      "date": "2026-11-18",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "GPT-6.2 Astra (≤ 272K)",
+      "summary": "GPT-6.2 Astra (≤ 272K) added"
+    },
     {
       "id": "e5234fd1f0dbe80d",
       "date": "2026-11-17",

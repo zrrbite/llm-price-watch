@@ -1,16 +1,11 @@
 {
-  "last_checked": "2026-11-17T18:21:47Z",
-  "problems": [
-    {
-      "source": "copilot-multipliers",
-      "message": "parsed 5 rows, down from 12 (under 50%); refusing to report this as removals"
-    }
-  ],
+  "last_checked": "2026-11-18T06:26:39Z",
+  "problems": [],
   "sources": {
     "anthropic": 22,
-    "copilot-pricing": 41,
-    "copilot-multipliers": 12,
+    "copilot-pricing": 47,
+    "copilot-multipliers": 7,
     "copilot-deprecations": 44
   },
-  "changelog_entries": 274
+  "changelog_entries": 291
 }
