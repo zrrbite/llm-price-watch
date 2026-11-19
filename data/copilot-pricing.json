@@ -2,7 +2,7 @@
   "source": "copilot-pricing",
   "title": "GitHub Copilot — usage-based token pricing",
   "url": "https://github.com/github/docs/blob/main/data/tables/copilot/models-and-pricing.yml",
-  "fetched": "2026-11-18T18:20:04Z",
+  "fetched": "2026-11-19T06:27:13Z",
   "floor": 15,
   "rows": [
     {
@@ -443,6 +443,17 @@
         "input": 1.5,
         "cached_input": 0.075,
         "output": 7.5,
+        "provider": "google",
+        "release_status": "GA",
+        "category": "Versatile"
+      }
+    },
+    {
+      "key": "Gemini 4 Neon",
+      "values": {
+        "input": 3.0,
+        "cached_input": 0.15,
+        "output": 15.0,
         "provider": "google",
         "release_status": "GA",
         "category": "Versatile"

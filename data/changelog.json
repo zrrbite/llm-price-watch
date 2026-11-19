@@ -1,7 +1,15 @@
 {
   "schema": 1,
-  "count": 291,
+  "count": 292,
   "entries": [
+    {
+      "id": "9cbe8cfef447dcf4",
+      "date": "2026-11-19",
+      "source": "copilot-pricing",
+      "class": "model_added",
+      "key": "Gemini 4 Neon",
+      "summary": "Gemini 4 Neon added"
+    },
     {
       "id": "f7292cd05abdec6f",
       "date": "2026-11-18",
